@@ -1,0 +1,52 @@
+// ============================================================
+// Slide Page Global Styles (Not Scoped)
+// These styles need to be global to work correctly
+// ============================================================
+
+/* CSS Variables for consistent theming */
+:root {
+  --primary-color: #1a73e8;
+  --primary-hover: #1557b0;
+  --border-color: #dadce0;
+  --bg-gray: #f8f9fa;
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --shadow-light: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+  --shadow-medium: 0 2px 8px rgba(0, 0, 0, 0.1), 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Global override for Arco Design dropdown */
+
+.arco-dropdown {
+  border: none !important;
+  outline: none !important;
+}
+
+.arco-dropdown-list-wrapper {
+  max-height: none !important;
+  padding: 0 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+.arco-dropdown-list {
+  padding: 0 !important;
+  border: none !important;
+  
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.arco-trigger-popup {
+  border: none !important;
+  outline: none !important;
+}
+
+.arco-trigger-content {
+  border: none !important;
+  outline: none !important;
+}
+
+
+
+

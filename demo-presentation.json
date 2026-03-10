@@ -1,0 +1,42 @@
+{
+  "title": "产品路线图演示",
+  "slides": [
+    {
+      "type": "markdown",
+      "content": "# 产品路线图演示\n\n2026 年度规划",
+      "raw": "# 产品路线图演示\n\n2026 年度规划",
+      "option": null
+    },
+    {
+      "type": "markdown",
+      "content": "## 核心功能\n\n- 实时协作编辑\n- AI 智能助手\n- 多主题支持\n- 图表可视化\n- 智能布局推荐",
+      "raw": "## 核心功能\n\n- 实时协作编辑\n- AI 智能助手\n- 多主题支持\n- 图表可视化\n- 智能布局推荐",
+      "option": null
+    },
+    {
+      "type": "markdown",
+      "content": "### 技术栈\n\n**前端**\n- Vue 3 + Vite\n- TipTap 编辑器\n- Konva.js 画布渲染\n\n**后端**\n- Node.js + Koa\n- PostgreSQL\n- WebSocket 协作",
+      "raw": "### 技术栈\n\n**前端**\n- Vue 3 + Vite\n- TipTap 编辑器\n- Konva.js 画布渲染\n\n**后端**\n- Node.js + Koa\n- PostgreSQL\n- WebSocket 协作",
+      "option": null
+    },
+    {
+      "type": "markdown",
+      "content": "## 开发计划\n\n1. Q1 2026: 核心编辑器\n2. Q2 2026: AI 功能集成\n3. Q3 2026: 协作功能\n4. Q4 2026: 企业版发布",
+      "raw": "## 开发计划\n\n1. Q1 2026: 核心编辑器\n2. Q2 2026: AI 功能集成\n3. Q3 2026: 协作功能\n4. Q4 2026: 企业版发布",
+      "option": null
+    },
+    {
+      "type": "markdown",
+      "content": "# 感谢观看\n\n期待您的反馈！\n\n联系方式: contact@jitslide.com",
+      "raw": "# 感谢观看\n\n期待您的反馈！\n\n联系方式: contact@jitslide.com",
+      "option": null
+    }
+  ],
+  "markdownContent": "# 产品路线图演示\n\n2026 年度规划\n\n---\n\n## 核心功能\n\n- 实时协作编辑\n- AI 智能助手\n- 多主题支持\n- 图表可视化\n- 智能布局推荐\n\n---\n\n### 技术栈\n\n**前端**\n- Vue 3 + Vite\n- TipTap 编辑器\n- Konva.js 画布渲染\n\n**后端**\n- Node.js + Koa\n- PostgreSQL\n- WebSocket 协作\n\n---\n\n## 开发计划\n\n1. Q1 2026: 核心编辑器\n2. Q2 2026: AI 功能集成\n3. Q3 2026: 协作功能\n4. Q4 2026: 企业版发布\n\n---\n\n# 感谢观看\n\n期待您的反馈！\n\n联系方式: contact@jitslide.com",
+  "theme": "blue-gradient",
+  "metadata": {
+    "exportedAt": "2026-02-12T08:30:00.000Z",
+    "version": "1.0",
+    "slideCount": 5
+  }
+}

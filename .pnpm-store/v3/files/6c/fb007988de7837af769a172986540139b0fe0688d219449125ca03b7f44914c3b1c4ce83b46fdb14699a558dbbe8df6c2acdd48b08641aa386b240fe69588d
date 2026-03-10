@@ -1,0 +1,1 @@
+{"version":3,"file":"jiggle.js","sources":["../../../../node_modules/d3-force/src/jiggle.js"],"sourcesContent":["export default function(random) {\n  return (random() - 0.5) * 1e-6;\n}\n"],"names":[],"mappings":"AAAe,iBAAQ,CAAC,MAAM,EAAE;AAChC,EAAE,OAAO,CAAC,MAAM,EAAE,GAAG,GAAG,IAAI,IAAI;AAChC;;;;","x_google_ignoreList":[0]}

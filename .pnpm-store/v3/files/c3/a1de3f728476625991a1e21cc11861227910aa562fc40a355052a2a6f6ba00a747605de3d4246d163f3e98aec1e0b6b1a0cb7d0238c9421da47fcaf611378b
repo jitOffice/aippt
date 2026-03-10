@@ -1,0 +1,37 @@
+{
+  "name": "marcheur",
+  "version": "0.9.0",
+  "description": "Library to build simplistic XSLT-like processors",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "eslintConfig": {
+    "extends": "robin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scienceai/marcheur.git"
+  },
+  "keywords": [
+    "XSLT",
+    "transformaltion",
+    "tree",
+    "walkter"
+  ],
+  "author": "Robin Berjon <robin@berjon.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/scienceai/marcheur/issues"
+  },
+  "homepage": "https://github.com/scienceai/marcheur",
+  "dependencies": {
+    "dom-node-types": "1.0.1"
+  },
+  "devDependencies": {
+    "eslint-config-robin": "^4.0.0",
+    "get-dom": "^9.0.0",
+    "jest": "^20.0.4",
+    "xmldom": "^0.1.27"
+  }
+}

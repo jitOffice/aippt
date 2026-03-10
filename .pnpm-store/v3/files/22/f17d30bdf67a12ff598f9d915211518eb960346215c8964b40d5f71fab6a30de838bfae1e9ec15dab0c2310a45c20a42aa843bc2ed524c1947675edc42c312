@@ -1,0 +1,1 @@
+{"version":3,"file":"root.js","sources":["../../../../node_modules/d3-quadtree/src/root.js"],"sourcesContent":["export default function() {\n  return this._root;\n}\n"],"names":[],"mappings":"AAAe,oBAAQ,GAAG;AAC1B,EAAE,OAAO,IAAI,CAAC,KAAK;AACnB;;;;","x_google_ignoreList":[0]}

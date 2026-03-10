@@ -1,0 +1,80 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.applyOptionUpdates = applyOptionUpdates;
+const lodash_es_1 = require("lodash-es");
+/**
+ * Recursively applies properties from 'source' to 'target' and collects changes.
+ *
+ * @param target - The object to be updated
+ * @param source - The source object containing partial updates
+ * @param basePath - Current path prefix for nested properties
+ * @param options - Configuration options
+ */
+function applyOptionUpdates(target, source, basePath = '', options) {
+    const { bubbleUp = false, collector } = options !== null && options !== void 0 ? options : {};
+    const hasChange = applyOptionUpdatesInternal(target, source, basePath, collector, bubbleUp);
+    if (basePath === '' && hasChange && bubbleUp && collector) {
+        collector('', (0, lodash_es_1.cloneDeep)(target), undefined);
+    }
+}
+/**
+ * Internal recursive function.
+ * Returns true if any change occurred within this branch (or its children).
+ */
+function applyOptionUpdatesInternal(target, source, basePath, collector, bubbleUp) {
+    let hasChange = false;
+    Object.keys(source).forEach((key) => {
+        if (key === '__proto__' || key === 'constructor' || key === 'prototype') {
+            return;
+        }
+        const fullPath = basePath ? `${basePath}.${key}` : key;
+        const updateValue = source[key];
+        const oldValue = target[key];
+        let childChanged = false;
+        if (updateValue === undefined) {
+            // Handle deletion: Only delete and notify if the key actually exists
+            if (key in target) {
+                delete target[key];
+                collector === null || collector === void 0 ? void 0 : collector(fullPath, undefined, oldValue);
+                childChanged = true;
+            }
+        }
+        else if ((0, lodash_es_1.isPlainObject)(updateValue)) {
+            // Handle nested object
+            const oldValueIsObject = (0, lodash_es_1.isPlainObject)(target[key]);
+            if (!oldValueIsObject) {
+                target[key] = {};
+            }
+            const grandChildChanged = applyOptionUpdatesInternal(target[key], updateValue, fullPath, collector, bubbleUp);
+            if (!oldValueIsObject) {
+                // Overwriting a primitive with an object is always a change.
+                childChanged = true;
+                // If the object was empty (grandChildChanged is false), we still need to report it.
+                if (!grandChildChanged) {
+                    collector === null || collector === void 0 ? void 0 : collector(fullPath, target[key], oldValue);
+                }
+            }
+            else {
+                childChanged = grandChildChanged;
+            }
+        }
+        else {
+            // Handle primitive update
+            target[key] = updateValue;
+            if (!(0, lodash_es_1.isEqual)(updateValue, oldValue)) {
+                collector === null || collector === void 0 ? void 0 : collector(fullPath, updateValue, oldValue);
+                childChanged = true;
+            }
+        }
+        if (childChanged) {
+            hasChange = true;
+        }
+    });
+    // Bubbling: Notify if any child changed in this branch
+    // The recursion naturally ensures this happens in "deepest-first" (post-order) sequence.
+    if (hasChange && bubbleUp && basePath !== '') {
+        // Current target is now fully updated for this scope.
+        collector === null || collector === void 0 ? void 0 : collector(basePath, (0, lodash_es_1.cloneDeep)(target), undefined);
+    }
+    return hasChange;
+}

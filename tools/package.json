@@ -1,0 +1,14 @@
+{
+  "name": "pptx-converter-tools",
+  "version": "1.0.0",
+  "description": "PPTX to JSON conversion tools for PPT templates",
+  "main": "pptx-to-json.js",
+  "scripts": {
+    "convert": "node pptx-to-json.js",
+    "convert:batch": "node batch-convert.js"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "xml2js": "^0.6.2"
+  }
+}

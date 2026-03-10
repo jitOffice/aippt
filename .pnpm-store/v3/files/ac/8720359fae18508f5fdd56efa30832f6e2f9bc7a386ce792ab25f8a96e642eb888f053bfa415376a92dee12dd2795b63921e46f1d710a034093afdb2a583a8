@@ -1,0 +1,47 @@
+{
+  "name": "@shikijs/monaco",
+  "type": "module",
+  "version": "4.0.2",
+  "description": "Use Shiki for Monaco Editor",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/shikijs/shiki#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shikijs/shiki.git",
+    "directory": "packages/monaco"
+  },
+  "bugs": "https://github.com/shikijs/shiki/issues",
+  "keywords": [
+    "shiki",
+    "monaco-editor"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./*": "./dist/*"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@shikijs/vscode-textmate": "^10.0.2",
+    "@shikijs/core": "4.0.2",
+    "@shikijs/types": "4.0.2"
+  },
+  "devDependencies": {
+    "monaco-editor-core": "^0.55.1"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "play": "nr -C playground play"
+  }
+}

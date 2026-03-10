@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo.png?v=px1">
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo.png?v=px1">
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo.png?v=px1">
+    <meta name="theme-color" content="#165dff">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="screen-orientation" content="any">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="robots" content="index, follow">
+      <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+      <!-- 页面标题 - SEO核心要素 -->
+      <title>JitWord - 即时文档 - 高效协同文档引擎 | 实时协作编辑平台</title>
+
+      <!-- 元描述 - 影响搜索结果展示 -->
+      <meta name="description" content="JitWord是一款高效的AI协同文档引擎，支持多人实时编辑、版本控制和云端同步，提升团队协作效率，简化文档管理流程。">
+
+      <!-- 关键词 - 辅助搜索引擎理解页面内容 -->
+      <meta name="keywords" content="JitWord, 即时文档, 协同文档, 文档引擎, AI创作, 实时协作, 团队协作, 在线文档, 文档管理">
+
+      <link rel="icon" type="image/png" href="/logo.png?v=px1">
+      <link rel="canonical" href="https://jitword.dooring.cn"> <!-- 规范链接，避免重复内容问题 -->
+
+      <!-- 社交媒体元标签 -->
+      <meta property="og:type" content="website">
+      <meta property="og:title" content="JitWord - 即时文档 - 高效协同文档引擎">
+      <meta property="og:description" content="支持多人实时编辑的高效协同文档平台，提升团队工作效率">
+      <meta property="og:url" content="https://jitword.dooring.cn">
+      <meta property="og:image" content="/social-preview.png">
+      <meta property="og:site_name" content="JitWord">
+
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="JitWord - 即时文档 - 高效协同文档引擎">
+      <meta name="twitter:description" content="支持多人实时编辑的高效协同文档平台，提升团队工作效率">
+      <meta name="twitter:image" content="/social-preview.png">
+  </head>
+  <body>
+    <style>
+      @keyframes brandPulse { 0% { transform: scale(1); opacity: 0.7 } 50% { transform: scale(1.04); opacity: 1 } 100% { transform: scale(1) ; opacity: 0.7 } }
+      @keyframes brandSpin { 0% { transform: rotate(0deg) } 100% { transform: rotate(360deg) } }
+      #brand-loader { position: fixed; inset: 0; background: #fff; display: flex; align-items: center; justify-content: center; z-index: 9999 }
+      #brand-loader.hidden { opacity: 0; pointer-events: none; transition: opacity .2s ease }
+      #brand-loader .wrap { display: flex; flex-direction: column; align-items: center; gap: 16px }
+      #brand-loader .logo { width: 72px; height: 72px; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,.08); animation: brandPulse 1.8s infinite }
+      #brand-loader .spinner { width: 28px; height: 28px; border: 2px solid rgba(0,0,0,.12); border-top-color: rgba(0,0,0,.6); border-radius: 50%; animation: brandSpin .8s linear infinite }
+      #brand-loader .text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; color: #6b7280 }
+    </style>
+    <div id="brand-loader">
+      <div class="wrap">
+          <img src="/logo.png?v=px1" alt="brand" class="logo" aria-label="brand" />
+        <div class="spinner"></div>
+        <div class="text">正在载入编辑器…</div>
+      </div>
+    </div>
+    <div id="app"></div>
+    <script>
+      (function(){
+        var el = document.querySelector('#brand-loader .text');
+        if (!el) return;
+        var map = {
+          'zh': '正在载入编辑器…',
+          'zh-cn': '正在载入编辑器…',
+          'zh-hant': '正在載入編輯器…',
+          'en': 'Loading editor…',
+          'ja': 'エディターを読み込み中…',
+          'ko': '에디터 로딩 중…',
+          'id': 'Memuat editor…',
+          'th': 'กำลังโหลดเอดิเตอร์…',
+          'vi': 'Đang tải trình soạn thảo…'
+        };
+        var stored = localStorage.getItem('px_locale');
+        var lang = (stored || navigator.language || 'zh').toLowerCase();
+        var base = lang.split('-')[0];
+        el.textContent = map[lang] || map[base] || map['en'];
+      })();
+    </script>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

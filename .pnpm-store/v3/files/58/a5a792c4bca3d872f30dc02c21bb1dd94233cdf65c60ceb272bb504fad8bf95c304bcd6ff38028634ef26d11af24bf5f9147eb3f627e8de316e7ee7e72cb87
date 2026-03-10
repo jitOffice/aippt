@@ -1,0 +1,1 @@
+{"version":3,"file":"get-agent-rules.d.ts","sourceRoot":"","sources":["../../../../../../packages/nx/src/ai/set-up-ai-agents/get-agent-rules.ts"],"names":[],"mappings":"AAAA,MAAM,WAAW,iBAAiB;IAChC,OAAO,EAAE,OAAO,CAAC;IACjB,KAAK,CAAC,EAAE,OAAO,CAAC;CACjB;AAED,wBAAgB,aAAa,CAAC,OAAO,EAAE,iBAAiB,UAsBvD"}

@@ -1,0 +1,569 @@
+{
+  "cancel": "Hủy",
+  "common": {
+    "loading": "Đang tải...",
+    "confirm": "Xác nhận",
+    "cancel": "Hủy",
+    "edit": "Chỉnh sửa",
+    "share": "Chia sẻ",
+    "readMode": "Chế độ đọc",
+    "ai": "AI",
+    "templateLibrary": "Thư viện mẫu",
+    "saveAsTemplate": "Lưu thành mẫu",
+    "today": "Hôm nay",
+    "yesterday": "Hôm qua",
+    "daysAgo": "ngày trước",
+    "collapse": "Thu gọn",
+    "expand": "Mở rộng",
+    "dragToMove": "Kéo để di chuyển",
+    "online": "Trực tuyến",
+    "people": "người",
+    "documentList": "Danh sách tài liệu",
+    "logout": "Đăng xuất",
+    "inviteCodeManagement": "Quản lý mã kích hoạt",
+    "loadingDocument": "Đang tải nội dung tài liệu…",
+    "privateDeployment": "Triển khai nội bộ",
+    "user": "Người dùng",
+    "appTitleShort": "JitWord",
+    "appTitleFull": "JitWord Tài liệu cộng tác",
+    "language": "Ngôn ngữ",
+    "languageSettings": "Cài đặt ngôn ngữ",
+    "switchTooFast": "Chuyển đổi quá nhanh, vui lòng thử lại sau",
+    "switchErrorSuggestRefresh": "Lỗi khi chuyển tài liệu, đề xuất làm mới trang để khôi phục",
+    "on": "Bật",
+    "off": "Tắt",
+    "save": "Lưu"
+  },
+  "doc": {
+    "type": {
+      "sheet": "Bảng tính",
+      "word": "Tài liệu"
+    },
+    "exportExcel": "Xuất Excel",
+    "importExcel": "Nhập Excel",
+    "untitled": "Không tiêu đề",
+    "untitledSheet": "Bảng tính không tiêu đề",
+    "untitledDoc": "Tài liệu không tiêu đề",
+    "untitledMindmap": "Sơ đồ tư duy chưa đặt tên",
+    "loadSheetFailed": "Tải dữ liệu bảng tính thất bại",
+    "allChangesSaved": "Tất cả thay đổi đã được lưu vào đám mây",
+    "saving": "Đang lưu...",
+    "pendingSave": "Chờ lưu...",
+    "saveSuccess": "Lưu thành công",
+    "importSuccessRefresh": "Nhập thành công, đang làm mới...",
+    "importFailed": "Nhập thất bại",
+    "exportSuccess": "Xuất thành công",
+    "exportFailed": "Xuất thất bại",
+    "autoSaveTitle": "Tự động lưu {date}",
+    "autoSaveDesc": "Hệ thống tự động lưu",
+    "quickSaveTitle": "Lưu nhanh {date}",
+    "quickSaveDesc": "Người dùng lưu nhanh",
+    "versionSavedSuccess": "Đã lưu phiên bản (Ctrl+S)",
+    "saveFailed": "Lưu thất bại",
+    "enterDocName": "Vui lòng nhập tên tài liệu",
+    "createSuccess": "Tạo tài liệu thành công",
+    "createFailed": "Tạo tài liệu thất bại",
+    "docLimitReached": "Đã đạt giới hạn số lượng tài liệu",
+    "cooldownMessage": "Thao tác quá nhanh, vui lòng đợi {seconds} giây",
+    "deletedSuccess": "Xóa thành công",
+    "restoredSuccess": "Khôi phục thành công",
+    "permanentlyDeletedSuccess": "Xóa vĩnh viễn thành công",
+    "deletedFailed": "Xóa thất bại",
+    "batchDeleteSuccess": "Xóa hàng loạt {count} tài liệu thành công",
+    "batchDeleteFailed": "Xóa hàng loạt thất bại",
+    "renameSuccess": "Đổi tên tài liệu thành công",
+    "renameFailed": "Đổi tên thất bại",
+    "batchDeleteSuccessDetail": "Thành công {success}, Thất bại {failed}",
+    "deleteReason": "Tài liệu {id}: {reason}",
+    "trash": "Thùng rác",
+    "viewTrash": "Xem thùng rác",
+    "backToDocs": "Quay lại tài liệu",
+    "softDelete": "Chuyển vào thùng rác",
+    "delete": "Xóa",
+    "permanentDelete": "Xóa vĩnh viễn",
+    "confirmDeleteTitle": "Xóa tài liệu {name}?",
+    "confirmSoftDeleteMessage": "Có thể khôi phục từ thùng rác",
+    "confirmPermanentDeleteMessage": "Hành động này không thể hoàn tác",
+    "confirmInputLabel": "Nhập tên tài liệu để xác nhận:",
+    "confirmInputPlaceholder": "Nhập: {name}",
+    "currentDocProtected": "Tài liệu hiện tại đang được bảo vệ, vui lòng chuyển sang tài liệu khác",
+    "nameLabel": "Tên tài liệu",
+    "namePlaceholder": "Nhập tên tài liệu",
+    "searchPlaceholder": "Tìm kiếm tài liệu hoặc ID",
+    "listTitle": "Danh sách tài liệu",
+    "loadingList": "Đang tải danh sách...",
+    "noMatchingDocuments": "Không tìm thấy tài liệu phù hợp",
+    "nameEmptyWarning": "Tên tài liệu không được để trống",
+    "editNameHint": "Nhấp để chỉnh sửa tên",
+    "recentlyEdited": "Đã chỉnh sửa gần đây",
+    "group": {
+      "today": "Hôm nay",
+      "yesterday": "Hôm qua",
+      "earlier": "Trước đó"
+    },
+    "time": {
+      "justNow": "Vừa xong",
+      "minutesAgo": "{n} phút trước",
+      "hoursAgo": "{n} giờ trước",
+      "yesterday": "Hôm qua",
+      "daysAgo": "{n} ngày trước"
+    },
+    "scope": {
+      "mine": "Của tôi",
+      "shared": "Được chia sẻ",
+      "all": "Tất cả"
+    },
+    "publicDocAdminOnly": "Chỉ quản trị viên mới có thể xóa tài liệu công khai",
+    "batchDelete": "Xóa hàng loạt",
+    "batchDeleteConfirm": "Xóa {count} tài liệu đã chọn?",
+    "selectAll": "Chọn tất cả",
+    "cancelSelect": "Hủy chọn",
+    "selected": "Đã chọn {count}"
+  },
+  "error": {
+    "badRequest": "Tham số yêu cầu không hợp lệ",
+    "unauthorized": "Chưa được ủy quyền",
+    "forbidden": "Truy cập bị từ chối",
+    "notFound": "Tài nguyên không tồn tại",
+    "serverError": "Lỗi máy chủ nội bộ",
+    "networkError": "Kết nối mạng thất bại, vui lòng kiểm tra cài đặt mạng",
+    "timeout": "Yêu cầu quá hạn, vui lòng thử lại",
+    "requestFailed": "Yêu cầu thất bại",
+    "unknownError": "Lỗi không xác định"
+  },
+  "ai": {
+    "settings": "Cài đặt AI",
+    "generationStopped": "Đã dừng tạo nội dung",
+    "processingFailed": "Xử lý thất bại",
+    "textReplaced": "Đã thay thế văn bản được chọn",
+    "textInserted": "Đã chèn",
+    "settingsSaved": "Đã lưu",
+    "fillRequirement": "Vui lòng nhập yêu cầu soạn thảo tài liệu trước",
+    "generationFailed": "Tạo nội dung thất bại",
+    "generationComplete": "Hoàn thành tạo nội dung",
+    "cursorPrompt": "Trợ lý AI",
+    "inputPromptPlaceholder": "Nhập yêu cầu của bạn, ví dụ: Viết một kế hoạch về việc ứng dụng sản phẩm AIGC...",
+    "submitTip": "Cmd/Ctrl + Enter để gửi",
+    "generate": "Tạo",
+    "onboarding": {
+      "title": "Hết phần dùng thử AI miễn phí",
+      "desc": "Tham gia WeChat để nhận quyền dùng thử hoặc cấu hình API key trong cài đặt",
+      "settingsInEditor": "Vui lòng quay lại trình soạn thảo tài liệu và nhấp vào nút cài đặt AI trên thanh công cụ để cấu hình"
+    },
+    "openSettings": "Mở cài đặt",
+    "jsonParseError": "AI trả về định dạng không hợp lệ. Vui lòng thử lại hoặc sử dụng lời nhắc khác.",
+    "timeoutError": "Yêu cầu hết thời gian. Vui lòng thử lại.",
+    "apiError": "Yêu cầu API thất bại. Vui lòng kiểm tra cài đặt của bạn.",
+    "scenarios": {
+      "continue": {
+        "label": "Viết tiếp",
+        "prompt": "Hãy tiếp tục viết dựa trên nội dung trước, giữ phong cách nhất quán và mạch lạc."
+      },
+      "outline": {
+        "label": "Dàn ý",
+        "prompt": "Hãy tạo dàn ý có cấu trúc cho nội dung sau, bao gồm tiêu đề cấp 1, cấp 2 và các ý chính."
+      },
+      "brainstorm": {
+        "label": "Động não",
+        "prompt": "Hãy brainstorm về chủ đề này và đưa ra nhiều góc nhìn cùng ý tưởng sáng tạo."
+      },
+      "summary": {
+        "label": "Tóm tắt",
+        "prompt": "Vui lòng tóm tắt nội dung sau, rút ra ý chính rõ ràng và ngắn gọn."
+      },
+      "expand": {
+        "label": "Mở rộng",
+        "prompt": "Hãy mở rộng đoạn nội dung sau, bổ sung chi tiết, ví dụ và phân tích sâu."
+      },
+      "polish": {
+        "label": "Chỉnh sửa",
+        "prompt": "Hãy chỉnh sửa đoạn văn sau, giúp câu chữ mượt mà và chuyên nghiệp hơn."
+      },
+      "weekly_report": {
+        "label": "Báo cáo tuần",
+        "prompt": "Hãy viết báo cáo tuần bao gồm: tổng quan công việc, kết quả chính, vấn đề & rủi ro, kế hoạch tuần tới."
+      },
+      "blog": {
+        "label": "Blog",
+        "prompt": "Hãy viết một bài blog gồm: mở đầu hấp dẫn, cấu trúc rõ ràng, nội dung hữu ích và phần kết luận."
+      },
+      "business_plan": {
+        "label": "Kế hoạch kinh doanh",
+        "prompt": "Hãy tạo một bản kế hoạch kinh doanh gồm: tóm tắt điều hành, mô tả công ty, phân tích thị trường, tổ chức, sản phẩm/dịch vụ, chiến lược marketing, dự báo tài chính."
+      },
+      "proposal": {
+        "label": "Đề xuất",
+        "prompt": "Hãy viết một đề xuất dự án gồm: bối cảnh, vấn đề, giải pháp, kế hoạch triển khai, dự toán ngân sách và kết quả kỳ vọng."
+      }
+    },
+    "scenario": {
+      "searchPlaceholder": "Tìm mẫu tình huống...",
+      "all": "Tất cả",
+      "use": "Sử dụng",
+      "noResults": "Không có mẫu phù hợp",
+      "more": "Thêm"
+    }
+  },
+  "page": {
+    "settings": "Cài đặt trang",
+    "settingsRestored": "Đã khôi phục mặc định",
+    "settingsSaved": "Đã lưu cài đặt trang",
+    "saveFailed": "Lưu thất bại"
+  },
+  "watermark": {
+    "settings": "Cài đặt watermark",
+    "title": "Watermark tài liệu",
+    "type": "Loại watermark",
+    "text": "Văn bản",
+    "image": "Hình ảnh",
+    "content": "Nội dung watermark",
+    "textPlaceholder": "Nhập văn bản watermark",
+    "imageUrl": "URL hình ảnh",
+    "imageUrlPlaceholder": "Nhập URL hình ảnh",
+    "imageHint": "Hỗ trợ PNG, JPG. Khuyến nghị PNG trong suốt",
+    "fontSettings": "Cài đặt phông chữ",
+    "fontSize": "Kích thước phông",
+    "fontWeight": "Độ dày phông",
+    "light": "Mỏng",
+    "normal": "Bình thường",
+    "bold": "Đậm",
+    "color": "Màu sắc",
+    "generalSettings": "Cài đặt chung",
+    "opacity": "Độ mờ",
+    "rotation": "Góc xoay",
+    "size": "Kích thước",
+    "pattern": "Mẫu bố trí",
+    "tile": "Lát gạch",
+    "center": "Giữa",
+    "diagonal": "Đường chéo",
+    "spacing": "Khoảng cách",
+    "templates": "Mẫu nhanh",
+    "confidential": "Tài liệu mật",
+    "draft": "Bản nháp",
+    "internal": "Sử dụng nội bộ",
+    "reset": "Khôi phục mặc định",
+    "enableHint": "Bật watermark để thêm nhãn mật, dấu bản nháp và thông tin khác. Watermark chỉ hiển thị khi xem trước và xuất."
+  },
+  "auth": {
+    "appTitle": "Jitword - Trình soạn thảo tài liệu cộng tác",
+    "usernamePlaceholder": "Nhập tên người dùng",
+    "passwordPlaceholder": "Nhập mật khẩu",
+    "login": "Đăng nhập",
+    "register": "Đăng ký",
+    "noAccount": "Chưa có tài khoản?",
+    "registerNow": "Đăng ký ngay",
+    "hasAccount": "Đã có tài khoản?",
+    "loginNow": "Đăng nhập ngay",
+    "createAccount": "Tạo tài khoản",
+    "usernameRequired": "Vui lòng nhập tên người dùng",
+    "passwordRequired": "Vui lòng nhập mật khẩu",
+    "passwordMin": "Tối thiểu 6 ký tự",
+    "passwordFormat": "Ít nhất 6 ký tự, bao gồm chữ và số",
+    "inviteCode": "Mã kích hoạt",
+    "inviteCodePlaceholder": "Nhập mã kích hoạt (ví dụ: YNZBCTJA2OIF)",
+    "inviteCodeRequired": "Vui lòng nhập mã kích hoạt",
+    "getInviteCode": "Lấy mã kích hoạt",
+    "wechatQrTitle": "Thêm WeChat để nhận mã kích hoạt",
+    "wechatQrDesc": "Quét mã QR để thêm WeChat và liên hệ quản trị viên",
+    "loginSuccess": "Đăng nhập thành công",
+    "loginFailed": "Đăng nhập thất bại",
+    "registerSuccess": "Đăng ký thành công",
+    "registerFailed": "Đăng ký thất bại",
+    "usernameOrPasswordError": "Sai tên người dùng hoặc mật khẩu",
+    "logoutSuccess": "Đăng xuất thành công",
+    "tooManyLoginAttempts": "Thử đăng nhập quá nhiều lần",
+    "tooManyRegisterAttempts": "Thử đăng ký quá nhiều lần",
+    "tooManyRequests": "Yêu cầu quá nhiều, vui lòng thử lại sau"
+  },
+  "inviteCode": {
+    "management": "Quản lý mã kích hoạt",
+    "description": "Tạo và quản lý mã kích hoạt đăng ký người dùng",
+    "back": "Quay lại",
+    "exportData": "Xuất dữ liệu bảng cũ",
+    "total": "Tổng",
+    "available": "Có thể dùng",
+    "used": "Đã dùng",
+    "expired": "Đã hết hạn",
+    "generateNew": "+ Tạo mã mới",
+    "batchGenerate": "Tạo hàng loạt mã kích hoạt và đặt thời hạn",
+    "count": "Số lượng",
+    "expiryDays": "Thời hạn (ngày)",
+    "expiryPlaceholder": "Để trống nếu muốn hiệu lực vĩnh viễn",
+    "generate": "Tạo",
+    "list": "Danh sách mã kích hoạt",
+    "listCount": "Tổng {count} mã",
+    "code": "Mã kích hoạt",
+    "createdAt": "Thời gian tạo",
+    "expiresAt": "Thời gian hết hạn",
+    "usedBy": "Người dùng",
+    "usedAt": "Thời gian sử dụng",
+    "actions": "Hành động",
+    "permanentValid": "Vĩnh viễn",
+    "revokeConfirm": "Bạn có chắc muốn thu hồi mã này? Sau khi thu hồi sẽ không sử dụng được.",
+    "revokeSuccess": "Thu hồi thành công",
+    "revokeFailed": "Thu hồi thất bại",
+    "copySuccess": "Đã sao chép",
+    "copyFailed": "Sao chép thất bại",
+    "loadFailed": "Tải thất bại",
+    "generateSuccess": "Đã tạo {count} mã thành công",
+    "generateFailed": "Tạo thất bại",
+    "exportSuccess": "Xuất thành công",
+    "permissionDenied": "Không đủ quyền, chỉ quản trị viên mới có thể truy cập"
+  },
+  "version": {
+    "management": "Lịch sử phiên bản"
+  },
+  "formatPainter": "Cọ định dạng",
+  "searchReplace": "Tìm và thay thế",
+  "searchPlaceholder": "Tìm nội dung...",
+  "replacePlaceholder": "Thay bằng...",
+  "find": "Tìm",
+  "replace": "Thay thế",
+  "replaceAll": "Thay tất cả",
+  "caseSensitive": "Phân biệt chữ hoa/thường",
+  "useRegex": "Sử dụng biểu thức chính quy",
+  "noResults": "Không tìm thấy",
+  "toolbar": {
+    "general": "Chung"
+  },
+  "chart": "Biểu đồ",
+  "importTable": "Nhập bảng",
+  "mention": {
+    "group": {
+      "online": "Trực tuyến",
+      "org": "Tổ chức",
+      "other": "Khác",
+      "new": "Mới"
+    }
+  },
+  "slide": {
+    "newSlide": "Slide mới",
+    "theme": "Chủ đề",
+    "showCode": "Hiện mã",
+    "hideCode": "Ẩn mã",
+    "present": "Trình bày",
+    "aiAgent": "Trợ lý AI",
+    "generating": "Đang tạo...",
+    "markdownSource": "Mã nguồn Markdown",
+    "themeCategories": {
+      "light": "Sáng",
+      "dark": "Tối",
+      "colorful": "Nhiều màu"
+    },
+    "themes": {
+      "default": "Mặc định",
+      "piano": "Piano",
+      "wireframe": "Khung dây",
+      "seriph": "Seriph",
+      "geist": "Geist",
+      "aurum": "Aurum",
+      "chocolate": "Chocolate",
+      "shibainu": "Shibainu",
+      "bricks": "Gạch",
+      "beeHappy": "Ong vui",
+      "atacama": "Atacama"
+    },
+    "themeApplied": "Đã áp dụng chủ đề \"{name}\"",
+    "slideCounter": "{current} / {total}",
+    "deleteSlideWarning": "Không thể xóa slide cuối cùng",
+    "slideDeleted": "Đã xóa slide",
+    "noSlidesToPresent": "Không có slide để trình bày. Hãy tạo bản trình bày trước!",
+    "presentMode": {
+      "hint": "Sử dụng phím mũi tên, phím space hoặc nhấp để điều hướng • ESC để thoát"
+    },
+    "quickActions": {
+      "improve": "Cải thiện",
+      "fix": "Sửa lỗi",
+      "translate": "Dịch",
+      "longer": "Mở rộng",
+      "shorter": "Rút ngắn",
+      "simplify": "Đơn giản hóa"
+    },
+    "aiPanel": {
+      "title": "Chỉnh sửa tất cả thẻ",
+      "placeholder": "Yêu cầu chỉnh sửa, tạo hoặc thiết kế",
+      "placeholderAll": "Mô tả bản trình bày bạn muốn tạo, ví dụ: 'Tạo bản trình bày chuyên nghiệp về biến đổi khí hậu'",
+      "placeholderCurrent": "Cho AI biết cách sửa đổi slide hiện tại, ví dụ: 'Thêm chi tiết và ví dụ'",
+      "quickActions": "Hành động nhanh",
+      "generate": "Tạo",
+      "allSlides": "Tất cả Slide",
+      "currentSlide": "Slide hiện tại",
+      "templates": "Mẫu",
+      "createSlidesFirst": "Vui lòng tạo slide trước khi sử dụng hành động nhanh"
+    },
+    "quickActionPrompts": {
+      "improve": "Cải thiện văn bản chuyên nghiệp hơn",
+      "fix": "Sửa tất cả lỗi chính tả và ngữ pháp",
+      "translate": "Dịch sang tiếng Việt",
+      "longer": "Làm nội dung chi tiết và toàn diện hơn",
+      "shorter": "Làm nội dung ngắn gọn hơn",
+      "simplify": "Đơn giản hóa ngôn ngữ để dễ hiểu"
+    },
+    "welcome": {
+      "title": "Chào mừng đến với JitSlide Studio",
+      "subtitle": "Công cụ tạo bản trình bày bằng AI",
+      "gettingStarted": "Bắt đầu",
+      "keyFeatures": "Tính năng chính",
+      "tryAiAgent": "Dùng thử AI Agent",
+      "steps": {
+        "clickAi": "Nhấp **AI Agent** để tạo slide bằng AI",
+        "useTheme": "Dùng **Theme** để thay đổi kiểu trực quan",
+        "pressPresent": "Nhấn **Trình bày** để bắt đầu trình chiếu",
+        "clickNew": "Nhấp **Mới** để thêm slide thủ công"
+      },
+      "features": {
+        "aiPowered": "Tạo nội dung **Bằng AI**",
+        "beautiful": "Chủ đề **Đẹp**",
+        "interactive": "Hỗ trợ biểu đồ **Tương tác**",
+        "markdown": "Chỉnh sửa **Markdown**",
+        "instant": "Xem trước **Tức thì**"
+      },
+      "examples": [
+        "Tạo bản trình bày về biến đổi khí hậu",
+        "Tạo slide ra mắt sản phẩm",
+        "Tạo tài liệu đánh giá kinh doanh"
+      ],
+      "callToAction": "Để AI làm công việc nặng nhọc cho bạn!"
+    },
+    "templates": {
+      "business": "Báo cáo Kinh doanh",
+      "education": "Đào tạo Giáo dục",
+      "tech": "Chia sẻ Công nghệ"
+    },
+    "zoomControl": {
+      "fitToWindow": "Vừa khít cửa sổ",
+      "zoomIn": "Phóng to",
+      "zoomOut": "Thu nhỏ",
+      "reset": "Đặt lại Thu phóng"
+    },
+    "editorMode": {
+      "markdown": "Markdown",
+      "visual": "Trình soạn thảo Trực quan"
+    },
+    "visual": {
+      "components": "Thư viện Thành phần",
+      "searchComponents": "Tìm thành phần...",
+      "properties": "Bảng Thuộc tính",
+      "delete": "Xóa",
+      "categories": {
+        "text": "Văn bản",
+        "media": "Phương tiện",
+        "shapes": "Hình dạng",
+        "charts": "Biểu đồ"
+      },
+      "image": {
+        "replace": "Thay thế",
+        "crop": "Cắt",
+        "filter": "Bộ lọc",
+        "filterNormal": "Bình thường",
+        "filterGrayscale": "Xám",
+        "filterSepia": "Nâu đỏ",
+        "filterBlur": "Mờ",
+        "filterBrightness": "Độ sáng"
+      },
+      "layer": {
+        "forward": "Đưa lên một lớp",
+        "backward": "Đưa xuống một lớp",
+        "front": "Đưa lên trên cùng",
+        "back": "Đưa xuống dưới cùng"
+      },
+      "categories": {
+        "text": "Văn bản",
+        "images": "Hình ảnh",
+        "media": "Video và Phương tiện",
+        "shapes": "Hình dạng",
+        "layouts": "Bố cục",
+        "charts": "Biểu đồ"
+      },
+      "images": {
+        "description": "Tải lên, duyệt hoặc tạo hình ảnh.",
+        "imageUpload": "Tải hình ảnh hoặc URL",
+        "webSearch": "Tìm kiếm hình ảnh web",
+        "aiImages": "Hình ảnh AI",
+        "pexels": "Hình ảnh Pexels",
+        "giphy": "GIF từ GIPHY",
+        "pictographic": "Minh họa hình ảnh",
+        "iconsClassic": "Biểu tượng (Cổ điển)",
+        "iconsModern": "Biểu tượng (Hiện đại)",
+        "qrcode": "Mã QR",
+        "accentImages": "Hình ảnh trang trí",
+        "gallery": "Thư viện"
+      },
+      "media": {
+        "description": "Tải lên hoặc nhập phương tiện từ các nền tảng phổ biến.",
+        "gallery": "Thư viện",
+        "videoEmbed": "Nhúng video hoặc âm thanh",
+        "loomRecording": "Ghi hình Loom",
+        "youtube": "Video YouTube",
+        "vimeo": "Video Vimeo",
+        "wistia": "Wistia",
+        "tiktok": "TikTok",
+        "spotify": "Spotify"
+      },
+      "propertyPanel": {
+        "text": "Thuộc tính Văn bản",
+        "image": "Thuộc tính Hình ảnh",
+        "shape": "Thuộc tính Hình dạng",
+        "position": "Vị trí",
+        "content": "Nội dung",
+        "fontSize": "Cỡ chữ",
+        "fontWeight": "Độ đậm",
+        "color": "Màu",
+        "width": "Rộng",
+        "height": "Cao",
+        "radius": "Bán kính",
+        "fillColor": "Màu tô",
+        "strokeColor": "Màu viền",
+        "strokeWidth": "Độ rộng viền",
+        "rotation": "Xoay",
+        "selectComponent": "Chọn thành phần để xem thuộc tính"
+      },
+      "messages": {
+        "undo": "Hoàn tác",
+        "redo": "Làm lại",
+        "copied": "Đã sao chép",
+        "pasted": "Đã dán",
+        "nothingToPaste": "Không có gì để dán",
+        "hexagonAdded": "Đã thêm hình lục giác",
+        "pentagonAdded": "Đã thêm hình ngũ giác",
+        "diamondAdded": "Đã thêm hình thoi",
+        "ringAdded": "Đã thêm vòng tròn",
+        "ellipseAdded": "Đã thêm hình elip",
+        "arrowAdded": "Đã thêm mũi tên",
+        "parallelogramAdded": "Đã thêm hình bình hành",
+        "trapezoidAdded": "Đã thêm hình thang",
+        "imagePasted": "Đã dán hình ảnh thành công",
+        "imageLoadFailed": "Không thể tải hình ảnh",
+        "unsupportedElementType": "Loại phần tử không được hỗ trợ: {type}",
+        "failedToUploadImage": "Tải lên hình ảnh thất bại: {error}",
+        "unsupportedLayoutType": "Loại bố cục không được hỗ trợ",
+        "imageFiltersNotSupported": "Bộ lọc hình ảnh không được hỗ trợ trong môi trường này",
+        "selectedElements": "Đã chọn {count} phần tử"
+      }
+    },
+    "agent": "Agent",
+    "agentDialog": "AI Agent",
+    "agentPlaceholder": "Để tôi giúp bạn chỉnh sửa, tạo hoặc định dạng bất cứ điều gì",
+    "quickPrompts": {
+      "optimizeLayout": "Tối ưu hóa bố cục slide hiện tại",
+      "addChart": "Thêm biểu đồ chuyên nghiệp",
+      "improveContent": "Cải thiện cách trình bày nội dung"
+    },
+    "mindmap_modal": {
+      "modal_title": "Sơ đồ tư duy AI",
+      "subtitle": "Lập bản đồ kiến thức thông minh",
+      "input_title": "Vui lòng nhập chủ đề hoặc mô tả:",
+      "cancel_button": "Hủy",
+      "generate_button": "Tạo",
+      "ai_generate": "Tạo tự động bằng AI",
+      "missing_api_key": "Chưa cấu hình AI API Key. Vui lòng cấu hình trong Cài đặt AI.",
+      "loading_title": "Đang tạo sơ đồ tư duy",
+      "ai_prompt_prefix": "Vui lòng chuyển đổi văn bản sau thành sơ đồ tư duy:"
+    },
+    "cannotDeleteLast": "Không thể xóa slide cuối cùng",
+    "deleted": "Đã xóa slide",
+    "layouts": {
+      "layoutApplied": "Đã áp dụng bố cục '{name}'"
+    }
+  }
+}

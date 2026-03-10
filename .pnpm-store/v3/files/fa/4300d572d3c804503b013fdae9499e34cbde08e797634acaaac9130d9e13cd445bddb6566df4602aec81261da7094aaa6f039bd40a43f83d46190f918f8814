@@ -1,0 +1,37 @@
+/**
+ * A specialized version of `_.filter` for arrays without support for
+ * iteratee shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} predicate The function invoked per iteration.
+ * @returns {Array} Returns the new filtered array.
+ */
+
+var _arrayFilter;
+var hasRequired_arrayFilter;
+
+function require_arrayFilter () {
+	if (hasRequired_arrayFilter) return _arrayFilter;
+	hasRequired_arrayFilter = 1;
+	function arrayFilter(array, predicate) {
+	  var index = -1,
+	      length = array == null ? 0 : array.length,
+	      resIndex = 0,
+	      result = [];
+
+	  while (++index < length) {
+	    var value = array[index];
+	    if (predicate(value, index, array)) {
+	      result[resIndex++] = value;
+	    }
+	  }
+	  return result;
+	}
+
+	_arrayFilter = arrayFilter;
+	return _arrayFilter;
+}
+
+export { require_arrayFilter as __require };
+//# sourceMappingURL=_arrayFilter.js.map

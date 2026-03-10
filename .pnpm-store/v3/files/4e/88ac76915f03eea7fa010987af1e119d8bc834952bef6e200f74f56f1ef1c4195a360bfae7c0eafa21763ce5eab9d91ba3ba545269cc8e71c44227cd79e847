@@ -1,0 +1,89 @@
+{
+  "name": "@antfu/ni",
+  "type": "module",
+  "version": "28.3.0",
+  "description": "Use the right package manager",
+  "author": "Anthony Fu <anthonyfu117@hotmail.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/antfu-collective/ni#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antfu-collective/ni.git"
+  },
+  "bugs": {
+    "url": "https://github.com/antfu-collective/ni/issues"
+  },
+  "exports": {
+    ".": "./dist/index.mjs",
+    "./ni": "./dist/ni.mjs",
+    "./nci": "./dist/nci.mjs",
+    "./nr": "./dist/nr.mjs",
+    "./nup": "./dist/nup.mjs",
+    "./nd": "./dist/nd.mjs",
+    "./nlx": "./dist/nlx.mjs",
+    "./na": "./dist/na.mjs",
+    "./nun": "./dist/nun.mjs"
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.mts",
+  "bin": {
+    "ni": "bin/ni.mjs",
+    "nci": "bin/nci.mjs",
+    "nr": "bin/nr.mjs",
+    "nup": "bin/nup.mjs",
+    "nd": "bin/nd.mjs",
+    "nlx": "bin/nlx.mjs",
+    "na": "bin/na.mjs",
+    "nun": "bin/nun.mjs"
+  },
+  "files": [
+    "bin",
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "ansis": "^4.2.0",
+    "fzf": "^0.5.2",
+    "package-manager-detector": "^1.6.0",
+    "tinyexec": "^1.0.2",
+    "tinyglobby": "^0.2.15"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^7.7.0",
+    "@posva/prompts": "^2.4.4",
+    "@types/ini": "^4.1.1",
+    "@types/node": "^25.3.5",
+    "@types/which": "^3.0.4",
+    "bumpp": "^10.4.1",
+    "eslint": "^10.0.2",
+    "ini": "^5.0.0",
+    "lint-staged": "^16.3.2",
+    "simple-git-hooks": "^2.13.1",
+    "taze": "^19.10.0",
+    "terminal-link": "^4.0.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "unbuild": "^3.6.1",
+    "vitest": "^4.0.18",
+    "which": "^5.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  },
+  "scripts": {
+    "dev": "tsx src/commands/ni.ts",
+    "nr": "tsx src/commands/nr.ts",
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "release": "bumpp",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint",
+    "test": "vitest"
+  }
+}

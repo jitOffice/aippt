@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.getPaletteColor = exports.registerPalette = exports.getPalettes = exports.getPalette = void 0;
+require("./built-in");
+var registry_1 = require("./registry");
+Object.defineProperty(exports, "getPalette", { enumerable: true, get: function () { return registry_1.getPalette; } });
+Object.defineProperty(exports, "getPalettes", { enumerable: true, get: function () { return registry_1.getPalettes; } });
+Object.defineProperty(exports, "registerPalette", { enumerable: true, get: function () { return registry_1.registerPalette; } });
+var utils_1 = require("./utils");
+Object.defineProperty(exports, "getPaletteColor", { enumerable: true, get: function () { return utils_1.getPaletteColor; } });

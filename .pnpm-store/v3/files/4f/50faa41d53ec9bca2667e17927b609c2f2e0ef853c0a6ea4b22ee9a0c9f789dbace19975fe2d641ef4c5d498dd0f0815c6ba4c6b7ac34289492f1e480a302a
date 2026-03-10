@@ -1,0 +1,3 @@
+import type { MindElixirInstance } from '../types';
+export declare const exportSvg: (this: MindElixirInstance, noForiegnObject?: boolean, injectCss?: string) => Blob;
+export declare const exportPng: (this: MindElixirInstance, noForiegnObject?: boolean, injectCss?: string) => Promise<Blob | null>;

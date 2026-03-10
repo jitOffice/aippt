@@ -1,0 +1,51 @@
+{
+  "name": "markdown-exit",
+  "type": "module",
+  "version": "1.0.0-beta.9",
+  "description": "A TypeScript rewrite of markdown-it with enhancements",
+  "license": "MIT",
+  "homepage": "https://github.com/serkodev/markdown-exit#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serkodev/markdown-exit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/serkodev/markdown-exit/issues"
+  },
+  "keywords": [
+    "markdown",
+    "parser",
+    "commonmark",
+    "markdown-it",
+    "markdown-it-plugin",
+    "markdown-exit"
+  ],
+  "exports": {
+    ".": "./dist/index.js",
+    "./package.json": "./package.json"
+  },
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "@types/linkify-it": "^5.0.0",
+    "@types/mdurl": "^2.0.0",
+    "entities": "^7.0.0",
+    "linkify-it": "^5.0.0",
+    "mdurl": "^2.0.0",
+    "punycode.js": "^2.3.1",
+    "uc.micro": "^2.1.0"
+  },
+  "devDependencies": {
+    "@markdown-exit/testgen": "1.0.0-beta.9"
+  },
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  }
+}

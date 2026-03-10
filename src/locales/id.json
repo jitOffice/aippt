@@ -1,0 +1,573 @@
+{
+  "cancel": "Batal",
+  "common": {
+    "loading": "Memuat...",
+    "confirm": "Konfirmasi",
+    "cancel": "Batal",
+    "edit": "Sunting",
+    "share": "Bagikan",
+    "readMode": "Mode baca",
+    "ai": "AI",
+    "templateLibrary": "Perpustakaan template",
+    "saveAsTemplate": "Simpan sebagai template",
+    "today": "Hari ini",
+    "yesterday": "Kemarin",
+    "daysAgo": "hari yang lalu",
+    "collapse": "Ciutkan",
+    "expand": "Perluas",
+    "dragToMove": "Seret untuk memindahkan",
+    "online": "Online",
+    "people": "orang",
+    "documentList": "Daftar dokumen",
+    "logout": "Keluar",
+    "inviteCodeManagement": "Kelola kode undangan",
+    "loadingDocument": "Memuat dokumen…",
+    "privateDeployment": "Penyebaran internal",
+    "user": "Pengguna",
+    "appTitleShort": "JitWord",
+    "appTitleFull": "JitWord Dokumen Kolaboratif",
+    "language": "Bahasa",
+    "languageSettings": "Pengaturan bahasa",
+    "switchTooFast": "Beralih terlalu cepat, silakan coba lagi nanti",
+    "switchErrorSuggestRefresh": "Terjadi kesalahan saat beralih dokumen, disarankan untuk memuat ulang halaman",
+    "on": "Hidup",
+    "off": "Mati",
+    "save": "Simpan"
+  },
+  "doc": {
+    "type": {
+      "sheet": "Spreadsheet",
+      "word": "Dokumen",
+      "mindmap": "Peta Pikiran"
+    },
+    "newDocument": "Dokumen Baru",
+    "newSheet": "Spreadsheet Baru",
+    "newMindmap": "Peta Pikiran Baru",
+    "exportExcel": "Ekspor Excel",
+    "untitledMindmap": "Peta Pikiran Tanpa Judul",
+    "importExcel": "Impor Excel",
+    "untitled": "Tanpa Judul",
+    "untitledSheet": "Spreadsheet Tanpa Judul",
+    "untitledDoc": "Dokumen Tanpa Judul",
+    "loadSheetFailed": "Gagal memuat data spreadsheet",
+    "allChangesSaved": "Semua perubahan telah disimpan ke cloud",
+    "saving": "Menyimpan...",
+    "pendingSave": "Menunggu untuk menyimpan...",
+    "saveSuccess": "Berhasil disimpan",
+    "importSuccessRefresh": "Impor berhasil, memuat ulang...",
+    "importFailed": "Impor gagal",
+    "exportSuccess": "Ekspor berhasil",
+    "exportFailed": "Ekspor gagal",
+    "autoSaveTitle": "Simpan Otomatis {date}",
+    "autoSaveDesc": "Disimpan otomatis oleh sistem",
+    "quickSaveTitle": "Simpan Cepat {date}",
+    "quickSaveDesc": "Disimpan cepat oleh pengguna",
+    "versionSavedSuccess": "Versi berhasil disimpan (Ctrl+S)",
+    "saveFailed": "Gagal menyimpan",
+    "enterDocName": "Masukkan nama dokumen",
+    "createSuccess": "Dokumen berhasil dibuat",
+    "createFailed": "Gagal membuat dokumen",
+    "docLimitReached": "Batas jumlah dokumen tercapai",
+    "cooldownMessage": "Operasi terlalu cepat, silakan tunggu {seconds} detik",
+    "deletedSuccess": "Berhasil dihapus",
+    "restoredSuccess": "Berhasil dipulihkan",
+    "permanentlyDeletedSuccess": "Berhasil dihapus secara permanen",
+    "deletedFailed": "Gagal menghapus",
+    "batchDeleteSuccess": "Berhasil menghapus {count} dokumen",
+    "batchDeleteFailed": "Gagal menghapus secara massal",
+    "renameSuccess": "Ganti nama dokumen berhasil",
+    "renameFailed": "Gagal mengganti nama",
+    "batchDeleteSuccessDetail": "Sukses {success}, Gagal {failed}",
+    "deleteReason": "Dokumen {id}: {reason}",
+    "trash": "Sampah",
+    "viewTrash": "Lihat Sampah",
+    "backToDocs": "Kembali ke Dokumen",
+    "softDelete": "Pindahkan ke Sampah",
+    "delete": "Hapus",
+    "permanentDelete": "Hapus Permanen",
+    "confirmDeleteTitle": "Hapus dokumen {name}?",
+    "confirmSoftDeleteMessage": "Dapat dipulihkan dari Sampah",
+    "confirmPermanentDeleteMessage": "Tindakan ini tidak dapat dibatalkan",
+    "confirmInputLabel": "Ketik nama dokumen untuk konfirmasi:",
+    "confirmInputPlaceholder": "Masukkan: {name}",
+    "currentDocProtected": "Dokumen ini dilindungi, silakan beralih ke dokumen lain",
+    "nameLabel": "Nama Dokumen",
+    "namePlaceholder": "Masukkan nama dokumen",
+    "searchPlaceholder": "Cari dokumen atau ID",
+    "listTitle": "Daftar Dokumen",
+    "loadingList": "Memuat daftar...",
+    "noMatchingDocuments": "Tidak ada dokumen yang cocok",
+    "nameEmptyWarning": "Nama dokumen tidak boleh kosong",
+    "editNameHint": "Klik untuk mengedit nama",
+    "recentlyEdited": "Baru Diedit",
+    "group": {
+      "today": "Hari ini",
+      "yesterday": "Kemarin",
+      "earlier": "Lebih lama"
+    },
+    "time": {
+      "justNow": "Baru saja",
+      "minutesAgo": "{n} menit lalu",
+      "hoursAgo": "{n} jam lalu",
+      "yesterday": "Kemarin",
+      "daysAgo": "{n} hari lalu"
+    },
+    "scope": {
+      "mine": "Milik Saya",
+      "shared": "Dibagikan",
+      "all": "Semua"
+    },
+    "publicDocAdminOnly": "Hanya admin yang dapat menghapus dokumen publik",
+    "batchDelete": "Hapus Massal",
+    "batchDeleteConfirm": "Hapus {count} dokumen terpilih?",
+    "selectAll": "Pilih Semua",
+    "cancelSelect": "Batal Pilih",
+    "selected": "Terpilih {count}"
+  },
+  "error": {
+    "badRequest": "Parameter permintaan tidak valid",
+    "unauthorized": "Tidak memiliki otorisasi",
+    "forbidden": "Akses ditolak",
+    "notFound": "Sumber daya tidak ditemukan",
+    "serverError": "Kesalahan server internal",
+    "networkError": "Koneksi jaringan gagal, periksa pengaturan jaringan",
+    "timeout": "Permintaan melebihi waktu, silakan coba lagi",
+    "requestFailed": "Permintaan gagal",
+    "unknownError": "Kesalahan tidak diketahui"
+  },
+  "ai": {
+    "settings": "Pengaturan AI",
+    "generationStopped": "Pembuatan konten dihentikan",
+    "processingFailed": "Pemrosesan gagal",
+    "textReplaced": "Teks yang dipilih telah diganti",
+    "textInserted": "Telah disisipkan",
+    "settingsSaved": "Tersimpan",
+    "fillRequirement": "Silakan masukkan permintaan pembuatan dokumen terlebih dahulu",
+    "generationFailed": "Gagal membuat konten",
+    "generationComplete": "Pembuatan konten selesai",
+    "cursorPrompt": "Asisten AI",
+    "inputPromptPlaceholder": "Masukkan permintaan Anda, misalnya: Tulis rencana penggunaan produk AIGC...",
+    "submitTip": "Cmd/Ctrl + Enter untuk mengirim",
+    "generate": "Buat",
+    "onboarding": {
+      "title": "Percobaan AI Gratis Habis",
+      "desc": "Bergabunglah dengan WeChat untuk mendapatkan akses percobaan atau konfigurasi API key di pengaturan",
+      "settingsInEditor": "Silakan kembali ke editor dokumen dan klik tombol Pengaturan AI di toolbar atas untuk mengkonfigurasi"
+    },
+    "openSettings": "Buka Pengaturan",
+    "jsonParseError": "AI mengembalikan format yang tidak valid. Silakan coba lagi atau gunakan prompt yang berbeda.",
+    "timeoutError": "Permintaan timeout. Silakan coba lagi.",
+    "apiError": "Permintaan API gagal. Silakan periksa pengaturan Anda.",
+    "scenarios": {
+      "continue": {
+        "label": "Lanjutkan menulis",
+        "prompt": "Lanjutkan menulis berdasarkan konten sebelumnya, pertahankan gaya dan konsistensi"
+      },
+      "outline": {
+        "label": "Garis besar",
+        "prompt": "Buat garis besar terstruktur untuk konten berikut, termasuk judul tingkat 1, tingkat 2, dan poin utama"
+      },
+      "brainstorm": {
+        "label": "Brainstorming",
+        "prompt": "Brainstorm topik ini dan berikan berbagai sudut pandang serta ide kreatif"
+      },
+      "summary": {
+        "label": "Ringkasan",
+        "prompt": "Ringkas konten berikut, tarik poin penting dengan jelas dan singkat"
+      },
+      "expand": {
+        "label": "Perluas",
+        "prompt": "Perluas konten berikut, tambahkan detail, contoh, dan analisis mendalam"
+      },
+      "polish": {
+        "label": "Poles",
+        "prompt": "Perbaiki paragraf berikut agar lebih lancar dan profesional"
+      },
+      "weekly_report": {
+        "label": "Laporan mingguan",
+        "prompt": "Tulis laporan mingguan yang mencakup: ringkasan pekerjaan, hasil utama, masalah & risiko, rencana minggu depan"
+      },
+      "blog": {
+        "label": "Blog",
+        "prompt": "Tulis blog yang mencakup: pembukaan menarik, struktur jelas, konten bermanfaat, dan kesimpulan"
+      },
+      "business_plan": {
+        "label": "Rencana bisnis",
+        "prompt": "Buat rencana bisnis yang mencakup: ringkasan eksekutif, deskripsi perusahaan, analisis pasar, organisasi, produk/layanan, strategi pemasaran, proyeksi keuangan"
+      },
+      "proposal": {
+        "label": "Proposal",
+        "prompt": "Tulis proposal proyek yang mencakup: latar belakang, masalah, solusi, rencana implementasi, anggaran, dan hasil yang diharapkan"
+      }
+    },
+    "scenario": {
+      "searchPlaceholder": "Cari template skenario...",
+      "all": "Semua",
+      "use": "Gunakan",
+      "noResults": "Tidak ada template yang sesuai",
+      "more": "Lebih banyak"
+    }
+  },
+  "page": {
+    "settings": "Pengaturan halaman",
+    "settingsRestored": "Kembali ke pengaturan default",
+    "settingsSaved": "Pengaturan halaman tersimpan",
+    "saveFailed": "Gagal menyimpan"
+  },
+  "watermark": {
+    "settings": "Pengaturan watermark",
+    "title": "Watermark dokumen",
+    "type": "Jenis watermark",
+    "text": "Teks",
+    "image": "Gambar",
+    "content": "Konten watermark",
+    "textPlaceholder": "Masukkan teks watermark",
+    "imageUrl": "URL gambar",
+    "imageUrlPlaceholder": "Masukkan URL gambar",
+    "imageHint": "Mendukung PNG, JPG. Disarankan PNG transparan",
+    "fontSettings": "Pengaturan font",
+    "fontSize": "Ukuran font",
+    "fontWeight": "Ketebalan font",
+    "light": "Tipis",
+    "normal": "Normal",
+    "bold": "Tebal",
+    "color": "Warna",
+    "generalSettings": "Pengaturan umum",
+    "opacity": "Opasitas",
+    "rotation": "Sudut rotasi",
+    "size": "Ukuran",
+    "pattern": "Pola tata letak",
+    "tile": "Ubin",
+    "center": "Tengah",
+    "diagonal": "Diagonal",
+    "spacing": "Jarak",
+    "templates": "Template cepat",
+    "confidential": "Dokumen rahasia",
+    "draft": "Draft",
+    "internal": "Penggunaan internal",
+    "reset": "Reset ke default",
+    "enableHint": "Aktifkan watermark untuk menambah label rahasia, tanda draft, dan informasi lainnya. Watermark hanya ditampilkan saat pratinjau dan ekspor."
+  },
+  "auth": {
+    "appTitle": "Jitword - Editor Dokumen Kolaboratif",
+    "usernamePlaceholder": "Masukkan nama pengguna",
+    "passwordPlaceholder": "Masukkan kata sandi",
+    "login": "Masuk",
+    "register": "Daftar",
+    "noAccount": "Belum punya akun?",
+    "registerNow": "Daftar sekarang",
+    "hasAccount": "Sudah punya akun?",
+    "loginNow": "Masuk sekarang",
+    "createAccount": "Buat akun",
+    "usernameRequired": "Silakan masukkan nama pengguna",
+    "passwordRequired": "Silakan masukkan kata sandi",
+    "passwordMin": "Minimal 6 karakter",
+    "passwordFormat": "Minimal 6 karakter, termasuk huruf dan angka",
+    "inviteCode": "Kode undangan",
+    "inviteCodePlaceholder": "Masukkan kode undangan (contoh: YNZBCTJA2OIF)",
+    "inviteCodeRequired": "Silakan masukkan kode undangan",
+    "getInviteCode": "Dapatkan kode undangan",
+    "wechatQrTitle": "Tambahkan WeChat untuk mendapatkan kode undangan",
+    "wechatQrDesc": "Pindai kode QR untuk menambahkan WeChat dan hubungi administrator",
+    "loginSuccess": "Login berhasil",
+    "loginFailed": "Login gagal",
+    "registerSuccess": "Pendaftaran berhasil",
+    "registerFailed": "Pendaftaran gagal",
+    "usernameOrPasswordError": "Nama pengguna atau kata sandi salah",
+    "logoutSuccess": "Logout berhasil",
+    "tooManyLoginAttempts": "Terlalu banyak percobaan login",
+    "tooManyRegisterAttempts": "Terlalu banyak percobaan pendaftaran",
+    "tooManyRequests": "Terlalu banyak permintaan, coba lagi nanti"
+  },
+  "inviteCode": {
+    "management": "Kelola kode undangan",
+    "description": "Buat dan kelola kode undangan untuk pendaftaran pengguna",
+    "back": "Kembali",
+    "exportData": "Ekspor data tabel lama",
+    "total": "Total",
+    "available": "Tersedia",
+    "used": "Terpakai",
+    "expired": "Kadaluarsa",
+    "generateNew": "+ Buat kode baru",
+    "batchGenerate": "Buat banyak kode undangan sekaligus dan tetapkan masa berlaku",
+    "count": "Jumlah",
+    "expiryDays": "Masa berlaku (hari)",
+    "expiryPlaceholder": "Kosongkan jika ingin berlaku permanen",
+    "generate": "Buat",
+    "list": "Daftar kode undangan",
+    "listCount": "Total {count} kode",
+    "code": "Kode undangan",
+    "createdAt": "Tanggal dibuat",
+    "expiresAt": "Tanggal kadaluarsa",
+    "usedBy": "Pengguna",
+    "usedAt": "Tanggal digunakan",
+    "actions": "Tindakan",
+    "permanentValid": "Permanen",
+    "revokeConfirm": "Apakah Anda yakin ingin mencabut kode ini? Setelah dicabut tidak dapat digunakan.",
+    "revokeSuccess": "Pencabutan berhasil",
+    "revokeFailed": "Pencabutan gagal",
+    "copySuccess": "Salin berhasil",
+    "copyFailed": "Salin gagal",
+    "loadFailed": "Gagal memuat",
+    "generateSuccess": "{count} kode berhasil dibuat",
+    "generateFailed": "Gagal membuat",
+    "exportSuccess": "Ekspor berhasil",
+    "permissionDenied": "Tidak memiliki izin, hanya admin yang dapat mengakses"
+  },
+  "version": {
+    "management": "Riwayat versi"
+  },
+  "formatPainter": "Penyalin format",
+  "searchReplace": "Cari dan ganti",
+  "searchPlaceholder": "Cari konten...",
+  "replacePlaceholder": "Ganti dengan...",
+  "find": "Cari",
+  "replace": "Ganti",
+  "replaceAll": "Ganti semua",
+  "caseSensitive": "Case sensitive",
+  "useRegex": "Gunakan ekspresi reguler",
+  "noResults": "Tidak ditemukan",
+  "toolbar": {
+    "general": "Umum"
+  },
+  "chart": "Grafik",
+  "importTable": "Impor Tabel",
+  "mention": {
+    "group": {
+      "online": "Online",
+      "org": "Organisasi",
+      "other": "Lainnya",
+      "new": "Baru"
+    }
+  },
+  "slide": {
+    "newSlide": "Slide Baru",
+    "theme": "Tema",
+    "showCode": "Tampilkan Kode",
+    "hideCode": "Sembunyikan Kode",
+    "present": "Presentasi",
+    "aiAgent": "Agen AI",
+    "generating": "Membuat...",
+    "markdownSource": "Sumber Markdown",
+    "themeCategories": {
+      "light": "Terang",
+      "dark": "Gelap",
+      "colorful": "Berwarna"
+    },
+    "themes": {
+      "default": "Default",
+      "piano": "Piano",
+      "wireframe": "Wireframe",
+      "seriph": "Seriph",
+      "geist": "Geist",
+      "aurum": "Aurum",
+      "chocolate": "Chocolate",
+      "shibainu": "Shibainu",
+      "bricks": "Bricks",
+      "beeHappy": "Bee Happy",
+      "atacama": "Atacama"
+    },
+    "themeApplied": "Tema \"{name}\" diterapkan",
+    "slideCounter": "{current} / {total}",
+    "deleteSlideWarning": "Tidak dapat menghapus slide terakhir",
+    "slideDeleted": "Slide dihapus",
+    "noSlidesToPresent": "Tidak ada slide untuk dipresentasikan. Buat presentasi terlebih dahulu!",
+    "presentMode": {
+      "hint": "Gunakan tombol panah, spasi, atau klik untuk navigasi • ESC untuk keluar"
+    },
+    "quickActions": {
+      "improve": "Tingkatkan",
+      "fix": "Perbaiki",
+      "translate": "Terjemahkan",
+      "longer": "Perpanjang",
+      "shorter": "Persingkat",
+      "simplify": "Sederhanakan"
+    },
+    "aiPanel": {
+      "title": "Edit semua kartu",
+      "placeholder": "Minta saya mengedit, membuat, atau mendesain",
+      "placeholderAll": "Deskripsikan presentasi yang ingin Anda buat, misalnya: 'Buat presentasi profesional tentang perubahan iklim'",
+      "placeholderCurrent": "Beri tahu AI bagaimana memodifikasi slide saat ini, misalnya: 'Tambahkan lebih banyak detail dan contoh'",
+      "quickActions": "Tindakan Cepat",
+      "generate": "Buat",
+      "allSlides": "Semua Slide",
+      "currentSlide": "Slide Saat Ini",
+      "templates": "Template",
+      "createSlidesFirst": "Silakan buat slide terlebih dahulu sebelum menggunakan tindakan cepat"
+    },
+    "quickActionPrompts": {
+      "improve": "Tingkatkan tulisan agar lebih profesional",
+      "fix": "Perbaiki semua kesalahan ejaan dan tata bahasa",
+      "translate": "Terjemahkan ke Bahasa Indonesia",
+      "longer": "Buat konten lebih detail dan komprehensif",
+      "shorter": "Buat konten lebih ringkas",
+      "simplify": "Sederhanakan bahasa agar mudah dipahami"
+    },
+    "welcome": {
+      "title": "Selamat Datang di JitSlide Studio",
+      "subtitle": "Pembuat Presentasi Bertenaga AI",
+      "gettingStarted": "Memulai",
+      "keyFeatures": "Fitur Utama",
+      "tryAiAgent": "Coba Agen AI",
+      "steps": {
+        "clickAi": "Klik **Agen AI** untuk menghasilkan slide dengan AI",
+        "useTheme": "Gunakan **Tema** untuk mengubah gaya visual",
+        "pressPresent": "Tekan **Presentasi** untuk memulai tayangan slide",
+        "clickNew": "Klik **Baru** untuk menambahkan slide secara manual"
+      },
+      "features": {
+        "aiPowered": "Pembuatan konten **Bertenaga AI**",
+        "beautiful": "Tema **Indah**",
+        "interactive": "Dukungan bagan **Interaktif**",
+        "markdown": "Pengeditan **Markdown**",
+        "instant": "Pratinjau **Instan**"
+      },
+      "examples": [
+        "Buat presentasi tentang perubahan iklim",
+        "Buat slide peluncuran produk",
+        "Hasilkan dokumen tinjauan bisnis"
+      ],
+      "callToAction": "Biarkan AI melakukan pekerjaan berat untuk Anda!"
+    },
+    "templates": {
+      "business": "Laporan Bisnis",
+      "education": "Pelatihan Pendidikan",
+      "tech": "Berbagi Teknologi"
+    },
+    "zoomControl": {
+      "fitToWindow": "Sesuaikan dengan Jendela",
+      "zoomIn": "Perbesar",
+      "zoomOut": "Perkecil",
+      "reset": "Reset Zoom"
+    },
+    "editorMode": {
+      "markdown": "Markdown",
+      "visual": "Editor Visual"
+    },
+    "visual": {
+      "components": "Perpustakaan Komponen",
+      "searchComponents": "Cari komponen...",
+      "properties": "Panel Properti",
+      "delete": "Hapus",
+      "categories": {
+        "text": "Teks",
+        "media": "Media",
+        "shapes": "Bentuk",
+        "charts": "Grafik"
+      },
+      "image": {
+        "replace": "Ganti",
+        "crop": "Potong",
+        "filter": "Filter",
+        "filterNormal": "Normal",
+        "filterGrayscale": "Abu-abu",
+        "filterSepia": "Sepia",
+        "filterBlur": "Blur",
+        "filterBrightness": "Kecerahan"
+      },
+      "layer": {
+        "forward": "Naikkan Satu Lapisan",
+        "backward": "Turunkan Satu Lapisan",
+        "front": "Ke Lapisan Teratas",
+        "back": "Ke Lapisan Terbawah"
+      },
+      "categories": {
+        "text": "Teks",
+        "images": "Gambar",
+        "media": "Video & Media",
+        "shapes": "Bentuk",
+        "layouts": "Tata Letak",
+        "charts": "Grafik"
+      },
+      "images": {
+        "description": "Unggah, telusuri, atau buat gambar.",
+        "imageUpload": "Unggah gambar atau URL",
+        "webSearch": "Pencarian gambar web",
+        "aiImages": "Gambar AI",
+        "pexels": "Gambar Pexels",
+        "giphy": "GIF dari GIPHY",
+        "pictographic": "Ilustrasi bergambar",
+        "iconsClassic": "Ikon (Klasik)",
+        "iconsModern": "Ikon (Modern)",
+        "qrcode": "Kode QR",
+        "accentImages": "Gambar aksen",
+        "gallery": "Galeri"
+      },
+      "media": {
+        "description": "Unggah atau impor media dari platform populer.",
+        "gallery": "Galeri",
+        "videoEmbed": "Embed video atau audio",
+        "loomRecording": "Rekaman Loom",
+        "youtube": "Video YouTube",
+        "vimeo": "Video Vimeo",
+        "wistia": "Wistia",
+        "tiktok": "TikTok",
+        "spotify": "Spotify"
+      },
+      "propertyPanel": {
+        "text": "Properti Teks",
+        "image": "Properti Gambar",
+        "shape": "Properti Bentuk",
+        "position": "Posisi",
+        "content": "Konten",
+        "fontSize": "Ukuran Font",
+        "fontWeight": "Ketebalan Font",
+        "color": "Warna",
+        "width": "Lebar",
+        "height": "Tinggi",
+        "radius": "Radius",
+        "fillColor": "Warna Isi",
+        "strokeColor": "Warna Garis",
+        "strokeWidth": "Lebar Garis",
+        "rotation": "Rotasi",
+        "selectComponent": "Pilih komponen untuk melihat properti"
+      },
+      "messages": {
+        "undo": "Urungkan",
+        "redo": "Ulangi",
+        "copied": "Disalin",
+        "pasted": "Ditempel",
+        "nothingToPaste": "Tidak ada yang akan ditempel",
+        "hexagonAdded": "Heksagon ditambahkan",
+        "pentagonAdded": "Pentagon ditambahkan",
+        "diamondAdded": "Berlian ditambahkan",
+        "ringAdded": "Cincin ditambahkan",
+        "ellipseAdded": "Elips ditambahkan",
+        "arrowAdded": "Panah ditambahkan",
+        "parallelogramAdded": "Jajaran genjang ditambahkan",
+        "trapezoidAdded": "Trapesium ditambahkan",
+        "imagePasted": "Gambar ditempel berhasil",
+        "imageLoadFailed": "Gagal memuat gambar",
+        "unsupportedElementType": "Jenis elemen tidak didukung: {type}",
+        "failedToUploadImage": "Gagal mengunggah gambar: {error}",
+        "unsupportedLayoutType": "Jenis tata letak tidak didukung",
+        "imageFiltersNotSupported": "Filter gambar tidak didukung di lingkungan ini",
+        "selectedElements": "{count} elemen dipilih"
+      }
+    },
+    "agent": "Agent",
+    "agentDialog": "AI Agent",
+    "agentPlaceholder": "Biarkan saya membantu Anda mengedit, membuat, atau menata apa pun",
+    "quickPrompts": {
+      "optimizeLayout": "Optimalkan tata letak slide saat ini",
+      "addChart": "Tambahkan grafik profesional",
+      "improveContent": "Tingkatkan ekspresi konten"
+    },
+    "mindmap_modal": {
+      "modal_title": "Peta Pikiran AI",
+      "subtitle": "Pemetaan Struktur Pengetahuan Cerdas",
+      "input_title": "Silakan masukkan topik atau deskripsi:",
+      "cancel_button": "Batal",
+      "generate_button": "Buat",
+      "ai_generate": "Buat Otomatis dengan AI",
+      "missing_api_key": "AI API Key belum dikonfigurasi. Silakan konfigurasi di Pengaturan AI.",
+      "loading_title": "Membuat Peta Pikiran",
+      "ai_prompt_prefix": "Silakan ubah teks berikut menjadi peta pikiran:"
+    },
+    "cannotDeleteLast": "Tidak dapat menghapus slide terakhir",
+    "deleted": "Slide dihapus",
+    "layouts": {
+      "layoutApplied": "Layout '{name}' diterapkan"
+    }
+  }
+}

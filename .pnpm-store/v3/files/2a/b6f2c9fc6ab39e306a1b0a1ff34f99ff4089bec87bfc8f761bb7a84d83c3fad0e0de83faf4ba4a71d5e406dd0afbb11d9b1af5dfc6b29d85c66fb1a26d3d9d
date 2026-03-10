@@ -1,0 +1,85 @@
+{
+  "name": "vue-konva",
+  "version": "3.4.0",
+  "description": "Vue binding to canvas element via Konva framework",
+  "keywords": [
+    "vue",
+    "konva",
+    "canvas"
+  ],
+  "homepage": "https://github.com/konvajs/vue-konva#readme",
+  "author": "Rafael Escala <rafaesc92@gmail.com>",
+  "types": "dist/index.d.ts",
+  "main": "dist/vue-konva.umd.js",
+  "module": "dist/vue-konva.mjs",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-konva.mjs",
+      "require": "./dist/vue-konva.umd.js"
+    },
+    "./core": {
+      "types": "./dist/index-core.d.ts",
+      "import": "./dist/vue-konva-core.mjs",
+      "require": "./dist/vue-konva-core.js"
+    }
+  },
+  "vetur": {
+    "tags": "vetur/tags.json",
+    "attributes": "vetur/attributes.json"
+  },
+  "files": [
+    "dist/",
+    "vetur/"
+  ],
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://www.patreon.com/lavrton"
+    },
+    {
+      "type": "opencollective",
+      "url": "https://opencollective.com/konva"
+    },
+    {
+      "type": "github",
+      "url": "https://github.com/sponsors/lavrton"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/konvajs/vue-konva.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/konvajs/vue-konva/issues"
+  },
+  "scripts": {
+    "build": "vite build && BUILD_CORE=1 vite build && tsc --emitDeclarationOnly --declaration --outDir dist",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "konva": ">7",
+    "vue": "^3"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.5",
+    "@vue/test-utils": "^2.4.6",
+    "canvas": "^3.2.1",
+    "jsdom": "^28.1.0",
+    "konva": ">=10",
+    "typescript": "^5.9.3",
+    "vite": "^7.3.1",
+    "vitest": "^4.0.18",
+    "vue": "^3.5.29"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "name": "round-polygon",
+  "version": "0.6.7",
+  "description": "Small, typed, dependency free tool to round corners of 2d-polygon provided by an array of { x, y } points.",
+  "keywords": [ "2d", "tool", "library", "geometry", "round", "arc", "circle", "polygon", "shape", "corner" ],
+  "author": "Sergey Borovikov",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/round-polygon.es.js",
+  "module": "./dist/round-polygon.es.js",
+  "types": "./dist/index.d.ts",
+  "files": [ "./dist" ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/foretoo/round-polygon.git"
+  },
+  "bugs": {
+    "url": "https://github.com/foretoo/round-polygon/issues"
+  },
+  "homepage": "https://github.com/foretoo/round-polygon#readme",
+  "scripts": {
+    "public": "rollup -c config/public.ts",
+    "dev": "rollup -c config/dev.ts -w",
+    "build": "rollup -c config/build.ts"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "bratik": "^0.5.3",
+    "eslint": "^8.18.0",
+    "rollup": "^2.75.7",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-esbuild": "^4.9.1",
+    "rollup-plugin-eslint-bundle": "^7.0.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-sass": "^1.2.12",
+    "rollup-plugin-serve": "^1.1.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "simplex-noise": "^3.0.1",
+    "typescript": "^4.7.4"
+  }
+}

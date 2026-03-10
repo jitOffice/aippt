@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-02-11T16:20:08.826Z",
+  "total": 1,
+  "success": 1,
+  "failed": 0,
+  "results": [
+    {
+      "success": true,
+      "input": "template_blue_business.pptx",
+      "output": "template_blue_business.json",
+      "slides": 18
+    }
+  ]
+}

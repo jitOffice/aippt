@@ -1,0 +1,44 @@
+{
+  "name": "@hungknguyen/mathml2omml",
+  "version": "0.4.6",
+  "description": "a MathML to OMML converter ",
+  "main": "./dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest",
+    "lint": "eslint src/",
+    "transpile": "rollup -c",
+    "prepublishOnly": "npm run lint && npm run transpile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fiduswriter/mathml2omml.git"
+  },
+  "keywords": [
+    "mml",
+    "mathml",
+    "omml"
+  ],
+  "author": "Johannes Wilm",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/fiduswriter/mathml2omml/issues"
+  },
+  "homepage": "https://github.com/fiduswriter/mathml2omml#readme",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "entities": "^4.3.1",
+    "eslint": "^8.17.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.2",
+    "eslint-plugin-promise": "^6.0.0",
+    "jest": "^28.1.0",
+    "rollup": "^2.78.1",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "xml-formatter": "^2.6.1"
+  }
+}

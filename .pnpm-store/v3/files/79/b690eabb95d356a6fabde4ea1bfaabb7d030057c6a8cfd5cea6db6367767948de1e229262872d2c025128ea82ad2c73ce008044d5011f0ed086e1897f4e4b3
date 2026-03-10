@@ -1,0 +1,64 @@
+import process from 'node:process';
+import { r as runCli, t as exclude, y as prompts, k as parseNun } from './shared/ni.BtcD8a97.mjs';
+import { Fzf } from 'fzf';
+import { g as getPackageJSON } from './shared/ni.C4mrCGPc.mjs';
+import 'node:path';
+import 'readline';
+import 'events';
+import 'ansis';
+import 'package-manager-detector';
+import 'tinyexec';
+import 'node:fs';
+import 'package-manager-detector/constants';
+import 'os';
+import 'tty';
+import 'node:os';
+import 'fs';
+import 'fs/promises';
+import 'path';
+import 'package-manager-detector/commands';
+
+runCli(async (agent, args, ctx) => {
+  const isMultiple = args[0] === "-m";
+  const isGlobal = args.includes("-g");
+  const isInteractive = !args.length && !ctx?.programmatic;
+  if ((isInteractive || isMultiple) && !isGlobal) {
+    const pkg = getPackageJSON(ctx);
+    const allDependencies = { ...pkg.dependencies, ...pkg.devDependencies };
+    const raw = Object.entries(allDependencies);
+    if (!raw.length) {
+      console.error("No dependencies found");
+      return;
+    }
+    const fzf = new Fzf(raw, {
+      selector: ([dep, version]) => `${dep} ${version}`,
+      casing: "case-insensitive"
+    });
+    const choices = raw.map(([dependency, version]) => ({
+      title: dependency,
+      value: dependency,
+      description: version
+    }));
+    if (isMultiple)
+      args = exclude(args, "-m");
+    try {
+      const { depsToRemove } = await prompts({
+        type: "autocompleteMultiselect",
+        name: "depsToRemove",
+        choices,
+        min: 1,
+        instructions: false,
+        message: "remove dependencies",
+        async suggest(input, choices2) {
+          const results = fzf.find(input);
+          return results.map((r) => choices2.find((c) => c.value === r.item[0]));
+        }
+      });
+      if (Array.isArray(depsToRemove))
+        args.push(...depsToRemove);
+    } catch {
+      process.exit(1);
+    }
+  }
+  return parseNun(agent, args);
+});

@@ -1,0 +1,35 @@
+import { PropType } from 'vue';
+import { TableColumnData, TableOperationColumn } from './interface';
+declare const _default: import("vue").DefineComponent<{
+    dataColumns: {
+        type: PropType<TableColumnData[]>;
+        required: true;
+    };
+    operations: {
+        type: PropType<TableOperationColumn[]>;
+        required: true;
+    };
+    columnWidth: {
+        type: PropType<Record<string, number>>;
+    };
+}, {
+    fixedWidth: (width?: number | undefined, minWidth?: number | undefined) => {
+        width: string;
+        minWidth: string;
+        maxWidth: string;
+    } | {
+        minWidth: string;
+        width?: undefined;
+        maxWidth?: undefined;
+    } | undefined;
+}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, Record<string, any>, string, import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps, Readonly<{
+    dataColumns?: unknown;
+    operations?: unknown;
+    columnWidth?: unknown;
+} & {
+    operations: TableOperationColumn[];
+    dataColumns: TableColumnData[];
+} & {
+    columnWidth?: Record<string, number> | undefined;
+}>, {}>;
+export default _default;

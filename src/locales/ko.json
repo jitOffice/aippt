@@ -1,0 +1,569 @@
+{
+  "cancel": "취소",
+  "common": {
+    "loading": "로딩 중...",
+    "confirm": "확인",
+    "cancel": "취소",
+    "edit": "편집",
+    "share": "공유",
+    "readMode": "읽기 모드",
+    "ai": "AI",
+    "templateLibrary": "템플릿 라이브러리",
+    "saveAsTemplate": "템플릿으로 저장",
+    "today": "오늘",
+    "yesterday": "어제",
+    "daysAgo": "일 전",
+    "collapse": "접기",
+    "expand": "펼치기",
+    "dragToMove": "끌어서 이동",
+    "online": "온라인",
+    "people": "명",
+    "documentList": "문서 목록",
+    "logout": "로그아웃",
+    "inviteCodeManagement": "초대 코드 관리",
+    "loadingDocument": "문서를 불러오는 중…",
+    "privateDeployment": "사내 배포",
+    "user": "사용자",
+    "appTitleShort": "JitWord",
+    "appTitleFull": "JitWord 협업 문서",
+    "language": "언어",
+    "languageSettings": "언어 설정",
+    "switchTooFast": "전환 속도가 너무 빠릅니다. 잠시 후 다시 시도하세요.",
+    "switchErrorSuggestRefresh": "문서 전환 중 오류가 발생했습니다. 페이지 새로고침을 권장합니다.",
+    "on": "켜기",
+    "off": "끄기",
+    "save": "저장"
+  },
+  "doc": {
+    "type": {
+      "sheet": "스프레드시트",
+      "word": "문서"
+    },
+    "exportExcel": "Excel 내보내기",
+    "importExcel": "Excel 가져오기",
+    "untitled": "제목 없음",
+    "untitledSheet": "제목 없는 스프레드시트",
+    "untitledDoc": "제목 없는 문서",
+    "untitledMindmap": "제목 없는 마인드맵",
+    "loadSheetFailed": "스프레드시트 데이터 로드 실패",
+    "allChangesSaved": "모든 변경 사항이 클라우드에 저장되었습니다",
+    "saving": "저장 중...",
+    "pendingSave": "저장 대기 중...",
+    "saveSuccess": "저장 성공",
+    "importSuccessRefresh": "가져오기 성공, 새로 고침 중...",
+    "importFailed": "가져오기 실패",
+    "exportSuccess": "내보내기 성공",
+    "exportFailed": "내보내기 실패",
+    "autoSaveTitle": "자동 저장 {date}",
+    "autoSaveDesc": "시스템 자동 저장",
+    "quickSaveTitle": "빠른 저장 {date}",
+    "quickSaveDesc": "사용자 빠른 저장",
+    "versionSavedSuccess": "버전 저장 성공 (Ctrl+S)",
+    "saveFailed": "저장 실패",
+    "enterDocName": "문서 이름을 입력하세요",
+    "createSuccess": "문서 생성 성공",
+    "createFailed": "문서 생성 실패",
+    "docLimitReached": "문서 제한 도달",
+    "cooldownMessage": "작업이 너무 빠릅니다. {seconds}초 동안 기다려주세요",
+    "deletedSuccess": "삭제 성공",
+    "restoredSuccess": "복원 성공",
+    "permanentlyDeletedSuccess": "영구 삭제 성공",
+    "deletedFailed": "삭제 실패",
+    "batchDeleteSuccess": "{count}개 문서 일괄 삭제 성공",
+    "batchDeleteFailed": "일괄 삭제 실패",
+    "renameSuccess": "문서 이름 변경 성공",
+    "renameFailed": "이름 변경 실패",
+    "batchDeleteSuccessDetail": "성공 {success}개, 실패 {failed}개",
+    "deleteReason": "문서 {id}: {reason}",
+    "trash": "휴지통",
+    "viewTrash": "휴지통 보기",
+    "backToDocs": "문서로 돌아가기",
+    "softDelete": "휴지통으로 이동",
+    "delete": "삭제",
+    "permanentDelete": "영구 삭제",
+    "confirmDeleteTitle": "문서 {name}을(를) 삭제하시겠습니까?",
+    "confirmSoftDeleteMessage": "휴지통에서 복원할 수 있습니다",
+    "confirmPermanentDeleteMessage": "이 작업은 취소할 수 없습니다",
+    "confirmInputLabel": "확인을 위해 문서 이름을 입력하세요:",
+    "confirmInputPlaceholder": "입력: {name}",
+    "currentDocProtected": "현재 문서가 보호되어 있습니다. 다른 문서로 전환하세요",
+    "nameLabel": "문서 이름",
+    "namePlaceholder": "문서 이름 입력",
+    "searchPlaceholder": "문서 이름 또는 ID 검색",
+    "listTitle": "문서 목록",
+    "loadingList": "목록 로딩 중...",
+    "noMatchingDocuments": "일치하는 문서 없음",
+    "nameEmptyWarning": "문서 이름은 비워둘 수 없습니다",
+    "editNameHint": "클릭하여 이름 편집",
+    "recentlyEdited": "최근 편집",
+    "group": {
+      "today": "오늘",
+      "yesterday": "어제",
+      "earlier": "이전"
+    },
+    "time": {
+      "justNow": "방금",
+      "minutesAgo": "{n}분 전",
+      "hoursAgo": "{n}시간 전",
+      "yesterday": "어제",
+      "daysAgo": "{n}일 전"
+    },
+    "scope": {
+      "mine": "내 문서",
+      "shared": "공유됨",
+      "all": "전체"
+    },
+    "publicDocAdminOnly": "공용 문서는 관리자만 삭제할 수 있습니다",
+    "batchDelete": "일괄 삭제",
+    "batchDeleteConfirm": "선택한 {count}개의 문서를 삭제하시겠습니까?",
+    "selectAll": "전체 선택",
+    "cancelSelect": "선택 취소",
+    "selected": "{count}개 선택됨"
+  },
+  "error": {
+    "badRequest": "잘못된 요청 파라미터",
+    "unauthorized": "권한 없음",
+    "forbidden": "접근 거부됨",
+    "notFound": "리소스를 찾을 수 없음",
+    "serverError": "서버 내부 오류",
+    "networkError": "네트워크 연결 실패, 설정을 확인하세요",
+    "timeout": "요청 시간 초과, 다시 시도하세요",
+    "requestFailed": "요청 실패",
+    "unknownError": "알 수 없는 오류"
+  },
+  "ai": {
+    "settings": "AI 설정",
+    "generationStopped": "생성 중단",
+    "processingFailed": "처리 실패",
+    "textReplaced": "선택한 텍스트 교체 완료",
+    "textInserted": "삽입 완료",
+    "settingsSaved": "저장 완료",
+    "fillRequirement": "문서 생성 요청을 입력하세요",
+    "generationFailed": "생성 실패",
+    "generationComplete": "생성 완료",
+    "cursorPrompt": "AI 도우미",
+    "inputPromptPlaceholder": "요청을 입력하세요. 예: AIGC 제품 적용 계획 작성...",
+    "submitTip": "Cmd/Ctrl + Enter로 전송",
+    "generate": "생성",
+    "onboarding": {
+      "title": "무료 AI 평가판이 종료되었습니다",
+      "desc": "WeChat에 가입하여 평가판을 받거나 설정에서 API 키를 구성하세요",
+      "settingsInEditor": "문서 편집기로 돌아가서 상단 도구 모음의 AI 설정 버튼을 클릭하여 구성하세요"
+    },
+    "openSettings": "설정 열기",
+    "jsonParseError": "AI가 유효하지 않은 형식을 반환했습니다. 다시 시도하거나 다른 프롬프트를 사용하세요.",
+    "timeoutError": "요청 시간이 초과했습니다. 다시 시도하세요.",
+    "apiError": "API 요청이 실패했습니다. 설정을 확인하세요.",
+    "scenarios": {
+      "continue": {
+        "label": "이어쓰기",
+        "prompt": "이전 내용을 기반으로 일관성과 논리를 유지하며 작성하세요."
+      },
+      "outline": {
+        "label": "개요",
+        "prompt": "다음 내용을 구조화된 개요로 작성하세요. 1급, 2급 제목과 주요 포인트 포함."
+      },
+      "brainstorm": {
+        "label": "브레인스토밍",
+        "prompt": "주제에 대해 다양한 관점과 창의적 아이디어를 제시하세요."
+      },
+      "summary": {
+        "label": "요약",
+        "prompt": "다음 내용을 요약하고 핵심 포인트를 명확하고 간결하게 작성하세요."
+      },
+      "expand": {
+        "label": "확장",
+        "prompt": "다음 내용을 확장하고 세부사항, 예시, 심층 분석을 추가하세요."
+      },
+      "polish": {
+        "label": "다듬기",
+        "prompt": "다음 문장을 자연스럽고 전문적으로 다듬으세요."
+      },
+      "weekly_report": {
+        "label": "주간 보고서",
+        "prompt": "주간 보고서를 작성하세요. 포함: 업무 개요, 주요 성과, 문제 및 리스크, 다음 주 계획."
+      },
+      "blog": {
+        "label": "블로그",
+        "prompt": "블로그를 작성하세요. 포함: 흥미로운 서두, 명확한 구조, 유용한 내용, 결론."
+      },
+      "business_plan": {
+        "label": "사업 계획",
+        "prompt": "사업 계획을 작성하세요. 포함: 경영 요약, 회사 설명, 시장 분석, 조직, 제품/서비스, 마케팅 전략, 재무 예측."
+      },
+      "proposal": {
+        "label": "제안서",
+        "prompt": "프로젝트 제안서를 작성하세요. 포함: 배경, 문제, 해결책, 실행 계획, 예산, 기대 결과."
+      }
+    },
+    "scenario": {
+      "searchPlaceholder": "시나리오 템플릿 검색...",
+      "all": "전체",
+      "use": "사용",
+      "noResults": "적합한 템플릿 없음",
+      "more": "더보기"
+    }
+  },
+  "page": {
+    "settings": "페이지 설정",
+    "settingsRestored": "기본값 복원 완료",
+    "settingsSaved": "페이지 설정 저장 완료",
+    "saveFailed": "저장 실패"
+  },
+  "watermark": {
+    "settings": "워터마크 설정",
+    "title": "문서 워터마크",
+    "type": "워터마크 유형",
+    "text": "텍스트",
+    "image": "이미지",
+    "content": "워터마크 내용",
+    "textPlaceholder": "워터마크 텍스트 입력",
+    "imageUrl": "이미지 URL",
+    "imageUrlPlaceholder": "이미지 URL 입력",
+    "imageHint": "PNG, JPG 형식 지원. 투명 배경 PNG 권장",
+    "fontSettings": "글꼴 설정",
+    "fontSize": "글꼴 크기",
+    "fontWeight": "글꼴 굵기",
+    "light": "얼음",
+    "normal": "보통",
+    "bold": "굵게",
+    "color": "색상",
+    "generalSettings": "일반 설정",
+    "opacity": "불투명도",
+    "rotation": "회전 각도",
+    "size": "크기",
+    "pattern": "배치 패턴",
+    "tile": "타일",
+    "center": "가운데",
+    "diagonal": "대각선",
+    "spacing": "간격",
+    "templates": "빠른 템플릿",
+    "confidential": "기밀 문서",
+    "draft": "초안",
+    "internal": "내부용",
+    "reset": "기본값으로 초기화",
+    "enableHint": "워터마크를 활성화하면 기밀 라벨, 초안 표시 등을 추가할 수 있습니다. 워터마크는 미리보기와 내보내기에서만 표시됩니다."
+  },
+  "auth": {
+    "appTitle": "Jitword - 협업 문서 편집기",
+    "usernamePlaceholder": "사용자 이름 입력",
+    "passwordPlaceholder": "비밀번호 입력",
+    "login": "로그인",
+    "register": "회원가입",
+    "noAccount": "계정이 없으신가요?",
+    "registerNow": "지금 가입",
+    "hasAccount": "이미 계정이 있으신가요?",
+    "loginNow": "지금 로그인",
+    "createAccount": "계정 생성",
+    "usernameRequired": "사용자 이름을 입력하세요",
+    "passwordRequired": "비밀번호를 입력하세요",
+    "passwordMin": "최소 6자",
+    "passwordFormat": "문자와 숫자를 포함한 최소 6자",
+    "inviteCode": "초대 코드",
+    "inviteCodePlaceholder": "초대 코드 입력 (예: YNZBCTJA2OIF)",
+    "inviteCodeRequired": "초대 코드를 입력하세요",
+    "getInviteCode": "초대 코드 받기",
+    "wechatQrTitle": "WeChat 추가하여 초대 코드 받기",
+    "wechatQrDesc": "QR 코드 스캔 후 WeChat 추가 및 관리자에게 문의",
+    "loginSuccess": "로그인 성공",
+    "loginFailed": "로그인 실패",
+    "registerSuccess": "회원가입 성공",
+    "registerFailed": "회원가입 실패",
+    "usernameOrPasswordError": "사용자 이름 또는 비밀번호가 잘못되었습니다",
+    "logoutSuccess": "로그아웃 성공",
+    "tooManyLoginAttempts": "로그인 시도 횟수가 너무 많습니다",
+    "tooManyRegisterAttempts": "회원가입 시도 횟수가 너무 많습니다",
+    "tooManyRequests": "요청이 너무 많습니다. 잠시 후 다시 시도하세요"
+  },
+  "inviteCode": {
+    "management": "초대 코드 관리",
+    "description": "사용자 등록용 초대 코드 생성 및 관리",
+    "back": "뒤로",
+    "exportData": "이전 테이블 데이터 내보내기",
+    "total": "총계",
+    "available": "사용 가능",
+    "used": "사용됨",
+    "expired": "만료됨",
+    "generateNew": "+ 새 코드 생성",
+    "batchGenerate": "초대 코드를 대량 생성하고 만료일 설정",
+    "count": "수량",
+    "expiryDays": "유효기간 (일)",
+    "expiryPlaceholder": "영구적으로 사용하려면 비워두세요",
+    "generate": "생성",
+    "list": "초대 코드 목록",
+    "listCount": "총 {count}개 코드",
+    "code": "초대 코드",
+    "createdAt": "생성일",
+    "expiresAt": "만료일",
+    "usedBy": "사용자",
+    "usedAt": "사용일",
+    "actions": "동작",
+    "permanentValid": "영구",
+    "revokeConfirm": "이 코드를 취소하시겠습니까? 취소 후에는 사용할 수 없습니다.",
+    "revokeSuccess": "취소 성공",
+    "revokeFailed": "취소 실패",
+    "copySuccess": "복사 성공",
+    "copyFailed": "복사 실패",
+    "loadFailed": "불러오기 실패",
+    "generateSuccess": "{count}개의 코드 생성 완료",
+    "generateFailed": "생성 실패",
+    "exportSuccess": "내보내기 성공",
+    "permissionDenied": "권한 없음, 관리자만 접근 가능"
+  },
+  "version": {
+    "management": "버전 기록"
+  },
+  "formatPainter": "서식 복사 도구",
+  "searchReplace": "찾기 및 바꾸기",
+  "searchPlaceholder": "내용 검색...",
+  "replacePlaceholder": "다음으로 바꾸기...",
+  "find": "찾기",
+  "replace": "바꾸기",
+  "replaceAll": "모두 바꾸기",
+  "caseSensitive": "대소문자 구분",
+  "useRegex": "정규식 사용",
+  "noResults": "결과 없음",
+  "toolbar": {
+    "general": "일반"
+  },
+  "chart": "차트",
+  "importTable": "표 가져오기",
+  "mention": {
+    "group": {
+      "online": "온라인",
+      "org": "조직",
+      "other": "기타",
+      "new": "새로 만들기"
+    }
+  },
+  "slide": {
+    "newSlide": "새 슬라이드",
+    "theme": "테마",
+    "showCode": "코드 보기",
+    "hideCode": "코드 숨기기",
+    "present": "프레젠테이션",
+    "aiAgent": "AI 도우미",
+    "generating": "생성 중...",
+    "markdownSource": "Markdown 소스",
+    "themeCategories": {
+      "light": "라이트",
+      "dark": "다크",
+      "colorful": "컴러풀"
+    },
+    "themes": {
+      "default": "기본",
+      "piano": "피아노",
+      "wireframe": "와이어프레임",
+      "seriph": "세리프",
+      "geist": "가이스트",
+      "aurum": "오럼",
+      "chocolate": "초콜릿",
+      "shibainu": "시바이누",
+      "bricks": "브릭스",
+      "beeHappy": "비해피",
+      "atacama": "아타카마"
+    },
+    "themeApplied": "테마 \"{name}\"이(가) 적용되었습니다",
+    "slideCounter": "{current} / {total}",
+    "deleteSlideWarning": "마지막 슬라이드는 삭제할 수 없습니다",
+    "slideDeleted": "슬라이드가 삭제되었습니다",
+    "noSlidesToPresent": "프레젠테이션할 슬라이드가 없습니다. 먼저 프레젠테이션을 생성하세요!",
+    "presentMode": {
+      "hint": "화살표 키, 스페이스 또는 클릭으로 탐색 • ESC로 종료"
+    },
+    "quickActions": {
+      "improve": "개선",
+      "fix": "수정",
+      "translate": "번역",
+      "longer": "확장",
+      "shorter": "축소",
+      "simplify": "단순화"
+    },
+    "aiPanel": {
+      "title": "모든 카드 편집",
+      "placeholder": "편집, 생성 또는 스타일 지정 요청",
+      "placeholderAll": "만들고 싶은 프레젠테이션을 설명하세요. 예: '기후 변화에 대한 전문 프레젠테이션 만들기'",
+      "placeholderCurrent": "현재 슬라이드를 수정하는 방법을 AI에게 알려주세요. 예: '더 많은 세부 사항과 예시 추가'",
+      "quickActions": "빠른 작업",
+      "generate": "생성",
+      "allSlides": "모든 슬라이드",
+      "currentSlide": "현재 슬라이드",
+      "templates": "템플릿",
+      "createSlidesFirst": "빠른 작업을 사용하기 전에 먼저 슬라이드를 만드세요"
+    },
+    "quickActionPrompts": {
+      "improve": "더 전문적으로 글쓰기 개선",
+      "fix": "모든 맞춤법 및 문법 오류 수정",
+      "translate": "한국어로 번역",
+      "longer": "콘텐츠를 더 자세하고 포괄적으로",
+      "shorter": "콘텐츠를 더 간결하게",
+      "simplify": "이해하기 쉽게 언어 단순화"
+    },
+    "welcome": {
+      "title": "JitSlide Studio에 오신 것을 환영합니다",
+      "subtitle": "AI 기반 프레젠테이션 제작 도구",
+      "gettingStarted": "시작하기",
+      "keyFeatures": "주요 기능",
+      "tryAiAgent": "AI 에이전트 사용해보기",
+      "steps": {
+        "clickAi": "**AI 에이전트**를 클릭하여 AI로 슬라이드 생성",
+        "useTheme": "**테마**를 사용하여 시각적 스타일 변경",
+        "pressPresent": "**프레젠테이션**을 눌러 슬라이드쇼 시작",
+        "clickNew": "**새로 만들기**를 클릭하여 수동으로 슬라이드 추가"
+      },
+      "features": {
+        "aiPowered": "**AI 기반** 콘텐츠 생성",
+        "beautiful": "**아름다운** 테마",
+        "interactive": "**인터랙티브** 차트 지원",
+        "markdown": "**Markdown** 편집",
+        "instant": "**즉시** 미리보기"
+      },
+      "examples": [
+        "기후 변화에 대한 프레젠테이션 만들기",
+        "제품 출시 슬라이드 만들기",
+        "비즈니스 리뷰 문서 생성"
+      ],
+      "callToAction": "AI가 힘든 작업을 대신 해드립니다!"
+    },
+    "templates": {
+      "business": "비즈니스 보고서",
+      "education": "교육 훈련",
+      "tech": "기술 공유"
+    },
+    "zoomControl": {
+      "fitToWindow": "창에 맞추기",
+      "zoomIn": "확대",
+      "zoomOut": "축소",
+      "reset": "줌 재설정"
+    },
+    "editorMode": {
+      "markdown": "Markdown",
+      "visual": "비주얼 에디터"
+    },
+    "visual": {
+      "components": "구성 요소 라이브러리",
+      "searchComponents": "구성 요소 검색...",
+      "properties": "속성 패널",
+      "delete": "삭제",
+      "categories": {
+        "text": "텍스트",
+        "media": "미디어",
+        "shapes": "도형",
+        "charts": "차트"
+      },
+      "image": {
+        "replace": "교체",
+        "crop": "자르기",
+        "filter": "필터",
+        "filterNormal": "보통",
+        "filterGrayscale": "흑백",
+        "filterSepia": "세피아",
+        "filterBlur": "흐림",
+        "filterBrightness": "밝기"
+      },
+      "layer": {
+        "forward": "한 단계 위로",
+        "backward": "한 단계 아래로",
+        "front": "맨 앞으로",
+        "back": "맨 뒤로"
+      },
+      "categories": {
+        "text": "텍스트",
+        "images": "이미지",
+        "media": "비디오 및 미디어",
+        "shapes": "도형",
+        "layouts": "레이아웃",
+        "charts": "차트"
+      },
+      "images": {
+        "description": "이미지를 업로드, 검색 또는 생성합니다.",
+        "imageUpload": "이미지 업로드 또는 URL",
+        "webSearch": "웹 이미지 검색",
+        "aiImages": "AI 생성 이미지",
+        "pexels": "Pexels 이미지",
+        "giphy": "GIPHY GIF",
+        "pictographic": "그림 삽화",
+        "iconsClassic": "아이콘(클래식)",
+        "iconsModern": "아이콘(모던)",
+        "qrcode": "QR 코드",
+        "accentImages": "장식 이미지",
+        "gallery": "갤러리"
+      },
+      "media": {
+        "description": "주요 플랫폼에서 미디어를 업로드 또는 가져옵니다.",
+        "gallery": "갤러리",
+        "videoEmbed": "비디오 또는 오디오 임베드",
+        "loomRecording": "Loom 녹화",
+        "youtube": "YouTube 비디오",
+        "vimeo": "Vimeo 비디오",
+        "wistia": "Wistia",
+        "tiktok": "TikTok",
+        "spotify": "Spotify"
+      },
+      "propertyPanel": {
+        "text": "텍스트 속성",
+        "image": "이미지 속성",
+        "shape": "도형 속성",
+        "position": "위치",
+        "content": "콘텐츠",
+        "fontSize": "글꼴 크기",
+        "fontWeight": "글꼴 두께",
+        "color": "색상",
+        "width": "너비",
+        "height": "높이",
+        "radius": "반지름",
+        "fillColor": "채우기 색상",
+        "strokeColor": "선 색상",
+        "strokeWidth": "선 두께",
+        "rotation": "회전",
+        "selectComponent": "속성을 보려면 구성 요소를 선택하세요"
+      },
+      "messages": {
+        "undo": "실행 취소",
+        "redo": "다시 실행",
+        "copied": "복사됨",
+        "pasted": "붙여넣기 완료",
+        "nothingToPaste": "붙여넣을 내용이 없습니다",
+        "hexagonAdded": "육각형이 추가되었습니다",
+        "pentagonAdded": "오각형이 추가되었습니다",
+        "diamondAdded": "다이아몬드가 추가되었습니다",
+        "ringAdded": "링이 추가되었습니다",
+        "ellipseAdded": "타원이 추가되었습니다",
+        "arrowAdded": "화살표가 추가되었습니다",
+        "parallelogramAdded": "평행사변형이 추가되었습니다",
+        "trapezoidAdded": "사다리꼴이 추가되었습니다",
+        "imagePasted": "이미지가 붙여넣어졌습니다",
+        "imageLoadFailed": "이미지를 로드하지 못했습니다",
+        "unsupportedElementType": "지원되지 않는 요소 유형: {type}",
+        "failedToUploadImage": "이미지 업로드 실패: {error}",
+        "unsupportedLayoutType": "지원되지 않는 레이아웃 유형",
+        "imageFiltersNotSupported": "이 환경에서는 이미지 필터가 지원되지 않습니다",
+        "selectedElements": "{count}개의 요소가 선택됨"
+      }
+    },
+    "agent": "Agent",
+    "agentDialog": "AI Agent",
+    "agentPlaceholder": "편집, 생성 또는 스타일 지정을 도와드립니다",
+    "quickPrompts": {
+      "optimizeLayout": "현재 슬라이드 레이아웃 최적화",
+      "addChart": "전문 차트 추가",
+      "improveContent": "콘텐츠 표현 개선"
+    },
+    "mindmap_modal": {
+      "modal_title": "AI 마인드맵",
+      "subtitle": "지능형 지식 구조 매핑",
+      "input_title": "주제 또는 설명을 입력하세요:",
+      "cancel_button": "취소",
+      "generate_button": "생성",
+      "ai_generate": "AI 자동 생성",
+      "missing_api_key": "AI API Key가 구성되지 않았습니다. AI 설정에서 구성해 주세요.",
+      "loading_title": "마인드맵 생성 중",
+      "ai_prompt_prefix": "다음 텍스트를 마인드맵으로 변환해 주세요:"
+    },
+    "cannotDeleteLast": "마지막 슬라이드는 삭제할 수 없습니다",
+    "deleted": "슬라이드가 삭제되었습니다",
+    "layouts": {
+      "layoutApplied": "레이아웃 '{name}' 적용됨"
+    }
+  }
+}

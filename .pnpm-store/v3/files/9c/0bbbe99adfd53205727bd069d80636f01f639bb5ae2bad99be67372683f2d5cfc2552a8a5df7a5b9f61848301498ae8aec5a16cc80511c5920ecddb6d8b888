@@ -1,0 +1,10 @@
+import type { VNode, ComponentInternalInstance } from 'vue';
+import type { Node } from 'konva/lib/Node';
+import updatePicture from './updatePicture';
+import applyNodeProps from './applyNodeProps';
+export declare const componentPrefix = "V";
+export declare function findParentKonva(instance: ComponentInternalInstance): ComponentInternalInstance | null;
+export declare function findKonvaNode(instance: VNode): Node | null;
+export declare function checkOrder(subTree: VNode, konvaNode: Node): void;
+export { updatePicture, applyNodeProps };
+export { default as syncVModelBindings, VMODEL_NAMESPACE } from './syncVModelBindings';

@@ -1,0 +1,622 @@
+import { App, Plugin } from 'vue';
+export type { DragData, MarklineData } from './src/drager';
+export { DragerProps } from './src/drager';
+import Drager from './src/drager.vue';
+export declare const install: (app: App) => void;
+export { Drager as ESDrager };
+declare const _default: Plugin & {
+    new (...args: any[]): import("vue").CreateComponentPublicInstance<Readonly<import("vue").ExtractPropTypes<{
+        type: {
+            type: import("vue").PropType<"rect" | "text" | "image">;
+            default: string;
+        };
+        tag: {
+            type: import("vue").PropType<string | import("vue").Component>;
+            default: string;
+        };
+        resizable: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        rotatable: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        skewable: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        boundary: {
+            type: BooleanConstructor;
+        };
+        disabled: BooleanConstructor;
+        width: {
+            type: NumberConstructor;
+            default: number;
+        };
+        height: {
+            type: NumberConstructor;
+            default: number;
+        };
+        left: {
+            type: NumberConstructor;
+            default: number;
+        };
+        top: {
+            type: NumberConstructor;
+            default: number;
+        };
+        zIndex: {
+            type: NumberConstructor;
+            default: number;
+        };
+        angle: {
+            type: NumberConstructor;
+            default: number;
+        };
+        color: {
+            type: StringConstructor;
+            default: string;
+        };
+        minWidth: {
+            type: NumberConstructor;
+            default: number;
+        };
+        minHeight: {
+            type: NumberConstructor;
+            default: number;
+        };
+        maxWidth: {
+            type: NumberConstructor;
+            default: number;
+        };
+        maxHeight: {
+            type: NumberConstructor;
+            default: number;
+        };
+        aspectRatio: {
+            type: NumberConstructor;
+        };
+        selected: BooleanConstructor;
+        snapToGrid: BooleanConstructor;
+        gridX: {
+            type: NumberConstructor;
+            default: number;
+        };
+        gridY: {
+            type: NumberConstructor;
+            default: number;
+        };
+        scaleRatio: {
+            type: NumberConstructor;
+            default: number;
+        };
+        disabledKeyEvent: BooleanConstructor;
+        border: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        resizeList: {
+            type: import("vue").PropType<import("./src/drager").IDotSide[]>;
+        };
+        equalProportion: {
+            type: BooleanConstructor;
+        };
+        checkCollision: {
+            type: BooleanConstructor;
+        };
+        snap: BooleanConstructor;
+        snapThreshold: {
+            type: NumberConstructor;
+            default: number;
+        };
+        markline: import("vue").PropType<boolean | ((e: import("./src/drager").MarklineData) => void)>;
+        extraLines: import("vue").PropType<(target: DOMRect) => {
+            showTop?: number | undefined;
+            top?: number | undefined;
+            showLeft?: number | undefined;
+            left?: number | undefined;
+        }[] | Element[]>;
+    }>> & {
+        onChange?: ((...args: any[]) => any) | undefined;
+        onDrag?: ((...args: any[]) => any) | undefined;
+        "onDrag-start"?: ((...args: any[]) => any) | undefined;
+        "onDrag-end"?: ((...args: any[]) => any) | undefined;
+        onResize?: ((...args: any[]) => any) | undefined;
+        "onResize-start"?: ((...args: any[]) => any) | undefined;
+        "onResize-end"?: ((...args: any[]) => any) | undefined;
+        onRotate?: ((...args: any[]) => any) | undefined;
+        "onRotate-start"?: ((...args: any[]) => any) | undefined;
+        "onRotate-end"?: ((...args: any[]) => any) | undefined;
+        onSkew?: ((...args: any[]) => any) | undefined;
+        "onSkew-start"?: ((...args: any[]) => any) | undefined;
+        "onSkew-end"?: ((...args: any[]) => any) | undefined;
+        onFocus?: ((...args: any[]) => any) | undefined;
+        onBlur?: ((...args: any[]) => any) | undefined;
+    }, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("change" | "drag" | "drag-start" | "drag-end" | "resize" | "resize-start" | "resize-end" | "rotate" | "rotate-start" | "rotate-end" | "skew" | "skew-start" | "skew-end" | "focus" | "blur")[], import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps & Readonly<import("vue").ExtractPropTypes<{
+        type: {
+            type: import("vue").PropType<"rect" | "text" | "image">;
+            default: string;
+        };
+        tag: {
+            type: import("vue").PropType<string | import("vue").Component>;
+            default: string;
+        };
+        resizable: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        rotatable: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        skewable: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        boundary: {
+            type: BooleanConstructor;
+        };
+        disabled: BooleanConstructor;
+        width: {
+            type: NumberConstructor;
+            default: number;
+        };
+        height: {
+            type: NumberConstructor;
+            default: number;
+        };
+        left: {
+            type: NumberConstructor;
+            default: number;
+        };
+        top: {
+            type: NumberConstructor;
+            default: number;
+        };
+        zIndex: {
+            type: NumberConstructor;
+            default: number;
+        };
+        angle: {
+            type: NumberConstructor;
+            default: number;
+        };
+        color: {
+            type: StringConstructor;
+            default: string;
+        };
+        minWidth: {
+            type: NumberConstructor;
+            default: number;
+        };
+        minHeight: {
+            type: NumberConstructor;
+            default: number;
+        };
+        maxWidth: {
+            type: NumberConstructor;
+            default: number;
+        };
+        maxHeight: {
+            type: NumberConstructor;
+            default: number;
+        };
+        aspectRatio: {
+            type: NumberConstructor;
+        };
+        selected: BooleanConstructor;
+        snapToGrid: BooleanConstructor;
+        gridX: {
+            type: NumberConstructor;
+            default: number;
+        };
+        gridY: {
+            type: NumberConstructor;
+            default: number;
+        };
+        scaleRatio: {
+            type: NumberConstructor;
+            default: number;
+        };
+        disabledKeyEvent: BooleanConstructor;
+        border: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        resizeList: {
+            type: import("vue").PropType<import("./src/drager").IDotSide[]>;
+        };
+        equalProportion: {
+            type: BooleanConstructor;
+        };
+        checkCollision: {
+            type: BooleanConstructor;
+        };
+        snap: BooleanConstructor;
+        snapThreshold: {
+            type: NumberConstructor;
+            default: number;
+        };
+        markline: import("vue").PropType<boolean | ((e: import("./src/drager").MarklineData) => void)>;
+        extraLines: import("vue").PropType<(target: DOMRect) => {
+            showTop?: number | undefined;
+            top?: number | undefined;
+            showLeft?: number | undefined;
+            left?: number | undefined;
+        }[] | Element[]>;
+    }>> & {
+        onChange?: ((...args: any[]) => any) | undefined;
+        onDrag?: ((...args: any[]) => any) | undefined;
+        "onDrag-start"?: ((...args: any[]) => any) | undefined;
+        "onDrag-end"?: ((...args: any[]) => any) | undefined;
+        onResize?: ((...args: any[]) => any) | undefined;
+        "onResize-start"?: ((...args: any[]) => any) | undefined;
+        "onResize-end"?: ((...args: any[]) => any) | undefined;
+        onRotate?: ((...args: any[]) => any) | undefined;
+        "onRotate-start"?: ((...args: any[]) => any) | undefined;
+        "onRotate-end"?: ((...args: any[]) => any) | undefined;
+        onSkew?: ((...args: any[]) => any) | undefined;
+        "onSkew-start"?: ((...args: any[]) => any) | undefined;
+        "onSkew-end"?: ((...args: any[]) => any) | undefined;
+        onFocus?: ((...args: any[]) => any) | undefined;
+        onBlur?: ((...args: any[]) => any) | undefined;
+    }, {
+        top: number;
+        left: number;
+        type: "rect" | "text" | "image";
+        tag: string | import("vue").Component;
+        resizable: boolean;
+        rotatable: boolean;
+        skewable: boolean;
+        boundary: boolean;
+        disabled: boolean;
+        width: number;
+        height: number;
+        zIndex: number;
+        angle: number;
+        color: string;
+        minWidth: number;
+        minHeight: number;
+        maxWidth: number;
+        maxHeight: number;
+        selected: boolean;
+        snapToGrid: boolean;
+        gridX: number;
+        gridY: number;
+        scaleRatio: number;
+        disabledKeyEvent: boolean;
+        border: boolean;
+        equalProportion: boolean;
+        checkCollision: boolean;
+        snap: boolean;
+        snapThreshold: number;
+    }, true, {}, {}, {
+        P: {};
+        B: {};
+        D: {};
+        C: {};
+        M: {};
+        Defaults: {};
+    }, Readonly<import("vue").ExtractPropTypes<{
+        type: {
+            type: import("vue").PropType<"rect" | "text" | "image">;
+            default: string;
+        };
+        tag: {
+            type: import("vue").PropType<string | import("vue").Component>;
+            default: string;
+        };
+        resizable: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        rotatable: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        skewable: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        boundary: {
+            type: BooleanConstructor;
+        };
+        disabled: BooleanConstructor;
+        width: {
+            type: NumberConstructor;
+            default: number;
+        };
+        height: {
+            type: NumberConstructor;
+            default: number;
+        };
+        left: {
+            type: NumberConstructor;
+            default: number;
+        };
+        top: {
+            type: NumberConstructor;
+            default: number;
+        };
+        zIndex: {
+            type: NumberConstructor;
+            default: number;
+        };
+        angle: {
+            type: NumberConstructor;
+            default: number;
+        };
+        color: {
+            type: StringConstructor;
+            default: string;
+        };
+        minWidth: {
+            type: NumberConstructor;
+            default: number;
+        };
+        minHeight: {
+            type: NumberConstructor;
+            default: number;
+        };
+        maxWidth: {
+            type: NumberConstructor;
+            default: number;
+        };
+        maxHeight: {
+            type: NumberConstructor;
+            default: number;
+        };
+        aspectRatio: {
+            type: NumberConstructor;
+        };
+        selected: BooleanConstructor;
+        snapToGrid: BooleanConstructor;
+        gridX: {
+            type: NumberConstructor;
+            default: number;
+        };
+        gridY: {
+            type: NumberConstructor;
+            default: number;
+        };
+        scaleRatio: {
+            type: NumberConstructor;
+            default: number;
+        };
+        disabledKeyEvent: BooleanConstructor;
+        border: {
+            type: BooleanConstructor;
+            default: boolean;
+        };
+        resizeList: {
+            type: import("vue").PropType<import("./src/drager").IDotSide[]>;
+        };
+        equalProportion: {
+            type: BooleanConstructor;
+        };
+        checkCollision: {
+            type: BooleanConstructor;
+        };
+        snap: BooleanConstructor;
+        snapThreshold: {
+            type: NumberConstructor;
+            default: number;
+        };
+        markline: import("vue").PropType<boolean | ((e: import("./src/drager").MarklineData) => void)>;
+        extraLines: import("vue").PropType<(target: DOMRect) => {
+            showTop?: number | undefined;
+            top?: number | undefined;
+            showLeft?: number | undefined;
+            left?: number | undefined;
+        }[] | Element[]>;
+    }>> & {
+        onChange?: ((...args: any[]) => any) | undefined;
+        onDrag?: ((...args: any[]) => any) | undefined;
+        "onDrag-start"?: ((...args: any[]) => any) | undefined;
+        "onDrag-end"?: ((...args: any[]) => any) | undefined;
+        onResize?: ((...args: any[]) => any) | undefined;
+        "onResize-start"?: ((...args: any[]) => any) | undefined;
+        "onResize-end"?: ((...args: any[]) => any) | undefined;
+        onRotate?: ((...args: any[]) => any) | undefined;
+        "onRotate-start"?: ((...args: any[]) => any) | undefined;
+        "onRotate-end"?: ((...args: any[]) => any) | undefined;
+        onSkew?: ((...args: any[]) => any) | undefined;
+        "onSkew-start"?: ((...args: any[]) => any) | undefined;
+        "onSkew-end"?: ((...args: any[]) => any) | undefined;
+        onFocus?: ((...args: any[]) => any) | undefined;
+        onBlur?: ((...args: any[]) => any) | undefined;
+    }, {}, {}, {}, {}, {
+        top: number;
+        left: number;
+        type: "rect" | "text" | "image";
+        tag: string | import("vue").Component;
+        resizable: boolean;
+        rotatable: boolean;
+        skewable: boolean;
+        boundary: boolean;
+        disabled: boolean;
+        width: number;
+        height: number;
+        zIndex: number;
+        angle: number;
+        color: string;
+        minWidth: number;
+        minHeight: number;
+        maxWidth: number;
+        maxHeight: number;
+        selected: boolean;
+        snapToGrid: boolean;
+        gridX: number;
+        gridY: number;
+        scaleRatio: number;
+        disabledKeyEvent: boolean;
+        border: boolean;
+        equalProportion: boolean;
+        checkCollision: boolean;
+        snap: boolean;
+        snapThreshold: number;
+    }>;
+    __isFragment?: undefined;
+    __isTeleport?: undefined;
+    __isSuspense?: undefined;
+} & import("vue").ComponentOptionsBase<Readonly<import("vue").ExtractPropTypes<{
+    type: {
+        type: import("vue").PropType<"rect" | "text" | "image">;
+        default: string;
+    };
+    tag: {
+        type: import("vue").PropType<string | import("vue").Component>;
+        default: string;
+    };
+    resizable: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+    rotatable: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+    skewable: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+    boundary: {
+        type: BooleanConstructor;
+    };
+    disabled: BooleanConstructor;
+    width: {
+        type: NumberConstructor;
+        default: number;
+    };
+    height: {
+        type: NumberConstructor;
+        default: number;
+    };
+    left: {
+        type: NumberConstructor;
+        default: number;
+    };
+    top: {
+        type: NumberConstructor;
+        default: number;
+    };
+    zIndex: {
+        type: NumberConstructor;
+        default: number;
+    };
+    angle: {
+        type: NumberConstructor;
+        default: number;
+    };
+    color: {
+        type: StringConstructor;
+        default: string;
+    };
+    minWidth: {
+        type: NumberConstructor;
+        default: number;
+    };
+    minHeight: {
+        type: NumberConstructor;
+        default: number;
+    };
+    maxWidth: {
+        type: NumberConstructor;
+        default: number;
+    };
+    maxHeight: {
+        type: NumberConstructor;
+        default: number;
+    };
+    aspectRatio: {
+        type: NumberConstructor;
+    };
+    selected: BooleanConstructor;
+    snapToGrid: BooleanConstructor;
+    gridX: {
+        type: NumberConstructor;
+        default: number;
+    };
+    gridY: {
+        type: NumberConstructor;
+        default: number;
+    };
+    scaleRatio: {
+        type: NumberConstructor;
+        default: number;
+    };
+    disabledKeyEvent: BooleanConstructor;
+    border: {
+        type: BooleanConstructor;
+        default: boolean;
+    };
+    resizeList: {
+        type: import("vue").PropType<import("./src/drager").IDotSide[]>;
+    };
+    equalProportion: {
+        type: BooleanConstructor;
+    };
+    checkCollision: {
+        type: BooleanConstructor;
+    };
+    snap: BooleanConstructor;
+    snapThreshold: {
+        type: NumberConstructor;
+        default: number;
+    };
+    markline: import("vue").PropType<boolean | ((e: import("./src/drager").MarklineData) => void)>;
+    extraLines: import("vue").PropType<(target: DOMRect) => {
+        showTop?: number | undefined;
+        top?: number | undefined;
+        showLeft?: number | undefined;
+        left?: number | undefined;
+    }[] | Element[]>;
+}>> & {
+    onChange?: ((...args: any[]) => any) | undefined;
+    onDrag?: ((...args: any[]) => any) | undefined;
+    "onDrag-start"?: ((...args: any[]) => any) | undefined;
+    "onDrag-end"?: ((...args: any[]) => any) | undefined;
+    onResize?: ((...args: any[]) => any) | undefined;
+    "onResize-start"?: ((...args: any[]) => any) | undefined;
+    "onResize-end"?: ((...args: any[]) => any) | undefined;
+    onRotate?: ((...args: any[]) => any) | undefined;
+    "onRotate-start"?: ((...args: any[]) => any) | undefined;
+    "onRotate-end"?: ((...args: any[]) => any) | undefined;
+    onSkew?: ((...args: any[]) => any) | undefined;
+    "onSkew-start"?: ((...args: any[]) => any) | undefined;
+    "onSkew-end"?: ((...args: any[]) => any) | undefined;
+    onFocus?: ((...args: any[]) => any) | undefined;
+    onBlur?: ((...args: any[]) => any) | undefined;
+}, {}, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("change" | "drag" | "drag-start" | "drag-end" | "resize" | "resize-start" | "resize-end" | "rotate" | "rotate-start" | "rotate-end" | "skew" | "skew-start" | "skew-end" | "focus" | "blur")[], "change" | "drag" | "drag-start" | "drag-end" | "resize" | "resize-start" | "resize-end" | "rotate" | "rotate-start" | "rotate-end" | "skew" | "skew-start" | "skew-end" | "focus" | "blur", {
+    top: number;
+    left: number;
+    type: "rect" | "text" | "image";
+    tag: string | import("vue").Component;
+    resizable: boolean;
+    rotatable: boolean;
+    skewable: boolean;
+    boundary: boolean;
+    disabled: boolean;
+    width: number;
+    height: number;
+    zIndex: number;
+    angle: number;
+    color: string;
+    minWidth: number;
+    minHeight: number;
+    maxWidth: number;
+    maxHeight: number;
+    selected: boolean;
+    snapToGrid: boolean;
+    gridX: number;
+    gridY: number;
+    scaleRatio: number;
+    disabledKeyEvent: boolean;
+    border: boolean;
+    equalProportion: boolean;
+    checkCollision: boolean;
+    snap: boolean;
+    snapThreshold: number;
+}, {}, string, {}> & import("vue").VNodeProps & import("vue").AllowedComponentProps & import("vue").ComponentCustomProps;
+export default _default;

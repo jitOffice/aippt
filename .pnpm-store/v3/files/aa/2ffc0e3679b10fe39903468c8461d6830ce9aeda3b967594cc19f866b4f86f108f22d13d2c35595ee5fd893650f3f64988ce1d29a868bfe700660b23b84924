@@ -1,0 +1,11 @@
+import { Math as Math_2 } from 'docx';
+
+export declare function convertLatex2Math(latexString: string): Math_2;
+
+export declare function convertMathMl2Math(mathMlString: string): Math_2;
+
+export declare function convertOmml2Math(ommlString: string): Math_2;
+
+export declare function mathJaxReady(): Promise<boolean>;
+
+export { }

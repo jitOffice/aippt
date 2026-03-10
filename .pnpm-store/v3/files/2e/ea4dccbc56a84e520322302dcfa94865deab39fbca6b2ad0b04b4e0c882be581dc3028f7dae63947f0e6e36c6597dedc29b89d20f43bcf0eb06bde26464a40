@@ -1,0 +1,30 @@
+{
+	"prefix": "mi",
+	"name": "Mono Icons",
+	"total": 180,
+	"version": "1.3.1",
+	"author": {
+		"name": "Mono",
+		"url": "https://github.com/mono-company/mono-icons"
+	},
+	"license": {
+		"title": "MIT",
+		"spdx": "MIT",
+		"url": "https://github.com/mono-company/mono-icons/blob/master/LICENSE.md"
+	},
+	"samples": [
+		"bar-chart",
+		"cloud-upload",
+		"log-out",
+		"board",
+		"search",
+		"layout"
+	],
+	"height": 24,
+	"category": "UI 24px",
+	"tags": [
+		"Precise Shapes",
+		"Has Padding"
+	],
+	"palette": false
+}

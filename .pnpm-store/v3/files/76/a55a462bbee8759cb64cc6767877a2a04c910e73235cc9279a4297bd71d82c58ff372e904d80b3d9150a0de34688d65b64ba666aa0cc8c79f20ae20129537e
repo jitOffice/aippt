@@ -1,0 +1,17 @@
+export { C as CLI_TEMP_DIR, U as UnsupportedCommand, u as cmdExists, e as detect, t as exclude, x as formatPackageWithUrl, n as getCliCommand, f as getCommand, g as getConfig, a as getDefaultAgent, b as getGlobalAgent, c as getRunAgent, d as getUseSfw, v as limitText, m as parseNa, j as parseNd, p as parseNi, l as parseNlx, h as parseNr, k as parseNun, i as parseNup, q as remove, o as run, r as runCli, s as serializeCommand, w as writeFileSafe } from './shared/ni.BtcD8a97.mjs';
+export * from 'package-manager-detector/commands';
+export * from 'package-manager-detector/constants';
+import 'node:path';
+import 'node:process';
+import 'readline';
+import 'events';
+import 'ansis';
+import 'package-manager-detector';
+import 'tinyexec';
+import 'node:fs';
+import 'os';
+import 'tty';
+import 'node:os';
+import 'fs';
+import 'fs/promises';
+import 'path';

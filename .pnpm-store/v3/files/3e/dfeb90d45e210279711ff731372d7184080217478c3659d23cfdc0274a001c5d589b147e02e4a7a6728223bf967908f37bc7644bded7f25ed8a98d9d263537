@@ -1,0 +1,1 @@
+{"version":3,"file":"constant.js","sources":["../../../../node_modules/d3-force/src/constant.js"],"sourcesContent":["export default function(x) {\n  return function() {\n    return x;\n  };\n}\n"],"names":[],"mappings":"AAAe,mBAAQ,CAAC,CAAC,EAAE;AAC3B,EAAE,OAAO,WAAW;AACpB,IAAI,OAAO,CAAC;AACZ,EAAE,CAAC;AACH;;;;","x_google_ignoreList":[0]}

@@ -1,0 +1,25 @@
+import { Expr } from '../../types/common.js';
+import { NodeData } from '../../types/data.js';
+import { BaseLayoutOptions } from '../types.js';
+import { ID } from '../../types/id.js';
+
+type ComboCombinedLayoutConfig = {
+    type: string;
+    [key: string]: any;
+};
+interface ComboCombinedLayoutOptions extends BaseLayoutOptions {
+    /**
+     * 布局配置：支持固定配置或回调选择器（可基于层级信息选择不同布局）
+     */
+    layout?: ComboCombinedLayoutConfig | ((comboId: ID | null) => ComboCombinedLayoutConfig) | Expr;
+    /**
+     * Combo 之间的间距
+     */
+    comboSpacing?: number | ((combo: NodeData) => number) | Expr;
+    /**
+     * Combo 内部的边距
+     */
+    comboPadding?: number | ((combo: NodeData) => number) | Expr;
+}
+
+export type { ComboCombinedLayoutConfig, ComboCombinedLayoutOptions };

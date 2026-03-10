@@ -1,0 +1,3812 @@
+{
+  "id": "tpl_1770826808820_z59dfv61w",
+  "name": "template_blue_business",
+  "category": "minimal",
+  "preview": "",
+  "width": 960,
+  "height": 540,
+  "slides": [
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 0,
+                "y": 469.74267716535434,
+                "width": 477.6704724409449,
+                "height": 70.25740157480315,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 34.16007874015748,
+                "y": 223.35251968503937,
+                "width": 667.0835433070866,
+                "height": 87.25889763779527,
+                "text": "季度工作汇报",
+                "fontSize": 72,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 42.60055118110236,
+                "y": 314.7512598425197,
+                "width": 422.34614173228346,
+                "height": 20.60433070866142,
+                "text": "Quarterly X work report of user activation project",
+                "fontSize": 12,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 34.16007874015748,
+                "y": 139.16811023622049,
+                "width": 667.0835433070866,
+                "height": 87.25889763779527,
+                "text": "用户激活项目",
+                "fontSize": 72,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 47.38795275590551,
+                "y": 356.51889763779525,
+                "width": 183.26724409448818,
+                "height": 47.79307086614173,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 84.31803149606299,
+                "y": 369.1464566929134,
+                "width": 146.9900787401575,
+                "height": 22.53795275590551,
+                "text": "汇报人：XX",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 58.8488188976378,
+                "y": 369.4934645669291,
+                "width": 22.703307086614174,
+                "height": 22.703149606299213,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 67.21031496062992,
+                "y": 377.0751968503937,
+                "width": 8.746220472440944,
+                "height": 7.539842519685039,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 48.00007874015748,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 554.5664566929133,
+                "y": 471.85716535433073,
+                "width": 405.4335433070866,
+                "height": 68.14291338582677,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 524.6774803149606,
+                "y": 97.15787401574804,
+                "width": 345.68425196850393,
+                "height": 345.68425196850393,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 524.6774803149606,
+                "y": 97.15787401574804,
+                "width": 345.68425196850393,
+                "height": 345.68425196850393,
+                "fill": "transparent"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.282047244094485,
+                "y": 46.04992125984252,
+                "width": 336.7272440944882,
+                "height": 46.04527559055118,
+                "text": "存在问题",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 60.959055118110236,
+                "y": 193.08094488188976,
+                "width": 838.081968503937,
+                "height": 278.9815748031496,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 102.66582677165354,
+                "y": 253.95433070866142,
+                "width": 297.5025984251968,
+                "height": 160.67897637795275,
+                "text": "通过一周留存率数据的变化，可看出用户体验完一个完整周期后满意度不高特别是在1天后，有一个大幅度的下降，说明产品还不够吸引人，用户黏度较低用户留存率",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 94.83023622047244,
+                "y": 155.27763779527558,
+                "width": 340.9592125984252,
+                "height": 80.90755905511811,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 102.66582677165354,
+                "y": 164.22417322834644,
+                "width": 320.95606299212596,
+                "height": 63.01448818897638,
+                "text": "用户激活率虽然高，但是一周过后留存率降低",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "bold",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.282047244094485,
+                "y": 46.04992125984252,
+                "width": 336.7272440944882,
+                "height": 46.04527559055118,
+                "text": "项目优化思考",
+                "fontSize": 32,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 135.001968503937,
+                "y": 181.0371653543307,
+                "width": 155.175905511811,
+                "height": 154.56314960629922,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 400.2847244094488,
+                "y": 134.7812598425197,
+                "width": 155.175905511811,
+                "height": 154.56314960629922,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 667.6158267716536,
+                "y": 184.64866141732284,
+                "width": 147.00393700787401,
+                "height": 146.42346456692914,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 147.6351968503937,
+                "y": 369.3011811023622,
+                "width": 135.0592125984252,
+                "height": 35.56503937007874,
+                "text": "推广形式",
+                "fontSize": 22,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 128.70220472440946,
+                "y": 404.86622047244094,
+                "width": 172.92503937007874,
+                "height": 45.40417322834646,
+                "text": "推广项目文案、图片是否得到良性数据反馈",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 408.77409448818895,
+                "y": 331.43299212598424,
+                "width": 135.0592125984252,
+                "height": 35.56503937007874,
+                "text": "活动形式",
+                "fontSize": 22,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 389.8411023622047,
+                "y": 366.998031496063,
+                "width": 172.92503937007874,
+                "height": 45.40417322834646,
+                "text": "活动创新性：是否能够引起用户的兴趣",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 668.1304724409449,
+                "y": 370.6258267716535,
+                "width": 154.61653543307088,
+                "height": 35.56503937007874,
+                "text": "活动的触发率",
+                "fontSize": 22,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 658.9761417322835,
+                "y": 406.1908661417323,
+                "width": 172.92503937007874,
+                "height": 45.40417322834646,
+                "text": "低触发引起更高的活动参与",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.282047244094485,
+                "y": 46.04992125984252,
+                "width": 336.7272440944882,
+                "height": 46.04527559055118,
+                "text": "配合方面优化思考",
+                "fontSize": 32,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 134.4404724409449,
+                "y": 197.37992125984252,
+                "width": 63.48677165354331,
+                "height": 63.48661417322835,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 151.84055118110237,
+                "y": 215.38220472440946,
+                "width": 28.686456692913385,
+                "height": 27.48204724409449,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 79.698031496063,
+                "y": 329.887874015748,
+                "width": 175.10944881889765,
+                "height": 75.93944881889763,
+                "text": "各部门是否做到高度有效、高效的配合，安排是否合理",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 119.47299212598425,
+                "y": 298.0928346456693,
+                "width": 95.55944881889764,
+                "height": 26.555826771653543,
+                "text": "领导力",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 342.93866141732286,
+                "y": 197.37992125984252,
+                "width": 63.48677165354331,
+                "height": 63.48661417322835,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 360.3387401574803,
+                "y": 215.31511811023623,
+                "width": 28.686456692913385,
+                "height": 27.616141732283463,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 288.1962204724409,
+                "y": 329.887874015748,
+                "width": 175.10944881889765,
+                "height": 52.674488188976376,
+                "text": "工作人员分工合作，反馈是否明确",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 327.9711811023622,
+                "y": 298.0928346456693,
+                "width": 95.55944881889764,
+                "height": 26.555826771653543,
+                "text": "合作力",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 551.4368503937008,
+                "y": 197.37992125984252,
+                "width": 63.48677165354331,
+                "height": 63.48661417322835,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 568.8369291338582,
+                "y": 215.22889763779528,
+                "width": 28.686456692913385,
+                "height": 27.788740157480316,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 496.6944094488189,
+                "y": 329.887874015748,
+                "width": 175.10944881889765,
+                "height": 52.674488188976376,
+                "text": "工作人员能力问题：业务处理能力是否过关",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 526.3518110236221,
+                "y": 298.0928346456693,
+                "width": 115.79464566929134,
+                "height": 26.555826771653543,
+                "text": "综合能力",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 759.9350393700787,
+                "y": 197.37992125984252,
+                "width": 63.48677165354331,
+                "height": 63.48661417322835,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 777.3351181102362,
+                "y": 215.67708661417322,
+                "width": 28.686456692913385,
+                "height": 26.89228346456693,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 705.1925984251968,
+                "y": 329.887874015748,
+                "width": 175.10944881889765,
+                "height": 52.674488188976376,
+                "text": "工作人员执行力是否存在问题，执行工作效率",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 744.9675590551182,
+                "y": 298.0928346456693,
+                "width": 95.55944881889764,
+                "height": 26.555826771653543,
+                "text": "执行力",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.28196850393701,
+                "y": 46.04992125984252,
+                "width": 406.38464566929133,
+                "height": 46.04527559055118,
+                "text": "物料、资金的问题优化思考",
+                "fontSize": 32,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 90.45574803149606,
+                "y": 297.7251181102362,
+                "width": 206.29905511811023,
+                "height": 44.10574803149606,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 106.05055118110236,
+                "y": 343.7623622047244,
+                "width": 175.10944881889765,
+                "height": 52.674488188976376,
+                "text": "预算充足、合理，是否得到合理的运用",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 145.8255905511811,
+                "y": 306.5000787401575,
+                "width": 95.55944881889764,
+                "height": 26.555826771653543,
+                "text": "预算",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 175.49188976377954,
+                "y": 246.00023622047243,
+                "width": 36.22692913385827,
+                "height": 34.7059842519685,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 361.79102362204725,
+                "y": 297.7251181102362,
+                "width": 206.29905511811023,
+                "height": 44.10574803149606,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 377.38582677165357,
+                "y": 343.7623622047244,
+                "width": 175.10944881889765,
+                "height": 52.674488188976376,
+                "text": "ROI控制范围，成本有无可节省的地方",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 417.1608661417323,
+                "y": 306.5000787401575,
+                "width": 95.55944881889764,
+                "height": 26.555826771653543,
+                "text": "成本",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 446.8271653543307,
+                "y": 245.9155905511811,
+                "width": 36.22692913385827,
+                "height": 34.87527559055118,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 633.1262992125984,
+                "y": 297.7251181102362,
+                "width": 206.29905511811023,
+                "height": 44.10574803149606,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 648.7211023622048,
+                "y": 343.7623622047244,
+                "width": 175.10944881889765,
+                "height": 52.674488188976376,
+                "text": "资源是否做到最大利用率，有效发挥",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 688.4961417322835,
+                "y": 306.5000787401575,
+                "width": 95.55944881889764,
+                "height": 26.555826771653543,
+                "text": "物资",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 718.6069291338582,
+                "y": 245.23976377952755,
+                "width": 35.33795275590551,
+                "height": 36.22692913385827,
+                "fill": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 447.7646456692913,
+                "y": 201.7207874015748,
+                "width": 407.66385826771653,
+                "height": 68.2792125984252,
+                "text": "项目反思及规划",
+                "fontSize": 54,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 447.76472440944883,
+                "y": 263.31141732283464,
+                "width": 412.23527559055117,
+                "height": 26.65779527559055,
+                "text": "Part Four - Project review and planning",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 561.3626771653543,
+                "y": 309.2451181102362,
+                "width": 91.66645669291339,
+                "height": 26.636850393700787,
+                "text": "未来规划",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 454.58574803149605,
+                "y": 309.2451181102362,
+                "width": 91.66645669291339,
+                "height": 26.636850393700787,
+                "text": "工作反思",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 127.2248031496063,
+                "y": 141,
+                "width": 244.6228346456693,
+                "height": 244.6228346456693,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 107.03448818897638,
+                "y": 141.85590551181102,
+                "width": 280.1088976377953,
+                "height": 242.54267716535432,
+                "text": "04",
+                "fontSize": 166,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.28196850393701,
+                "y": 46.04992125984252,
+                "width": 406.38464566929133,
+                "height": 46.04527559055118,
+                "text": "核心问题的改进方案",
+                "fontSize": 32,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 270.4348031496063,
+                "y": 308.8512598425197,
+                "width": 183.96472440944882,
+                "height": 183.96456692913387,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 505.62173228346455,
+                "y": 308.8512598425197,
+                "width": 183.96472440944882,
+                "height": 183.96456692913387,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 152.86338582677166,
+                "y": 138.83929133858268,
+                "width": 183.9427559055118,
+                "height": 183.94259842519685,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 388.05015748031497,
+                "y": 138.83929133858268,
+                "width": 183.9427559055118,
+                "height": 183.94259842519685,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 623.2151181102362,
+                "y": 138.83929133858268,
+                "width": 183.9427559055118,
+                "height": 183.94259842519685,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 166.17125984251967,
+                "y": 151.94149606299212,
+                "width": 627.8109448818898,
+                "height": 327.7335433070866,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 272.06464566929134,
+                "y": 125.9807874015748,
+                "width": 77.33070866141732,
+                "height": 77.33070866141732,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 176.16905511811024,
+                "y": 162.1559842519685,
+                "width": 137.33133858267718,
+                "height": 137.3311811023622,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 192.15653543307087,
+                "y": 202.7728346456693,
+                "width": 105.3459842519685,
+                "height": 56.06724409448819,
+                "text": "提高各部门工作效率",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 228.41629921259843,
+                "y": 392.43590551181103,
+                "width": 77.33070866141732,
+                "height": 77.33070866141732,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 293.76251968503936,
+                "y": 332.1788976377953,
+                "width": 137.33133858267718,
+                "height": 137.3311811023622,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 314.07582677165357,
+                "y": 372.7999212598425,
+                "width": 96.70456692913386,
+                "height": 56.06724409448819,
+                "text": "提高项目转化率",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 411.35590551181105,
+                "y": 162.1559842519685,
+                "width": 137.33133858267718,
+                "height": 137.3311811023622,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 403.71212598425194,
+                "y": 190.18606299212598,
+                "width": 155.13826771653544,
+                "height": 81.27102362204724,
+                "text": "加强设计、项目运营部分的衔接工作",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 299.3651181102362,
+                "y": 149.91535433070865,
+                "width": 25.705984251968506,
+                "height": 26.35244094488189,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 252.99330708661418,
+                "y": 414.68503937007875,
+                "width": 26.35244094488189,
+                "height": 24.704094488188975,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 464.86622047244094,
+                "y": 316.5,
+                "width": 26.35244094488189,
+                "height": 24.243779527559056,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 672.8496850393701,
+                "y": 416.244094488189,
+                "width": 26.35244094488189,
+                "height": 25.246141732283466,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 612.2482677165355,
+                "y": 125.9807874015748,
+                "width": 77.33070866141732,
+                "height": 77.33070866141732,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 639.2255118110236,
+                "y": 150.40700787401576,
+                "width": 26.35244094488189,
+                "height": 25.369133858267716,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 646.5537795275591,
+                "y": 162.1559842519685,
+                "width": 137.33133858267718,
+                "height": 137.3311811023622,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 624.297874015748,
+                "y": 202.7728346456693,
+                "width": 180.62913385826772,
+                "height": 56.06724409448819,
+                "text": "加强团队建设管理能力",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 528.96031496063,
+                "y": 332.1788976377953,
+                "width": 137.33133858267718,
+                "height": 137.3311811023622,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 515.3272440944882,
+                "y": 360.198031496063,
+                "width": 168.0327559055118,
+                "height": 81.27102362204724,
+                "text": "监控活动指标数据，每日汇总反馈调整",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 101.0459842519685,
+                "y": 138.14503937007873,
+                "width": 305.18566929133857,
+                "height": 305.1851968503937,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.28196850393701,
+                "y": 46.04992125984252,
+                "width": 453.5423622047244,
+                "height": 46.04527559055118,
+                "text": "持续性的复盘效果、跟进策略",
+                "fontSize": 32,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 486.55535433070867,
+                "y": 120.5707874015748,
+                "width": 114.11133858267716,
+                "height": 36.26031496062992,
+                "text": "持续关注",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 481.1624409448819,
+                "y": 156.92070866141734,
+                "width": 394.1708661417323,
+                "height": 29.409448818897637,
+                "text": "持续关注数据、进行监控，持续关注数据、进行监控",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 486.55535433070867,
+                "y": 210.5396062992126,
+                "width": 114.11133858267716,
+                "height": 36.26031496062992,
+                "text": "制定指标",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 481.1624409448819,
+                "y": 246.88952755905513,
+                "width": 301.8375590551181,
+                "height": 29.409448818897637,
+                "text": "围绕活动目标制定指标并持续输出内容",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 486.55535433070867,
+                "y": 300.5084251968504,
+                "width": 114.11133858267716,
+                "height": 36.26031496062992,
+                "text": "及时反馈",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 481.1624409448819,
+                "y": 336.8583464566929,
+                "width": 418.87661417322835,
+                "height": 29.409448818897637,
+                "text": "及时反馈用户数据、页面数据和行为指标、预期效果",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 486.55535433070867,
+                "y": 390.4772440944882,
+                "width": 114.11133858267716,
+                "height": 36.26031496062992,
+                "text": "持续复盘",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 481.1624409448819,
+                "y": 426.8271653543307,
+                "width": 352.8,
+                "height": 29.409448818897637,
+                "text": "持续复盘工作，吸取经验，制定相应的策略",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 273.97574803149604,
+                "y": 94.66078740157481,
+                "width": 412.04850393700787,
+                "height": 412.04850393700787,
+                "fill": "#0B3975"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.28196850393701,
+                "y": 46.04992125984252,
+                "width": 453.5423622047244,
+                "height": 46.04527559055118,
+                "text": "持续性的复盘效果、跟进策略",
+                "fontSize": 32,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 241.49818897637795,
+                "y": 254.84433070866143,
+                "width": 81.99795275590552,
+                "height": 81.99779527559055,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 231.34992125984252,
+                "y": 278.6728346456693,
+                "width": 102.29448818897637,
+                "height": 34.34094488188976,
+                "text": "15W+",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 634.4186614173228,
+                "y": 254.84433070866143,
+                "width": 81.99795275590552,
+                "height": 81.99779527559055,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 637.9644094488189,
+                "y": 278.6728346456693,
+                "width": 74.90645669291338,
+                "height": 34.34094488188976,
+                "text": "30w+",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 16.132992125984252,
+                "y": 279.6844881889764,
+                "width": 213.80992125984253,
+                "height": 32.31755905511811,
+                "text": "下个阶段新用户达到",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "right",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 731.7452755905512,
+                "y": 279.6844881889764,
+                "width": 213.80992125984253,
+                "height": 32.31755905511811,
+                "text": "日活达到",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 380.9202362204724,
+                "y": 263.98779527559054,
+                "width": 198.1595275590551,
+                "height": 55.73905511811024,
+                "text": "未来目标",
+                "fontSize": 40,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 406.2389763779528,
+                "y": 309.2851968503937,
+                "width": 147.5220472440945,
+                "height": 24.234409448818898,
+                "text": "The future goals",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 0,
+                "y": 469.74267716535434,
+                "width": 477.6704724409449,
+                "height": 70.25740157480315,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 42.60055118110236,
+                "y": 286.8034645669291,
+                "width": 422.34614173228346,
+                "height": 25.04724409448819,
+                "text": "Thank you for your attention",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 34.16007874015748,
+                "y": 172.29511811023622,
+                "width": 667.0835433070866,
+                "height": 123.92354330708662,
+                "text": "谢谢大家",
+                "fontSize": 105,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 47.38795275590551,
+                "y": 356.51889763779525,
+                "width": 183.26724409448818,
+                "height": 47.79307086614173,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 84.31803149606299,
+                "y": 369.1464566929134,
+                "width": 146.9900787401575,
+                "height": 22.53795275590551,
+                "text": "汇报人：xx",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 58.8488188976378,
+                "y": 369.4934645669291,
+                "width": 22.703307086614174,
+                "height": 22.703149606299213,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 67.21031496062992,
+                "y": 377.0751968503937,
+                "width": 8.746220472440944,
+                "height": 7.539842519685039,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 48.00007874015748,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 554.5664566929133,
+                "y": 471.85716535433073,
+                "width": 405.4335433070866,
+                "height": 68.14291338582677,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 524.6774803149606,
+                "y": 97.15787401574804,
+                "width": 345.68425196850393,
+                "height": 345.68425196850393,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 524.6774803149606,
+                "y": 97.15787401574804,
+                "width": 345.68425196850393,
+                "height": 345.68425196850393,
+                "fill": "transparent"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 32.27275590551181,
+                "y": 41.400944881889764,
+                "width": 146.9900787401575,
+                "height": 68.2792125984252,
+                "text": "目录",
+                "fontSize": 48,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 104.47417322834646,
+                "y": 167,
+                "width": 106.08937007874016,
+                "height": 35.69661417322835,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 77.49244094488189,
+                "y": 211.52771653543306,
+                "width": 160.7336220472441,
+                "height": 221.4468503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 94.29023622047244,
+                "y": 184.84834645669292,
+                "width": 127.138031496063,
+                "height": 231.32629921259843,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 110.92716535433071,
+                "y": 176.5088976377953,
+                "width": 93.86417322834646,
+                "height": 24.111496062992124,
+                "text": "Part One",
+                "fontSize": 11,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 130.27307086614172,
+                "y": 210.64133858267718,
+                "width": 55.17228346456693,
+                "height": 55.17228346456693,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 88.50685039370079,
+                "y": 313.2234645669291,
+                "width": 138.7051181102362,
+                "height": 29.49023622047244,
+                "text": "项目概述",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 69.6844094488189,
+                "y": 338.03220472440944,
+                "width": 176.34984251968504,
+                "height": 18.93818897637795,
+                "text": "Description of project",
+                "fontSize": 10.5,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 319.23464566929135,
+                "y": 167,
+                "width": 106.08937007874016,
+                "height": 35.69661417322835,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 292.2529133858268,
+                "y": 211.52771653543306,
+                "width": 160.7336220472441,
+                "height": 221.4468503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 309.05070866141733,
+                "y": 184.84834645669292,
+                "width": 127.138031496063,
+                "height": 231.32629921259843,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 325.6876377952756,
+                "y": 176.5088976377953,
+                "width": 93.86417322834646,
+                "height": 24.111496062992124,
+                "text": "Part Two",
+                "fontSize": 11,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 345.03354330708663,
+                "y": 210.64133858267718,
+                "width": 55.17228346456693,
+                "height": 55.17228346456693,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 303.26732283464565,
+                "y": 313.2234645669291,
+                "width": 138.7051181102362,
+                "height": 29.49023622047244,
+                "text": "项目完成情况",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 284.4448818897638,
+                "y": 338.03220472440944,
+                "width": 176.34984251968504,
+                "height": 18.93818897637795,
+                "text": "Project Completion",
+                "fontSize": 10.5,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 533.9951181102363,
+                "y": 167,
+                "width": 106.08937007874016,
+                "height": 35.69661417322835,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 507.01338582677164,
+                "y": 211.52771653543306,
+                "width": 160.7336220472441,
+                "height": 221.4468503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 523.8111811023622,
+                "y": 184.84834645669292,
+                "width": 127.138031496063,
+                "height": 231.32629921259843,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 540.4481102362205,
+                "y": 176.5088976377953,
+                "width": 93.86417322834646,
+                "height": 24.111496062992124,
+                "text": "Part Three",
+                "fontSize": 11,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 559.7940157480315,
+                "y": 210.64133858267718,
+                "width": 55.17228346456693,
+                "height": 55.17228346456693,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 518.0277952755905,
+                "y": 313.2234645669291,
+                "width": 138.7051181102362,
+                "height": 29.49023622047244,
+                "text": "项目存在问题",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 499.20535433070864,
+                "y": 338.03220472440944,
+                "width": 176.34984251968504,
+                "height": 18.93818897637795,
+                "text": "Problems in the project",
+                "fontSize": 10.5,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 748.7555118110237,
+                "y": 167,
+                "width": 106.08937007874016,
+                "height": 35.69661417322835,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 721.7737795275591,
+                "y": 211.52771653543306,
+                "width": 160.7336220472441,
+                "height": 221.4468503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 738.5715748031496,
+                "y": 184.84834645669292,
+                "width": 127.138031496063,
+                "height": 231.32629921259843,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 755.2085039370079,
+                "y": 176.5088976377953,
+                "width": 93.86417322834646,
+                "height": 24.111496062992124,
+                "text": "Part Four",
+                "fontSize": 11,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 774.5544094488189,
+                "y": 210.64133858267718,
+                "width": 55.17228346456693,
+                "height": 55.17228346456693,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 732.7881889763779,
+                "y": 313.2234645669291,
+                "width": 138.7051181102362,
+                "height": 29.49023622047244,
+                "text": "项目反思规划",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 713.9657480314961,
+                "y": 338.03220472440944,
+                "width": 176.34984251968504,
+                "height": 18.93818897637795,
+                "text": "Project review planning",
+                "fontSize": 10.5,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 145.04472440944883,
+                "y": 225.90787401574804,
+                "width": 25.628976377952757,
+                "height": 24.639212598425196,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 359.4648818897638,
+                "y": 226.1151181102362,
+                "width": 25.628897637795276,
+                "height": 24.2248031496063,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 573.9583464566929,
+                "y": 225.41299212598426,
+                "width": 25.48204724409449,
+                "height": 25.628897637795276,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 788.4628346456693,
+                "y": 225.41299212598426,
+                "width": 25.313228346456693,
+                "height": 25.628897637795276,
+                "fill": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 447.3935433070866,
+                "y": 201.7207874015748,
+                "width": 405.57188976377955,
+                "height": 68.2792125984252,
+                "text": "项目反思及规划",
+                "fontSize": 54,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 561.3626771653543,
+                "y": 309.2451181102362,
+                "width": 91.66645669291339,
+                "height": 26.636850393700787,
+                "text": "工作人员",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 447.76472440944883,
+                "y": 263.31141732283464,
+                "width": 412.23527559055117,
+                "height": 26.65779527559055,
+                "text": "Part One - Description of project",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 454.58574803149605,
+                "y": 309.2451181102362,
+                "width": 91.66645669291339,
+                "height": 26.636850393700787,
+                "text": "项目内容",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 127.2248031496063,
+                "y": 141,
+                "width": 244.6228346456693,
+                "height": 244.6228346456693,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 107.03448818897638,
+                "y": 141.85590551181102,
+                "width": 280.1088976377953,
+                "height": 242.54267716535432,
+                "text": "01",
+                "fontSize": 166,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.282047244094485,
+                "y": 46.04992125984252,
+                "width": 336.7272440944882,
+                "height": 46.04527559055118,
+                "text": "项目概述",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 137.0567716535433,
+                "y": 126.02291338582677,
+                "width": 425.80007874015746,
+                "height": 97.06834645669291,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 307.4671653543307,
+                "y": -31.4896062992126,
+                "width": 84.99464566929134,
+                "height": 412.0668503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 88.41330708661417,
+                "y": 125.91834645669292,
+                "width": 97.2807874015748,
+                "height": 97.2807874015748,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 110.44740157480315,
+                "y": 134.5551968503937,
+                "width": 50.008661417322834,
+                "height": 79.97346456692914,
+                "text": "1",
+                "fontSize": 60,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 210.45212598425198,
+                "y": 143.90417322834645,
+                "width": 118.52952755905511,
+                "height": 33.933228346456694,
+                "text": "开源",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 210.45212598425198,
+                "y": 176.33937007874016,
+                "width": 308.2166141732283,
+                "height": 25.04724409448819,
+                "text": "拉新用户，引导用户使用、注册",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 427.7236220472441,
+                "y": 254.01094488188977,
+                "width": 425.80007874015746,
+                "height": 97.06834645669291,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 598.1340157480315,
+                "y": 96.49842519685039,
+                "width": 84.99464566929134,
+                "height": 412.0668503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 379.08015748031494,
+                "y": 253.90637795275592,
+                "width": 97.2807874015748,
+                "height": 97.2807874015748,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 401.11425196850394,
+                "y": 262.5432283464567,
+                "width": 50.00858267716536,
+                "height": 79.97346456692914,
+                "text": "2",
+                "fontSize": 60,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 501.1189763779528,
+                "y": 263.3627559055118,
+                "width": 118.52952755905511,
+                "height": 33.933228346456694,
+                "text": "激活",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 501.1189763779528,
+                "y": 292.21023622047244,
+                "width": 320.8810236220472,
+                "height": 49.28165354330709,
+                "text": "提升用户的试用活跃度、使用率，提升产品环境质量",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 271.41299212598426,
+                "y": 381.1183464566929,
+                "width": 425.80007874015746,
+                "height": 97.06834645669291,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 441.82338582677164,
+                "y": 223.60582677165354,
+                "width": 84.99464566929134,
+                "height": 412.0668503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 222.76952755905512,
+                "y": 381.01377952755905,
+                "width": 97.2807874015748,
+                "height": 97.2807874015748,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 244.8036220472441,
+                "y": 389.65062992125985,
+                "width": 50.00858267716536,
+                "height": 79.97346456692914,
+                "text": "3",
+                "fontSize": 60,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 344.8083464566929,
+                "y": 398.9996062992126,
+                "width": 118.52952755905511,
+                "height": 33.933228346456694,
+                "text": "留存",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 344.8083464566929,
+                "y": 431.4348031496063,
+                "width": 308.2166141732283,
+                "height": 25.04724409448819,
+                "text": "培养用户使用习惯，提高用户留存率",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.282047244094485,
+                "y": 46.04992125984252,
+                "width": 336.7272440944882,
+                "height": 46.04527559055118,
+                "text": "工作团队",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 208.30535433070867,
+                "y": 196.57748031496064,
+                "width": 244.66669291338582,
+                "height": 257.3333070866142,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 281.99826771653545,
+                "y": 149.09448818897638,
+                "width": 97.2807874015748,
+                "height": 97.2807874015748,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 295.48527559055117,
+                "y": 162.58141732283465,
+                "width": 70.30677165354331,
+                "height": 70.30677165354331,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 209.40456692913386,
+                "y": 444.5774803149606,
+                "width": 242.46826771653542,
+                "height": 9.333307086614173,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 313.30527559055116,
+                "y": 181.0707874015748,
+                "width": 34.66677165354331,
+                "height": 33.32803149606299,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 242.49417322834645,
+                "y": 294.5775590551181,
+                "width": 176.28897637795276,
+                "height": 42.69291338582677,
+                "text": "公司各大区负责人及部门部门负责任",
+                "fontSize": 14,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 257.2895275590551,
+                "y": 260.66291338582676,
+                "width": 139.07614173228347,
+                "height": 24.234409448818898,
+                "text": "领导小组",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 507.02803149606297,
+                "y": 196.57748031496064,
+                "width": 244.66669291338582,
+                "height": 257.3333070866142,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 580.7209448818897,
+                "y": 149.09448818897638,
+                "width": 97.2807874015748,
+                "height": 97.2807874015748,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 594.2079527559055,
+                "y": 162.58141732283465,
+                "width": 70.30677165354331,
+                "height": 70.30677165354331,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 508.12724409448816,
+                "y": 444.5774803149606,
+                "width": 242.46826771653542,
+                "height": 9.333307086614173,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 541.2168503937008,
+                "y": 294.5775590551181,
+                "width": 176.28897637795276,
+                "height": 42.69291338582677,
+                "text": "各部门工作小组、内容组、活动组、用户组、产品组",
+                "fontSize": 14,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 556.0122047244095,
+                "y": 260.66291338582676,
+                "width": 139.07614173228347,
+                "height": 24.234409448818898,
+                "text": "工作小组",
+                "fontSize": 20,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 611.333937007874,
+                "y": 180.4515748031496,
+                "width": 36.0548031496063,
+                "height": 34.566456692913384,
+                "fill": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 447.76472440944883,
+                "y": 201.7207874015748,
+                "width": 356,
+                "height": 68.2792125984252,
+                "text": "项目完成情况",
+                "fontSize": 54,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 447.76472440944883,
+                "y": 263.31141732283464,
+                "width": 412.23527559055117,
+                "height": 26.65779527559055,
+                "text": "Part Two - Project Completion",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 454.58574803149605,
+                "y": 309.2451181102362,
+                "width": 145.97062992125984,
+                "height": 26.636850393700787,
+                "text": "整体完成情况",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 613.0293700787402,
+                "y": 309.2451181102362,
+                "width": 145.97062992125984,
+                "height": 26.636850393700787,
+                "text": "用户激活完成情况",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 127.2248031496063,
+                "y": 141,
+                "width": 244.6228346456693,
+                "height": 244.6228346456693,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 107.03448818897638,
+                "y": 141.85590551181102,
+                "width": 280.1088976377953,
+                "height": 242.54267716535432,
+                "text": "02",
+                "fontSize": 166,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.282047244094485,
+                "y": 46.04992125984252,
+                "width": 336.7272440944882,
+                "height": 46.04527559055118,
+                "text": "项目整体完成情况",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 92.67874015748032,
+                "y": 233.02897637795274,
+                "width": 147.543937007874,
+                "height": 46.41307086614173,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 109.42236220472441,
+                "y": 186.2028346456693,
+                "width": 146.84070866141732,
+                "height": 197.50968503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 92.67874015748032,
+                "y": 205.9267716535433,
+                "width": 147.54401574803148,
+                "height": 59.595748031496065,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 96.91259842519685,
+                "y": 217.78314960629922,
+                "width": 139.07614173228347,
+                "height": 29.081259842519685,
+                "text": "60,000+",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 118.20007874015748,
+                "y": 264.45543307086615,
+                "width": 129.2851968503937,
+                "height": 26.541732283464565,
+                "text": "新用户注册",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 118.20007874015748,
+                "y": 291.14858267716534,
+                "width": 129.2851968503937,
+                "height": 14.818346456692913,
+                "text": "New User registration",
+                "fontSize": 10.5,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 118.20007874015748,
+                "y": 349.30952755905514,
+                "width": 20.062992125984252,
+                "height": 19.288188976377953,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 296.3648031496063,
+                "y": 233.02897637795274,
+                "width": 147.543937007874,
+                "height": 46.41307086614173,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 313.1084251968504,
+                "y": 186.2028346456693,
+                "width": 146.84070866141732,
+                "height": 197.50968503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 296.3648031496063,
+                "y": 205.9267716535433,
+                "width": 147.54401574803148,
+                "height": 59.595748031496065,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 300.59866141732283,
+                "y": 217.78314960629922,
+                "width": 139.07614173228347,
+                "height": 29.081259842519685,
+                "text": "110,000+",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 321.8861417322835,
+                "y": 264.45543307086615,
+                "width": 129.2851968503937,
+                "height": 26.541732283464565,
+                "text": "日活用户",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 321.8861417322835,
+                "y": 291.14858267716534,
+                "width": 129.2851968503937,
+                "height": 14.818346456692913,
+                "text": "On the user",
+                "fontSize": 10.5,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 321.8861417322835,
+                "y": 349.3362992125984,
+                "width": 20.06291338582677,
+                "height": 19.23472440944882,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 500.0508661417323,
+                "y": 233.02897637795274,
+                "width": 147.543937007874,
+                "height": 46.41307086614173,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 516.7944881889764,
+                "y": 186.2028346456693,
+                "width": 146.84070866141732,
+                "height": 197.50968503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 500.0508661417323,
+                "y": 205.9267716535433,
+                "width": 147.54401574803148,
+                "height": 59.595748031496065,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 504.2847244094488,
+                "y": 217.78314960629922,
+                "width": 139.07614173228347,
+                "height": 29.081259842519685,
+                "text": "80%",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 525.5722047244094,
+                "y": 264.45543307086615,
+                "width": 129.2851968503937,
+                "height": 26.541732283464565,
+                "text": "用户留存率",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 525.5722047244094,
+                "y": 291.14858267716534,
+                "width": 129.2851968503937,
+                "height": 14.818346456692913,
+                "text": "Retention rate",
+                "fontSize": 10.5,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 525.6958267716535,
+                "y": 348.9222047244094,
+                "width": 19.815826771653544,
+                "height": 20.06291338582677,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 703.7369291338582,
+                "y": 233.02897637795274,
+                "width": 147.543937007874,
+                "height": 46.41307086614173,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 720.4805511811023,
+                "y": 186.2028346456693,
+                "width": 146.84070866141732,
+                "height": 197.50968503937008,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 703.7369291338582,
+                "y": 205.9267716535433,
+                "width": 147.54401574803148,
+                "height": 59.595748031496065,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 707.9707874015749,
+                "y": 217.78314960629922,
+                "width": 139.07614173228347,
+                "height": 29.081259842519685,
+                "text": "110%",
+                "fontSize": 24,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 729.2582677165354,
+                "y": 264.45543307086615,
+                "width": 129.2851968503937,
+                "height": 26.541732283464565,
+                "text": "完成目标",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 729.2582677165354,
+                "y": 291.14858267716534,
+                "width": 129.2851968503937,
+                "height": 14.818346456692913,
+                "text": "Meet the target",
+                "fontSize": 10.5,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 729.315748031496,
+                "y": 348.9222047244094,
+                "width": 19.94795275590551,
+                "height": 20.06291338582677,
+                "fill": "#000000"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 0,
+                "y": 191.65511811023623,
+                "width": 960,
+                "height": 348.34488188976377,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 412.5651181102362,
+                "y": 151.35818897637796,
+                "width": 89.7607874015748,
+                "height": 89.7607874015748,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 741.7664566929134,
+                "y": 213.37472440944882,
+                "width": 89.7607874015748,
+                "height": 89.7607874015748,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 36.282047244094485,
+                "y": 46.04992125984252,
+                "width": 336.7272440944882,
+                "height": 46.04527559055118,
+                "text": "用户激活完成情况",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 121.71818897637796,
+                "y": 207.34913385826772,
+                "width": 101.47165354330708,
+                "height": 101.47165354330708,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 269.8877952755906,
+                "y": 444.40740157480315,
+                "width": 420.2244094488189,
+                "height": 62.166299212598425,
+                "text": "从数据中，在下一阶段调整推广策略重点在周末，加大周末的推广力度",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 125.87803149606299,
+                "y": 235.37937007874015,
+                "width": 89.51574803149606,
+                "height": 50.892204724409446,
+                "text": "90%",
+                "fontSize": 36,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 56.80771653543307,
+                "y": 317.63503937007874,
+                "width": 227.65637795275592,
+                "height": 23.593228346456694,
+                "text": "本周新增人数指标实际完成率",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 413.7383464566929,
+                "y": 170.22944881889765,
+                "width": 89.51574803149606,
+                "height": 50.892204724409446,
+                "text": "80%",
+                "fontSize": 36,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 345.9879527559055,
+                "y": 253.4932283464567,
+                "width": 227.65637795275592,
+                "height": 23.593228346456694,
+                "text": "累计新增人数指标实际完成率",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 741.8889763779528,
+                "y": 234.21669291338583,
+                "width": 89.51574803149606,
+                "height": 50.892204724409446,
+                "text": "70%",
+                "fontSize": 36,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 675.536062992126,
+                "y": 319.4390551181102,
+                "width": 227.65637795275592,
+                "height": 48.79692913385827,
+                "text": "周末时段增加的人数为全周增加的人数",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "content",
+      "background": {
+        "type": "solid",
+        "color": "#FFFFFF"
+      },
+      "layers": [
+        {
+          "name": "background",
+          "children": []
+        },
+        {
+          "name": "content",
+          "children": [
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 783.0000787401575,
+                "y": 53.61889763779528,
+                "width": 117.03897637795275,
+                "height": 15.453700787401575,
+                "fill": "#000000"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 447.76472440944883,
+                "y": 201.7207874015748,
+                "width": 356,
+                "height": 68.2792125984252,
+                "text": "项目存在问题",
+                "fontSize": 54,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 447.76472440944883,
+                "y": 263.31141732283464,
+                "width": 412.23527559055117,
+                "height": 26.65779527559055,
+                "text": "Part Three - Problems in the project",
+                "fontSize": 16,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 455.99724409448817,
+                "y": 310.4511811023622,
+                "width": 119.83732283464568,
+                "height": 26.636850393700787,
+                "text": "用户留存率低",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 586.8599212598425,
+                "y": 310.4511811023622,
+                "width": 119.83732283464568,
+                "height": 26.636850393700787,
+                "text": "协同效率低",
+                "fontSize": 18,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "left",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            },
+            {
+              "className": "Rect",
+              "attrs": {
+                "x": 127.2248031496063,
+                "y": 141,
+                "width": 244.6228346456693,
+                "height": 244.6228346456693,
+                "fill": "transparent"
+              }
+            },
+            {
+              "className": "Text",
+              "attrs": {
+                "x": 107.03448818897638,
+                "y": 141.85590551181102,
+                "width": 280.1088976377953,
+                "height": 242.54267716535432,
+                "text": "03",
+                "fontSize": 166,
+                "fontFamily": "Arial",
+                "fontStyle": "normal",
+                "fill": "#000000",
+                "align": "center",
+                "verticalAlign": "middle",
+                "placeholder": true
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

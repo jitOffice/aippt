@@ -1,0 +1,9 @@
+import "./utils-DuuqqWXg.mjs";
+import { t as unplugin_default } from "./src-pYuu2TZ_.mjs";
+
+//#region src/webpack.ts
+const webpack = unplugin_default.webpack;
+var webpack_default = webpack;
+
+//#endregion
+export { webpack_default as default, webpack as "module.exports" };

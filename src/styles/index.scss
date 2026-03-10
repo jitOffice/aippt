@@ -1,0 +1,32 @@
+@use 'vars';
+
+body,
+#app {
+  padding: 0 0;
+  margin: 0 0;
+  background-color: #f3f5f7;
+}
+.text-orange-500 {
+    --tw-text-opacity: 1;
+    color: #f97316;
+}
+.text-slate-600 {
+    --tw-text-opacity: 1;
+    color: rgb(71 85 105 / var(--tw-text-opacity, 1));
+}
+.icon-blue{
+  background-color: #2563eb;
+}
+
+/* Template Selection Modal Styles (must be global because modal is teleported) */
+.template-selection-modal {
+  border-radius: 1.5rem !important;
+  
+  .arco-modal {
+    border-radius: 1.5rem !important;
+  }
+  
+  .arco-modal-wrapper {
+    border-radius: 1.5rem !important;
+  }
+}

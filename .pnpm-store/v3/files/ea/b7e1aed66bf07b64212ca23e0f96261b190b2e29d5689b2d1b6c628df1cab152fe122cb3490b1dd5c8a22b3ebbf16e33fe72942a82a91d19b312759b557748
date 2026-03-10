@@ -1,0 +1,39 @@
+{
+  "name": "omml2mathml",
+  "version": "1.3.0",
+  "description": "Small utility to convert from Microsoft's OMML to MathML",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec --bail"
+  },
+  "eslintConfig": {
+    "extends": "robin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/scienceai/omml2mathml.git"
+  },
+  "keywords": [
+    "OMML",
+    "Office",
+    "Math",
+    "MathML"
+  ],
+  "author": "Robin Berjon <robin@berjon.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/scienceai/omml2mathml/issues"
+  },
+  "homepage": "https://github.com/scienceai/omml2mathml",
+  "dependencies": {
+    "escape-string-regexp": "1.0.5",
+    "get-dom": "9.0.0",
+    "marcheur": "^0.9.0",
+    "xpath": "0.0.24"
+  },
+  "devDependencies": {
+    "eslint-config-robin": "^4.0.0",
+    "mocha": "^3.4.2",
+    "xmldom": "^0.1.27"
+  }
+}

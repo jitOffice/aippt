@@ -1,0 +1,573 @@
+{
+  "cancel": "キャンセル",
+  "common": {
+    "loading": "読み込み中...",
+    "confirm": "確認",
+    "cancel": "キャンセル",
+    "edit": "編集",
+    "share": "共有",
+    "readMode": "読書モード",
+    "ai": "AI",
+    "templateLibrary": "テンプレートライブラリ",
+    "saveAsTemplate": "テンプレートとして保存",
+    "today": "今日",
+    "yesterday": "昨日",
+    "daysAgo": "日前",
+    "collapse": "折りたたむ",
+    "expand": "展開",
+    "dragToMove": "ドラッグして移動",
+    "online": "オンライン",
+    "people": "人",
+    "documentList": "ドキュメント一覧",
+    "logout": "ログアウト",
+    "inviteCodeManagement": "招待コード管理",
+    "loadingDocument": "ドキュメントを読み込み中…",
+    "privateDeployment": "社内展開",
+    "user": "ユーザー",
+    "appTitleShort": "JitWord",
+    "appTitleFull": "JitWord 協働ドキュメント",
+    "language": "言語",
+    "languageSettings": "言語設定",
+    "switchTooFast": "切り替えが速すぎます。しばらくしてから再試行してください。",
+    "switchErrorSuggestRefresh": "ドキュメント切り替え中にエラーが発生しました。ページをリロードして復元することを推奨します。",
+    "on": "オン",
+    "off": "オフ",
+    "save": "保存"
+  },
+  "doc": {
+    "type": {
+      "sheet": "スプレッドシート",
+      "word": "ドキュメント",
+      "mindmap": "マインドマップ"
+    },
+    "newDocument": "新規ドキュメント",
+    "newSheet": "新規スプレッドシート",
+    "newMindmap": "新規マインドマップ",
+    "exportExcel": "Excelエクスポート",
+    "importExcel": "Excelインポート",
+    "untitled": "無題",
+    "untitledSheet": "無題のスプレッドシート",
+    "untitledDoc": "無題のドキュメント",
+    "untitledMindmap": "無題のマインドマップ",
+    "loadSheetFailed": "スプレッドシートデータの読み込みに失敗しました",
+    "allChangesSaved": "すべての変更がクラウドに保存されました",
+    "saving": "保存中...",
+    "pendingSave": "保存待機中...",
+    "saveSuccess": "保存しました",
+    "importSuccessRefresh": "インポート成功、更新中...",
+    "importFailed": "インポート失敗",
+    "exportSuccess": "エクスポート成功",
+    "exportFailed": "エクスポート失敗",
+    "autoSaveTitle": "自動保存 {date}",
+    "autoSaveDesc": "システムによる自動保存",
+    "quickSaveTitle": "クイック保存 {date}",
+    "quickSaveDesc": "ユーザーによるクイック保存",
+    "versionSavedSuccess": "バージョンを保存しました (Ctrl+S)",
+    "saveFailed": "保存に失敗しました",
+    "enterDocName": "ドキュメント名を入力してください",
+    "createSuccess": "ドキュメントを作成しました",
+    "createFailed": "ドキュメントの作成に失敗しました",
+    "docLimitReached": "ドキュメント数の上限に達しました",
+    "cooldownMessage": "操作が速すぎます。{seconds}秒待ってください",
+    "deletedSuccess": "削除しました",
+    "restoredSuccess": "復元しました",
+    "permanentlyDeletedSuccess": "完全に削除しました",
+    "deletedFailed": "削除に失敗しました",
+    "batchDeleteSuccess": "{count} 件のドキュメントを削除しました",
+    "batchDeleteFailed": "一括削除に失敗しました",
+    "renameSuccess": "ドキュメント名を変更しました",
+    "renameFailed": "名前の変更に失敗しました",
+    "batchDeleteSuccessDetail": "成功 {success} 件、失敗 {failed} 件",
+    "deleteReason": "ドキュメント {id}: {reason}",
+    "trash": "ゴミ箱",
+    "viewTrash": "ゴミ箱を表示",
+    "backToDocs": "ドキュメントに戻る",
+    "softDelete": "ゴミ箱に移動",
+    "delete": "削除",
+    "permanentDelete": "完全に削除",
+    "confirmDeleteTitle": "ドキュメント {name} を削除しますか？",
+    "confirmSoftDeleteMessage": "ゴミ箱から復元可能です",
+    "confirmPermanentDeleteMessage": "この操作は取り消せません",
+    "confirmInputLabel": "確認のためドキュメント名を入力してください:",
+    "confirmInputPlaceholder": "入力: {name}",
+    "currentDocProtected": "現在のドキュメントは保護されています。他のドキュメントに切り替えてください",
+    "nameLabel": "ドキュメント名",
+    "namePlaceholder": "ドキュメント名を入力",
+    "searchPlaceholder": "ドキュメント名またはIDを検索",
+    "listTitle": "ドキュメント一覧",
+    "loadingList": "読み込み中...",
+    "noMatchingDocuments": "一致するドキュメントがありません",
+    "nameEmptyWarning": "ドキュメント名は空にできません",
+    "editNameHint": "クリックして名前を編集",
+    "recentlyEdited": "最近編集",
+    "group": {
+      "today": "今日",
+      "yesterday": "昨日",
+      "earlier": "以前"
+    },
+    "time": {
+      "justNow": "たった今",
+      "minutesAgo": "{n} 分前",
+      "hoursAgo": "{n} 時間前",
+      "yesterday": "昨日",
+      "daysAgo": "{n} 日前"
+    },
+    "scope": {
+      "mine": "自分",
+      "shared": "共有",
+      "all": "すべて"
+    },
+    "publicDocAdminOnly": "パブリックドキュメントは管理者のみ削除可能です",
+    "batchDelete": "一括削除",
+    "batchDeleteConfirm": "選択した {count} 件のドキュメントを削除しますか？",
+    "selectAll": "すべて選択",
+    "cancelSelect": "選択解除",
+    "selected": "{count} 件選択中"
+  },
+  "error": {
+    "badRequest": "無効なリクエストパラメータ",
+    "unauthorized": "未認証",
+    "forbidden": "アクセス拒否",
+    "notFound": "リソースが見つかりません",
+    "serverError": "サーバー内部エラー",
+    "networkError": "ネットワーク接続に失敗しました。設定を確認してください",
+    "timeout": "リクエストタイムアウト。再試行してください",
+    "requestFailed": "リクエスト失敗",
+    "unknownError": "不明なエラー"
+  },
+  "ai": {
+    "settings": "AI設定",
+    "generationStopped": "生成停止",
+    "processingFailed": "処理失敗",
+    "textReplaced": "選択したテキストを置換しました",
+    "textInserted": "挿入完了",
+    "settingsSaved": "保存完了",
+    "fillRequirement": "ドキュメント作成のリクエストを入力してください",
+    "generationFailed": "生成失敗",
+    "generationComplete": "生成完了",
+    "cursorPrompt": "AIアシスタント",
+    "inputPromptPlaceholder": "リクエストを入力してください。例: AIGC製品の適用計画を書いて...",
+    "submitTip": "Cmd/Ctrl + Enter で送信",
+    "generate": "生成",
+    "onboarding": {
+      "title": "無料AIトライアルが終了しました",
+      "desc": "WeChatに参加してトライアルアクセスを取得するか、設定でAPIキーを構成してください",
+      "settingsInEditor": "ドキュメントエディターに戻り、トップツールバーのAI設定ボタンをクリックして設定してください"
+    },
+    "openSettings": "設定を開く",
+    "jsonParseError": "AIが無効な形式を返しました。再試行するか、別のプロンプトを使用してください。",
+    "timeoutError": "リクエストがタイムアウトしました。再試行してください。",
+    "apiError": "APIリクエストが失敗しました。設定を確認してください。",
+    "scenarios": {
+      "continue": {
+        "label": "続きを書く",
+        "prompt": "前の内容に基づいて、スタイルと論理の一貫性を維持しながら書き続けてください。"
+      },
+      "outline": {
+        "label": "アウトライン",
+        "prompt": "次の内容を構造化したアウトラインにしてください。1級、2級の見出しと主要ポイントを含む。"
+      },
+      "brainstorm": {
+        "label": "ブレインストーミング",
+        "prompt": "このテーマについて、さまざまな視点と創造的なアイデアを出してください。"
+      },
+      "summary": {
+        "label": "要約",
+        "prompt": "次の内容を要約し、主要ポイントを明確かつ簡潔にまとめてください。"
+      },
+      "expand": {
+        "label": "拡張",
+        "prompt": "次の内容を拡張し、詳細、例、深い分析を追加してください。"
+      },
+      "polish": {
+        "label": "校正",
+        "prompt": "次の文章を滑らかで専門的に整えてください。"
+      },
+      "weekly_report": {
+        "label": "週次レポート",
+        "prompt": "週次レポートを作成してください。含む: 作業概要、主要成果、問題とリスク、来週の計画。"
+      },
+      "blog": {
+        "label": "ブログ",
+        "prompt": "ブログを作成してください。含む: 興味を引く導入、明確な構造、有益な内容、結論。"
+      },
+      "business_plan": {
+        "label": "事業計画",
+        "prompt": "事業計画を作成してください。含む: 経営概要、会社説明、市場分析、組織、製品/サービス、マーケティング戦略、財務予測。"
+      },
+      "proposal": {
+        "label": "提案書",
+        "prompt": "プロジェクト提案書を作成してください。含む: 背景、問題、解決策、実施計画、予算、期待結果。"
+      }
+    },
+    "scenario": {
+      "searchPlaceholder": "シナリオテンプレートを検索...",
+      "all": "すべて",
+      "use": "使用",
+      "noResults": "適切なテンプレートがありません",
+      "more": "さらに表示"
+    }
+  },
+  "page": {
+    "settings": "ページ設定",
+    "settingsRestored": "初期設定に戻しました",
+    "settingsSaved": "ページ設定を保存しました",
+    "saveFailed": "保存失敗"
+  },
+  "watermark": {
+    "settings": "透かし設定",
+    "title": "文書透かし",
+    "type": "透かしタイプ",
+    "text": "テキスト",
+    "image": "画像",
+    "content": "透かし内容",
+    "textPlaceholder": "透かしテキストを入力",
+    "imageUrl": "画像URL",
+    "imageUrlPlaceholder": "画像URLを入力",
+    "imageHint": "PNG、JPG形式対応。透明背景のPNG推奨",
+    "fontSettings": "フォント設定",
+    "fontSize": "フォントサイズ",
+    "fontWeight": "フォントの太さ",
+    "light": "細い",
+    "normal": "普通",
+    "bold": "太い",
+    "color": "色",
+    "generalSettings": "一般設定",
+    "opacity": "不透明度",
+    "rotation": "回転角度",
+    "size": "サイズ",
+    "pattern": "配置パターン",
+    "tile": "タイル",
+    "center": "中央",
+    "diagonal": "対角",
+    "spacing": "間隔",
+    "templates": "クイックテンプレート",
+    "confidential": "機密文書",
+    "draft": "下書き",
+    "internal": "社内用",
+    "reset": "初期設定にリセット",
+    "enableHint": "透かしを有効にすると、機密ラベル、下書きマークなどを追加できます。透かしはプレビューとエクスポート時にのみ表示されます。"
+  },
+  "auth": {
+    "appTitle": "Jitword - 協働ドキュメントエディタ",
+    "usernamePlaceholder": "ユーザー名を入力",
+    "passwordPlaceholder": "パスワードを入力",
+    "login": "ログイン",
+    "register": "登録",
+    "noAccount": "アカウントをお持ちでないですか？",
+    "registerNow": "今すぐ登録",
+    "hasAccount": "すでにアカウントをお持ちですか？",
+    "loginNow": "今すぐログイン",
+    "createAccount": "アカウント作成",
+    "usernameRequired": "ユーザー名を入力してください",
+    "passwordRequired": "パスワードを入力してください",
+    "passwordMin": "最低6文字",
+    "passwordFormat": "文字と数字を含む6文字以上",
+    "inviteCode": "招待コード",
+    "inviteCodePlaceholder": "招待コードを入力 (例: YNZBCTJA2OIF)",
+    "inviteCodeRequired": "招待コードを入力してください",
+    "getInviteCode": "招待コードを取得",
+    "wechatQrTitle": "WeChatを追加して招待コードを取得",
+    "wechatQrDesc": "QRコードをスキャンしてWeChatを追加し、管理者に連絡",
+    "loginSuccess": "ログイン成功",
+    "loginFailed": "ログイン失敗",
+    "registerSuccess": "登録成功",
+    "registerFailed": "登録失敗",
+    "usernameOrPasswordError": "ユーザー名またはパスワードが間違っています",
+    "logoutSuccess": "ログアウト成功",
+    "tooManyLoginAttempts": "ログイン試行が多すぎます",
+    "tooManyRegisterAttempts": "登録試行が多すぎます",
+    "tooManyRequests": "リクエストが多すぎます。しばらくしてから再試行してください"
+  },
+  "inviteCode": {
+    "management": "招待コード管理",
+    "description": "ユーザー登録用招待コードの作成と管理",
+    "back": "戻る",
+    "exportData": "旧データをエクスポート",
+    "total": "合計",
+    "available": "利用可能",
+    "used": "使用済み",
+    "expired": "期限切れ",
+    "generateNew": "+ 新しいコード作成",
+    "batchGenerate": "複数の招待コードを生成し、有効期限を設定",
+    "count": "数量",
+    "expiryDays": "有効期間（日）",
+    "expiryPlaceholder": "永久に有効にする場合は空欄",
+    "generate": "生成",
+    "list": "招待コード一覧",
+    "listCount": "合計 {count} コード",
+    "code": "招待コード",
+    "createdAt": "作成日時",
+    "expiresAt": "有効期限",
+    "usedBy": "ユーザー",
+    "usedAt": "使用日時",
+    "actions": "操作",
+    "permanentValid": "永久",
+    "revokeConfirm": "このコードを取り消しますか？取り消すと使用できなくなります。",
+    "revokeSuccess": "取り消し成功",
+    "revokeFailed": "取り消し失敗",
+    "copySuccess": "コピー成功",
+    "copyFailed": "コピー失敗",
+    "loadFailed": "読み込み失敗",
+    "generateSuccess": "{count} コードを生成しました",
+    "generateFailed": "生成失敗",
+    "exportSuccess": "エクスポート成功",
+    "permissionDenied": "権限がありません。管理者のみアクセス可能"
+  },
+  "version": {
+    "management": "バージョン履歴"
+  },
+  "formatPainter": "書式コピー",
+  "searchReplace": "検索と置換",
+  "searchPlaceholder": "内容を検索...",
+  "replacePlaceholder": "置換後...",
+  "find": "検索",
+  "replace": "置換",
+  "replaceAll": "すべて置換",
+  "caseSensitive": "大文字小文字を区別",
+  "useRegex": "正規表現を使用",
+  "noResults": "結果が見つかりません",
+  "toolbar": {
+    "general": "一般"
+  },
+  "chart": "チャート",
+  "importTable": "テーブルをインポート",
+  "mention": {
+    "group": {
+      "online": "オンライン",
+      "org": "組織",
+      "other": "その他",
+      "new": "新規"
+    }
+  },
+  "slide": {
+    "newSlide": "新しいスライド",
+    "theme": "テーマ",
+    "showCode": "コードを表示",
+    "hideCode": "コードを非表示",
+    "present": "プレゼン",
+    "aiAgent": "AIアシスタント",
+    "generating": "生成中...",
+    "markdownSource": "Markdownソース",
+    "themeCategories": {
+      "light": "ライト",
+      "dark": "ダーク",
+      "colorful": "カラフル"
+    },
+    "themes": {
+      "default": "デフォルト",
+      "piano": "ピアノ",
+      "wireframe": "ワイヤーフレーム",
+      "seriph": "セリフ",
+      "geist": "ガイスト",
+      "aurum": "オーラム",
+      "chocolate": "チョコレート",
+      "shibainu": "柴犬",
+      "bricks": "ブリックス",
+      "beeHappy": "ビーハッピー",
+      "atacama": "アタカマ"
+    },
+    "themeApplied": "テーマ \"{name}\" が適用されました",
+    "slideCounter": "{current} / {total}",
+    "deleteSlideWarning": "最後のスライドは削除できません",
+    "slideDeleted": "スライドが削除されました",
+    "noSlidesToPresent": "プレゼンテーションするスライドがありません。まずプレゼンテーションを生成してください！",
+    "presentMode": {
+      "hint": "矢印キー、スペース、またはクリックでナビゲート • ESCで終了"
+    },
+    "quickActions": {
+      "improve": "改善",
+      "fix": "修正",
+      "translate": "翻訳",
+      "longer": "詳細化",
+      "shorter": "簡略化",
+      "simplify": "簡素化"
+    },
+    "aiPanel": {
+      "title": "すべてのカードを編集",
+      "placeholder": "編集、作成、またはスタイル設定を依頼",
+      "placeholderAll": "作成したいプレゼンテーションを説明してください。例：'気候変動に関するプロフェッショナルなプレゼンテーションを作成'",
+      "placeholderCurrent": "AIに現在のスライドの変更方法を指示してください。例：'詳細と例を追加'",
+      "quickActions": "クイックアクション",
+      "generate": "生成",
+      "allSlides": "すべてのスライド",
+      "currentSlide": "現在のスライド",
+      "templates": "テンプレート",
+      "createSlidesFirst": "クイックアクションを使用する前にスライドを作成してください"
+    },
+    "quickActionPrompts": {
+      "improve": "より専門的に文章を改善",
+      "fix": "すべてのスペルと文法エラーを修正",
+      "translate": "日本語に翻訳",
+      "longer": "コンテンツをより詳細かつ包括的に",
+      "shorter": "コンテンツをより簡潔に",
+      "simplify": "理解しやすいように言語を簡素化"
+    },
+    "welcome": {
+      "title": "JitSlide Studioへようこそ",
+      "subtitle": "AI駆動のプレゼンテーション作成ツール",
+      "gettingStarted": "はじめに",
+      "keyFeatures": "主な機能",
+      "tryAiAgent": "AIエージェントを試す",
+      "steps": {
+        "clickAi": "**AIエージェント**をクリックしてAIでスライドを生成",
+        "useTheme": "**テーマ**を使用してビジュアルスタイルを変更",
+        "pressPresent": "**プレゼント**を押してスライドショーを開始",
+        "clickNew": "**新規**をクリックして手動でスライドを追加"
+      },
+      "features": {
+        "aiPowered": "**AI駆動**コンテンツ生成",
+        "beautiful": "**美しい**テーマ",
+        "interactive": "**インタラクティブ**チャートサポート",
+        "markdown": "**Markdown**編集",
+        "instant": "**即時**プレビュー"
+      },
+      "examples": [
+        "気候変動に関するプレゼンテーションを作成",
+        "製品発表スライドを作成",
+        "ビジネスレビュードキュメントを生成"
+      ],
+      "callToAction": "AIに重い作業を任せましょう！"
+    },
+    "templates": {
+      "business": "ビジネスレポート",
+      "education": "教育トレーニング",
+      "tech": "技術共有"
+    },
+    "zoomControl": {
+      "fitToWindow": "ウィンドウに合わせる",
+      "zoomIn": "拡大",
+      "zoomOut": "縮小",
+      "reset": "ズームをリセット"
+    },
+    "editorMode": {
+      "markdown": "Markdown",
+      "visual": "ビジュアルエディター"
+    },
+    "visual": {
+      "components": "コンポーネントライブラリ",
+      "searchComponents": "コンポーネントを検索...",
+      "properties": "プロパティパネル",
+      "delete": "削除",
+      "categories": {
+        "text": "テキスト",
+        "media": "メディア",
+        "shapes": "図形",
+        "charts": "チャート"
+      },
+      "image": {
+        "replace": "置換",
+        "crop": "トリミング",
+        "filter": "フィルター",
+        "filterNormal": "通常",
+        "filterGrayscale": "グレースケール",
+        "filterSepia": "セピア",
+        "filterBlur": "ぼかし",
+        "filterBrightness": "明るさ"
+      },
+      "layer": {
+        "forward": "一つ上に移動",
+        "backward": "一つ下に移動",
+        "front": "最前面に移動",
+        "back": "最背面に移動"
+      },
+      "categories": {
+        "text": "テキスト",
+        "images": "画像",
+        "media": "動画とメディア",
+        "shapes": "図形",
+        "layouts": "レイアウト",
+        "charts": "グラフ"
+      },
+      "images": {
+        "description": "画像をアップロード、閲覧、または生成します。",
+        "imageUpload": "画像アップロードまたはURL",
+        "webSearch": "ウェブ画像検索",
+        "aiImages": "AI生成画像",
+        "pexels": "Pexels画像",
+        "giphy": "GIPHYアニメーション",
+        "pictographic": "イラスト挿絵",
+        "iconsClassic": "アイコン（クラシック）",
+        "iconsModern": "アイコン（モダン）",
+        "qrcode": "QRコード",
+        "accentImages": "装飾画像",
+        "gallery": "ギャラリー"
+      },
+      "media": {
+        "description": "主要プラットフォームからメディアをアップロードまたはインポートします。",
+        "gallery": "ギャラリー",
+        "videoEmbed": "動画または音声の埋め込み",
+        "loomRecording": "Loom録画",
+        "youtube": "YouTube動画",
+        "vimeo": "Vimeo動画",
+        "wistia": "Wistia",
+        "tiktok": "TikTok",
+        "spotify": "Spotify"
+      },
+      "propertyPanel": {
+        "text": "テキストプロパティ",
+        "image": "画像プロパティ",
+        "shape": "図形プロパティ",
+        "position": "位置",
+        "content": "コンテンツ",
+        "fontSize": "フォントサイズ",
+        "fontWeight": "フォントウェイト",
+        "color": "色",
+        "width": "幅",
+        "height": "高さ",
+        "radius": "半径",
+        "fillColor": "塗りつぶしの色",
+        "strokeColor": "線の色",
+        "strokeWidth": "線の幅",
+        "rotation": "回転",
+        "selectComponent": "プロパティを表示するコンポーネントを選択"
+      },
+      "messages": {
+        "undo": "元に戻す",
+        "redo": "やり直し",
+        "copied": "コピーされました",
+        "pasted": "貼り付けられました",
+        "nothingToPaste": "貼り付ける内容がありません",
+        "hexagonAdded": "六角形が追加されました",
+        "pentagonAdded": "五角形が追加されました",
+        "diamondAdded": "菱形が追加されました",
+        "ringAdded": "リングが追加されました",
+        "ellipseAdded": "楕円が追加されました",
+        "arrowAdded": "矢印が追加されました",
+        "parallelogramAdded": "平行四辺形が追加されました",
+        "trapezoidAdded": "台形が追加されました",
+        "imagePasted": "画像が貼り付けられました",
+        "imageLoadFailed": "画像の読み込みに失敗しました",
+        "unsupportedElementType": "サポートされていない要素タイプ: {type}",
+        "failedToUploadImage": "画像のアップロードに失敗しました: {error}",
+        "unsupportedLayoutType": "サポートされていないレイアウトタイプ",
+        "imageFiltersNotSupported": "この環境では画像フィルターがサポートされていません",
+        "selectedElements": "{count} 個の要素が選択されました"
+      }
+    },
+    "agent": "Agent",
+    "agentDialog": "AI Agent",
+    "agentPlaceholder": "編集、作成、スタイル設定をお手伝いします",
+    "quickPrompts": {
+      "optimizeLayout": "現在のスライドレイアウトを最適化",
+      "addChart": "プロフェッショナルなグラフを追加",
+      "improveContent": "コンテンツ表現を改善"
+    },
+    "mindmap_modal": {
+      "modal_title": "AI マインドマップ",
+      "subtitle": "インテリジェントな知識構造マッピング",
+      "input_title": "トピックまたは説明を入力してください：",
+      "cancel_button": "キャンセル",
+      "generate_button": "生成",
+      "ai_generate": "AI 自動生成",
+      "missing_api_key": "AI API Keyが設定されていません。AI設定で設定してください。",
+      "loading_title": "マインドマップを生成中",
+      "ai_prompt_prefix": "次のテキストをマインドマップに変換してください："
+    },
+    "cannotDeleteLast": "最後のスライドは削除できません",
+    "deleted": "スライドが削除されました",
+    "layouts": {
+      "layoutApplied": "レイアウト '{name}' を適用しました"
+    }
+  }
+}

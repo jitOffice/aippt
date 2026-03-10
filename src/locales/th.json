@@ -1,0 +1,569 @@
+{
+  "cancel": "ยกเลิก",
+  "common": {
+    "loading": "กำลังโหลด...",
+    "confirm": "ยืนยัน",
+    "cancel": "ยกเลิก",
+    "edit": "แก้ไข",
+    "share": "แชร์",
+    "readMode": "โหมดอ่าน",
+    "ai": "AI",
+    "templateLibrary": "คลังเทมเพลต",
+    "saveAsTemplate": "บันทึกเป็นเทมเพลต",
+    "today": "วันนี้",
+    "yesterday": "เมื่อวาน",
+    "daysAgo": "วันที่ผ่านมา",
+    "collapse": "ย่อ",
+    "expand": "ขยาย",
+    "dragToMove": "ลากเพื่อย้าย",
+    "online": "ออนไลน์",
+    "people": "คน",
+    "documentList": "รายการเอกสาร",
+    "logout": "ออกจากระบบ",
+    "inviteCodeManagement": "จัดการรหัสเชิญ",
+    "loadingDocument": "กำลังโหลดเอกสาร…",
+    "privateDeployment": "การติดตั้งภายใน",
+    "user": "ผู้ใช้",
+    "appTitleShort": "JitWord",
+    "appTitleFull": "JitWord เอกสารร่วมมือ",
+    "language": "ภาษา",
+    "languageSettings": "การตั้งค่าภาษา",
+    "switchTooFast": "เปลี่ยนเร็วเกินไป โปรดลองใหม่อีกครั้ง",
+    "switchErrorSuggestRefresh": "เกิดข้อผิดพลาดในการเปลี่ยนเอกสาร แนะนำให้รีเฟรชหน้าเพื่อกู้คืน",
+    "on": "เปิด",
+    "off": "ปิด",
+    "save": "บันทึก"
+  },
+  "doc": {
+    "type": {
+      "sheet": "สเปรดชีต",
+      "word": "เอกสาร"
+    },
+    "exportExcel": "ส่งออก Excel",
+    "importExcel": "นำเข้า Excel",
+    "untitled": "ไม่มีชื่อ",
+    "untitledSheet": "สเปรดชีตไม่มีชื่อ",
+    "untitledDoc": "เอกสารไม่มีชื่อ",
+    "untitledMindmap": "แผนผังความคิดไม่มีชื่อ",
+    "loadSheetFailed": "โหลดข้อมูลสเปรดชีตล้มเหลว",
+    "allChangesSaved": "บันทึกการเปลี่ยนแปลงทั้งหมดลงในคลาวด์แล้ว",
+    "saving": "กำลังบันทึก...",
+    "pendingSave": "รอบันทึก...",
+    "saveSuccess": "บันทึกสำเร็จ",
+    "importSuccessRefresh": "นำเข้าสำเร็จ กำลังรีเฟรช...",
+    "importFailed": "นำเข้าล้มเหลว",
+    "exportSuccess": "ส่งออกสำเร็จ",
+    "exportFailed": "ส่งออกล้มเหลว",
+    "autoSaveTitle": "บันทึกอัตโนมัติ {date}",
+    "autoSaveDesc": "ระบบบันทึกอัตโนมัติ",
+    "quickSaveTitle": "บันทึกด่วน {date}",
+    "quickSaveDesc": "ผู้ใช้บันทึกด่วน",
+    "versionSavedSuccess": "บันทึกเวอร์ชันสำเร็จ (Ctrl+S)",
+    "saveFailed": "บันทึกล้มเหลว",
+    "enterDocName": "กรุณาใส่ชื่อเอกสาร",
+    "createSuccess": "สร้างเอกสารสำเร็จ",
+    "createFailed": "สร้างเอกสารล้มเหลว",
+    "docLimitReached": "ถึงขีดจำกัดจำนวนเอกสาร",
+    "cooldownMessage": "ดำเนินการเร็วเกินไป กรุณารอ {seconds} วินาที",
+    "deletedSuccess": "ลบสำเร็จ",
+    "restoredSuccess": "กู้คืนสำเร็จ",
+    "permanentlyDeletedSuccess": "ลบถาวรสำเร็จ",
+    "deletedFailed": "ลบล้มเหลว",
+    "batchDeleteSuccess": "ลบเอกสาร {count} รายการสำเร็จ",
+    "batchDeleteFailed": "ลบแบบกลุ่มล้มเหลว",
+    "renameSuccess": "เปลี่ยนชื่อเอกสารสำเร็จ",
+    "renameFailed": "เปลี่ยนชื่อล้มเหลว",
+    "batchDeleteSuccessDetail": "สำเร็จ {success}, ล้มเหลว {failed}",
+    "deleteReason": "เอกสาร {id}: {reason}",
+    "trash": "ถังขยะ",
+    "viewTrash": "ดูถังขยะ",
+    "backToDocs": "กลับไปที่เอกสาร",
+    "softDelete": "ย้ายไปถังขยะ",
+    "delete": "ลบ",
+    "permanentDelete": "ลบถาวร",
+    "confirmDeleteTitle": "ลบเอกสาร {name} หรือไม่?",
+    "confirmSoftDeleteMessage": "สามารถกู้คืนได้จากถังขยะ",
+    "confirmPermanentDeleteMessage": "การดำเนินการนี้ไม่สามารถยกเลิกได้",
+    "confirmInputLabel": "พิมพ์ชื่อเอกสารเพื่อยืนยัน:",
+    "confirmInputPlaceholder": "กรอก: {name}",
+    "currentDocProtected": "เอกสารปัจจุบันได้รับการคุ้มครอง โปรดเปลี่ยนไปใช้เอกสารอื่น",
+    "nameLabel": "ชื่อเอกสาร",
+    "namePlaceholder": "กรอกชื่อเอกสาร",
+    "searchPlaceholder": "ค้นหาเอกสารหรือ ID",
+    "listTitle": "รายการเอกสาร",
+    "loadingList": "กำลังโหลดรายการ...",
+    "noMatchingDocuments": "ไม่พบเอกสารที่ตรงกัน",
+    "nameEmptyWarning": "ชื่อเอกสารต้องไม่ว่างเปล่า",
+    "editNameHint": "คลิกเพื่อแก้ไขชื่อ",
+    "recentlyEdited": "แก้ไขล่าสุด",
+    "group": {
+      "today": "วันนี้",
+      "yesterday": "เมื่อวาน",
+      "earlier": "ก่อนหน้านี้"
+    },
+    "time": {
+      "justNow": "เมื่อสักครู่",
+      "minutesAgo": "{n} นาทีที่แล้ว",
+      "hoursAgo": "{n} ชั่วโมงที่แล้ว",
+      "yesterday": "เมื่อวาน",
+      "daysAgo": "{n} วันที่แล้ว"
+    },
+    "scope": {
+      "mine": "ของฉัน",
+      "shared": "ที่แชร์",
+      "all": "ทั้งหมด"
+    },
+    "publicDocAdminOnly": "เฉพาะผู้ดูแลระบบเท่านั้นที่สามารถลบเอกสารสาธารณะได้",
+    "batchDelete": "ลบแบบกลุ่ม",
+    "batchDeleteConfirm": "ลบเอกสาร {count} รายการที่เลือกหรือไม่?",
+    "selectAll": "เลือกทั้งหมด",
+    "cancelSelect": "ยกเลิกการเลือก",
+    "selected": "เลือกแล้ว {count} รายการ"
+  },
+  "error": {
+    "badRequest": "คำขอไม่ถูกต้อง",
+    "unauthorized": "ไม่ได้รับอนุญาต",
+    "forbidden": "การเข้าถึงถูกปฏิเสธ",
+    "notFound": "ไม่พบทรัพยากร",
+    "serverError": "เกิดข้อผิดพลาดภายในเซิร์ฟเวอร์",
+    "networkError": "การเชื่อมต่อเครือข่ายล้มเหลว โปรตรวจสอบการตั้งค่าเครือข่าย",
+    "timeout": "คำขอหมดเวลา โปรดลองใหม่",
+    "requestFailed": "คำขอล้มเหลว",
+    "unknownError": "เกิดข้อผิดพลาดไม่ทราบสาเหตุ"
+  },
+  "ai": {
+    "settings": "การตั้งค่า AI",
+    "generationStopped": "หยุดสร้างเนื้อหาแล้ว",
+    "processingFailed": "การประมวลผลล้มเหลว",
+    "textReplaced": "แทนที่ข้อความที่เลือกแล้ว",
+    "textInserted": "แทรกแล้ว",
+    "settingsSaved": "บันทึกแล้ว",
+    "fillRequirement": "กรุณาใส่คำขอสำหรับการสร้างเอกสารก่อน",
+    "generationFailed": "สร้างเนื้อหาล้มเหลว",
+    "generationComplete": "สร้างเนื้อหาเสร็จสิ้น",
+    "cursorPrompt": "ผู้ช่วย AI",
+    "inputPromptPlaceholder": "ใส่คำขอของคุณ เช่น: เขียนแผนเกี่ยวกับการใช้ผลิตภัณฑ์ AIGC...",
+    "submitTip": "Cmd/Ctrl + Enter เพื่อส่ง",
+    "generate": "สร้าง",
+    "onboarding": {
+      "title": "ทดลอง AI ฟรีหมดแล้ว",
+      "desc": "เข้าร่วม WeChat เพื่อรับสิทธิ์ทดลองหรือกำหนดค่า API key ในการตั้งค่า",
+      "settingsInEditor": "กรุณากลับไปที่เครื่องมือแก้ไขเอกสารและคลิกปุ่มการตั้งค่า AI ในแถบเครื่องมือด้านบนเพื่อกำหนดค่า"
+    },
+    "openSettings": "เปิดการตั้งค่า",
+    "jsonParseError": "AI ส่งคืนรูปแบบที่ไม่ถูกต้อง โปรดลองอีกครั้งหรือใช้คำสั่งอื่น",
+    "timeoutError": "คำขอหมดเวลา โปรดลองอีกครั้ง",
+    "apiError": "คำขอ API ล้มเหลว โปรดตรวจสอบการตั้งค่าของคุณ",
+    "scenarios": {
+      "continue": {
+        "label": "เขียนต่อ",
+        "prompt": "โปรดเขียนต่อจากเนื้อหาก่อนหน้า รักษาสไตล์และความสอดคล้อง"
+      },
+      "outline": {
+        "label": "ร่างโครงสร้าง",
+        "prompt": "โปรดสร้างโครงสร้างเนื้อหา รวมหัวข้อหลัก, หัวข้อย่อย และประเด็นสำคัญ"
+      },
+      "brainstorm": {
+        "label": "ระดมความคิด",
+        "prompt": "โปรดระดมความคิดเกี่ยวกับหัวข้อนี้ พร้อมเสนอหลายมุมมองและไอเดียสร้างสรรค์"
+      },
+      "summary": {
+        "label": "สรุป",
+        "prompt": "โปรดสรุปเนื้อหาต่อไปนี้ สรุปประเด็นสำคัญอย่างชัดเจนและสั้น"
+      },
+      "expand": {
+        "label": "ขยายความ",
+        "prompt": "โปรดขยายเนื้อหาต่อไปนี้ เพิ่มรายละเอียด ตัวอย่าง และวิเคราะห์เชิงลึก"
+      },
+      "polish": {
+        "label": "ปรับปรุง",
+        "prompt": "โปรดปรับปรุงข้อความต่อไปนี้ให้ลื่นไหลและเป็นมืออาชีพมากขึ้น"
+      },
+      "weekly_report": {
+        "label": "รายงานประจำสัปดาห์",
+        "prompt": "โปรดเขียนรายงานสัปดาห์ รวม: ภาพรวมงาน, ผลลัพธ์สำคัญ, ปัญหา & ความเสี่ยง, แผนสัปดาห์หน้า"
+      },
+      "blog": {
+        "label": "บล็อก",
+        "prompt": "โปรดเขียนบล็อก รวม: บทนำดึงดูด, โครงสร้างชัดเจน, เนื้อหามีประโยชน์, และบทสรุป"
+      },
+      "business_plan": {
+        "label": "แผนธุรกิจ",
+        "prompt": "โปรดสร้างแผนธุรกิจ รวม: สรุปผู้บริหาร, คำอธิบายบริษัท, วิเคราะห์ตลาด, องค์กร, ผลิตภัณฑ์/บริการ, กลยุทธ์การตลาด, การคาดการณ์ทางการเงิน"
+      },
+      "proposal": {
+        "label": "ข้อเสนอ",
+        "prompt": "โปรดเขียนข้อเสนอโครงการ รวม: บริบท, ปัญหา, วิธีแก้, แผนดำเนินการ, งบประมาณ, และผลลัพธ์ที่คาดหวัง"
+      }
+    },
+    "scenario": {
+      "searchPlaceholder": "ค้นหาเทมเพลตสถานการณ์...",
+      "all": "ทั้งหมด",
+      "use": "ใช้",
+      "noResults": "ไม่พบเทมเพลตที่ตรงกัน",
+      "more": "เพิ่มเติม"
+    }
+  },
+  "page": {
+    "settings": "การตั้งค่าหน้า",
+    "settingsRestored": "คืนค่าเริ่มต้นแล้ว",
+    "settingsSaved": "บันทึกการตั้งค่าหน้าแล้ว",
+    "saveFailed": "บันทึกล้มเหลว"
+  },
+  "watermark": {
+    "settings": "การตั้งค่าลายน้ำ",
+    "title": "ลายน้ำเอกสาร",
+    "type": "ประเภทลายน้ำ",
+    "text": "ข้อความ",
+    "image": "รูปภาพ",
+    "content": "เนื้อหาลายน้ำ",
+    "textPlaceholder": "ใส่ข้อความลายน้ำ",
+    "imageUrl": "URL รูปภาพ",
+    "imageUrlPlaceholder": "ใส่ URL รูปภาพ",
+    "imageHint": "รองรับ PNG, JPG. แนะนำ PNG พื้นหลังโปร่งใส",
+    "fontSettings": "การตั้งค่าแบบอักษร",
+    "fontSize": "ขนาดแบบอักษร",
+    "fontWeight": "ความหนาแบบอักษร",
+    "light": "บาง",
+    "normal": "ปกติ",
+    "bold": "หนา",
+    "color": "สี",
+    "generalSettings": "การตั้งค่าทั่วไป",
+    "opacity": "ความทึบ",
+    "rotation": "มุมหมุน",
+    "size": "ขนาด",
+    "pattern": "รูปแบบการจัดวาง",
+    "tile": "กระเบื้อง",
+    "center": "กลาง",
+    "diagonal": "เส้นทแยง",
+    "spacing": "ช่วงห่าง",
+    "templates": "เทมเพลตด่วน",
+    "confidential": "เอกสารลับ",
+    "draft": "ร่าง",
+    "internal": "ใช้ภายใน",
+    "reset": "คืนค่าเริ่มต้น",
+    "enableHint": "เปิดลายน้ำเพื่อเพิ่มป้ายลับ, เครื่องหมายร่าง และข้อมูลอื่นๆ ลายน้ำจะแสดงเฉพาะในการดูตัวอย่างและการส่งออกเท่านั้นในการดูตัวอย่างและการส่งออกเท่านั้น"
+  },
+  "auth": {
+    "appTitle": "Jitword - ตัวแก้ไขเอกสารร่วมมือ",
+    "usernamePlaceholder": "กรอกชื่อผู้ใช้",
+    "passwordPlaceholder": "กรอกรหัสผ่าน",
+    "login": "เข้าสู่ระบบ",
+    "register": "สมัครสมาชิก",
+    "noAccount": "ยังไม่มีบัญชี?",
+    "registerNow": "สมัครสมาชิกทันที",
+    "hasAccount": "มีบัญชีอยู่แล้ว?",
+    "loginNow": "เข้าสู่ระบบทันที",
+    "createAccount": "สร้างบัญชี",
+    "usernameRequired": "กรุณากรอกชื่อผู้ใช้",
+    "passwordRequired": "กรุณากรอกรหัสผ่าน",
+    "passwordMin": "อย่างน้อย 6 ตัวอักษร",
+    "passwordFormat": "อย่างน้อย 6 ตัวอักษร รวมตัวอักษรและตัวเลข",
+    "inviteCode": "รหัสเชิญ",
+    "inviteCodePlaceholder": "กรอกรหัสเชิญ (ตัวอย่าง: YNZBCTJA2OIF)",
+    "inviteCodeRequired": "กรุณากรอกรหัสเชิญ",
+    "getInviteCode": "รับรหัสเชิญ",
+    "wechatQrTitle": "เพิ่ม WeChat เพื่อรับรหัสเชิญ",
+    "wechatQrDesc": "สแกน QR เพื่อเพิ่ม WeChat และติดต่อผู้ดูแลระบบ",
+    "loginSuccess": "เข้าสู่ระบบสำเร็จ",
+    "loginFailed": "เข้าสู่ระบบล้มเหลว",
+    "registerSuccess": "สมัครสมาชิกสำเร็จ",
+    "registerFailed": "สมัครสมาชิกล้มเหลว",
+    "usernameOrPasswordError": "ชื่อผู้ใช้หรือรหัสผ่านไม่ถูกต้อง",
+    "logoutSuccess": "ออกจากระบบสำเร็จ",
+    "tooManyLoginAttempts": "พยายามเข้าสู่ระบบมากเกินไป",
+    "tooManyRegisterAttempts": "พยายามลงทะเบียนมากเกินไป",
+    "tooManyRequests": "มีคำขอมากเกินไป โปรดลองอีกครั้งในภายหลัง"
+  },
+  "inviteCode": {
+    "management": "จัดการรหัสเชิญ",
+    "description": "สร้างและจัดการรหัสเชิญสำหรับการลงทะเบียนผู้ใช้",
+    "back": "ย้อนกลับ",
+    "exportData": "ส่งออกข้อมูลตารางเก่า",
+    "total": "ทั้งหมด",
+    "available": "ใช้งานได้",
+    "used": "ใช้แล้ว",
+    "expired": "หมดอายุ",
+    "generateNew": "+ สร้างรหัสใหม่",
+    "batchGenerate": "สร้างรหัสเชิญหลายรหัสพร้อมกำหนดวันหมดอายุ",
+    "count": "จำนวน",
+    "expiryDays": "ระยะเวลา (วัน)",
+    "expiryPlaceholder": "เว้นว่างหากต้องการให้ใช้ได้ตลอด",
+    "generate": "สร้าง",
+    "list": "รายการรหัสเชิญ",
+    "listCount": "ทั้งหมด {count} รหัส",
+    "code": "รหัสเชิญ",
+    "createdAt": "วันที่สร้าง",
+    "expiresAt": "วันที่หมดอายุ",
+    "usedBy": "ผู้ใช้",
+    "usedAt": "วันที่ใช้งาน",
+    "actions": "การดำเนินการ",
+    "permanentValid": "ตลอดเวลา",
+    "revokeConfirm": "คุณแน่ใจหรือไม่ที่จะยกเลิกรหัสนี้? หลังจากยกเลิกจะไม่สามารถใช้งานได้",
+    "revokeSuccess": "ยกเลิกสำเร็จ",
+    "revokeFailed": "ยกเลิกล้มเหลว",
+    "copySuccess": "คัดลอกสำเร็จ",
+    "copyFailed": "คัดลอกล้มเหลว",
+    "loadFailed": "โหลดล้มเหลว",
+    "generateSuccess": "สร้าง {count} รหัสสำเร็จ",
+    "generateFailed": "สร้างล้มเหลว",
+    "exportSuccess": "ส่งออกสำเร็จ",
+    "permissionDenied": "ไม่มีสิทธิ์ การเข้าถึงจำกัดเฉพาะผู้ดูแลระบบ"
+  },
+  "version": {
+    "management": "ประวัติเวอร์ชัน"
+  },
+  "formatPainter": "เครื่องมือคัดลอกฟอร์แมต",
+  "searchReplace": "ค้นหาและแทนที่",
+  "searchPlaceholder": "ค้นหาเนื้อหา...",
+  "replacePlaceholder": "แทนที่ด้วย...",
+  "find": "ค้นหา",
+  "replace": "แทนที่",
+  "replaceAll": "แทนที่ทั้งหมด",
+  "caseSensitive": "ตัวพิมพ์ใหญ่/เล็ก",
+  "useRegex": "ใช้ Regular Expression",
+  "noResults": "ไม่พบผลลัพธ์",
+  "toolbar": {
+    "general": "ทั่วไป"
+  },
+  "chart": "แผนภูมิ",
+  "importTable": "นำเข้าตาราง",
+  "mention": {
+    "group": {
+      "online": "ออนไลน์",
+      "org": "องค์กร",
+      "other": "อื่นๆ",
+      "new": "ใหม่"
+    }
+  },
+  "slide": {
+    "newSlide": "สไลด์ใหม่",
+    "theme": "ธีม",
+    "showCode": "แสดงโค้ด",
+    "hideCode": "ซ่อนโค้ด",
+    "present": "นำเสนอ",
+    "aiAgent": "ผู้ช่วย AI",
+    "generating": "กำลังสร้าง...",
+    "markdownSource": "โค้ด Markdown",
+    "themeCategories": {
+      "light": "สว่าง",
+      "dark": "มืด",
+      "colorful": "สีสัน"
+    },
+    "themes": {
+      "default": "ค่าเริ่มต้น",
+      "piano": "Piano",
+      "wireframe": "Wireframe",
+      "seriph": "Seriph",
+      "geist": "Geist",
+      "aurum": "Aurum",
+      "chocolate": "Chocolate",
+      "shibainu": "Shibainu",
+      "bricks": "Bricks",
+      "beeHappy": "Bee Happy",
+      "atacama": "Atacama"
+    },
+    "themeApplied": "นำธีม \"{name}\" ไปใช้แล้ว",
+    "slideCounter": "{current} / {total}",
+    "deleteSlideWarning": "ไม่สามารถลบสไลด์สุดท้ายได้",
+    "slideDeleted": "ลบสไลด์แล้ว",
+    "noSlidesToPresent": "ไม่มีสไลด์ให้นำเสนอ กรุณาสร้างก่อน!",
+    "presentMode": {
+      "hint": "ใช้ปุ่มลูกศร ปุ่มเว้นวรรค หรือคลิกเพื่อเคลื่อนที่ • ESC เพื่อออก"
+    },
+    "quickActions": {
+      "improve": "ปรับปรุง",
+      "fix": "แก้ไข",
+      "translate": "แปล",
+      "longer": "ขยาย",
+      "shorter": "ย่อ",
+      "simplify": "ทำให้ง่าย"
+    },
+    "aiPanel": {
+      "title": "แก้ไขทุกการ์ด",
+      "placeholder": "ขอให้ฉันแก้ไข สร้าง หรือออกแบบ",
+      "placeholderAll": "อธิบายงานนำเสนอที่คุณต้องการสร้าง เช่น: 'สร้างงานนำเสนอมืออาชีพเกี่ยวกับการเปลี่ยนแปลงสภาพอากาศ'",
+      "placeholderCurrent": "บอก AI ว่าจะแก้ไขสไลด์ปัจจุบันอย่างไร เช่น: 'เพิ่มรายละเอียดและตัวอย่าง'",
+      "quickActions": "การดำเนินการด่วน",
+      "generate": "สร้าง",
+      "allSlides": "สไลด์ทั้งหมด",
+      "currentSlide": "สไลด์ปัจจุบัน",
+      "templates": "แม่แบบ",
+      "createSlidesFirst": "โปรดสร้างสไลด์ก่อนใช้การดำเนินการด่วน"
+    },
+    "quickActionPrompts": {
+      "improve": "ปรับปรุงการเขียนให้เป็นมืออาชีพมากขึ้น",
+      "fix": "แก้ไขข้อผิดพลาดการสะกดและไวยากรณ์ทั้งหมด",
+      "translate": "แปลเป็นภาษาไทย",
+      "longer": "ทำให้เนื้อหามีรายละเอียดและครบถ้วนมากขึ้น",
+      "shorter": "ทำให้เนื้อหากระชับมากขึ้น",
+      "simplify": "ทำให้ภาษาง่ายขึ้นเพื่อความเข้าใจ"
+    },
+    "welcome": {
+      "title": "ยินดีต้อนรับสู่ JitSlide Studio",
+      "subtitle": "เครื่องมือสร้างงานนำเสนอด้วย AI",
+      "gettingStarted": "เริ่มต้น",
+      "keyFeatures": "คุณสมบัติหลัก",
+      "tryAiAgent": "ลองใช้ AI Agent",
+      "steps": {
+        "clickAi": "คลิก **AI Agent** เพื่อสร้างสไลด์ด้วย AI",
+        "useTheme": "ใช้ **ธีม** เพื่อเปลี่ยนรูปลักษณ์",
+        "pressPresent": "กด **นำเสนอ** เพื่อเริ่มสไลด์โชว์",
+        "clickNew": "คลิก **ใหม่** เพื่อเพิ่มสไลด์ด้วยตัวเอง"
+      },
+      "features": {
+        "aiPowered": "สร้างเนื้อหา**ด้วย AI**",
+        "beautiful": "ธีม**สวยงาม**",
+        "interactive": "รองรับแผนภูมิ**โต้ตอบ**",
+        "markdown": "แก้ไข **Markdown**",
+        "instant": "ดูตัวอย่าง**ทันที**"
+      },
+      "examples": [
+        "สร้างงานนำเสนอเกี่ยวกับการเปลี่ยนแปลงสภาพอากาศ",
+        "สร้างสไลด์เปิดตัวผลิตภัณฑ์",
+        "สร้างเอกสารทบทวนธุรกิจ"
+      ],
+      "callToAction": "ให้ AI ทำงานหนักให้คุณ!"
+    },
+    "templates": {
+      "business": "รายงานธุรกิจ",
+      "education": "การฝึกอบรมด้านการศึกษา",
+      "tech": "การแบ่งปันเทคโนโลยี"
+    },
+    "zoomControl": {
+      "fitToWindow": "พอดีกับหน้าต่าง",
+      "zoomIn": "ขยาย",
+      "zoomOut": "ย่อ",
+      "reset": "รีเซ็ตการซูม"
+    },
+    "editorMode": {
+      "markdown": "Markdown",
+      "visual": "ตัวแก้ไขแบบกราฟิก"
+    },
+    "visual": {
+      "components": "คลังคอมโพเนนท์",
+      "searchComponents": "ค้นหาคอมโพเนนท์...",
+      "properties": "แผงคุณสมบัติ",
+      "delete": "ลบ",
+      "categories": {
+        "text": "ข้อความ",
+        "media": "สื่อ",
+        "shapes": "รูปทรง",
+        "charts": "แผนภูมิ"
+      },
+      "image": {
+        "replace": "แทนที่",
+        "crop": "ครอป",
+        "filter": "ฟิลเตอร์",
+        "filterNormal": "ปกติ",
+        "filterGrayscale": "ขาวดำ",
+        "filterSepia": "ซีเปีย",
+        "filterBlur": "เบลอ",
+        "filterBrightness": "ความสว่าง"
+      },
+      "layer": {
+        "forward": "ย้ายขึ้นหนึ่งชั้น",
+        "backward": "ย้ายลงหนึ่งชั้น",
+        "front": "ย้ายไปด้านหน้าสุด",
+        "back": "ย้ายไปด้านหลังสุด"
+      },
+      "categories": {
+        "text": "ข้อความ",
+        "images": "รูปภาพ",
+        "media": "วิดีโอและสื่อ",
+        "shapes": "รูปทรง",
+        "layouts": "เครื่องมือเว็บ",
+        "charts": "แผนภูมิ"
+      },
+      "images": {
+        "description": "อัปโหลด เรียกดู หรือสร้างรูปภาพ",
+        "imageUpload": "อัปโหลดรูปภาพหรือ URL",
+        "webSearch": "ค้นหารูปภาพบนเว็บ",
+        "aiImages": "รูปภาพ AI",
+        "pexels": "รูปภาพ Pexels",
+        "giphy": "GIF จาก GIPHY",
+        "pictographic": "ภาพประกอบ",
+        "iconsClassic": "ไอคอน (คลาสสิก)",
+        "iconsModern": "ไอคอน (โมเดิร์น)",
+        "qrcode": "คิวอาร์โค้ด",
+        "accentImages": "รูปภาพตกแต่ง",
+        "gallery": "แกลเลอรี่"
+      },
+      "media": {
+        "description": "อัปโหลดหรือนำเข้าสื่อจากแพลตฟอร์มยอดนิยม",
+        "gallery": "แกลเลอรี่",
+        "videoEmbed": "ฝังวิดีโอหรือเสียง",
+        "loomRecording": "บันทึก Loom",
+        "youtube": "วิดีโอ YouTube",
+        "vimeo": "วิดีโอ Vimeo",
+        "wistia": "Wistia",
+        "tiktok": "TikTok",
+        "spotify": "Spotify"
+      },
+      "propertyPanel": {
+        "text": "คุณสมบัติข้อความ",
+        "image": "คุณสมบัติรูปภาพ",
+        "shape": "คุณสมบัติรูปทรง",
+        "position": "ตำแหน่ง",
+        "content": "เนื้อหา",
+        "fontSize": "ขนาดตัวอักษร",
+        "fontWeight": "น้ำหนักตัวอักษร",
+        "color": "สี",
+        "width": "ความกว้าง",
+        "height": "ความสูง",
+        "radius": "รัศมี",
+        "fillColor": "สีเติม",
+        "strokeColor": "สีเส้นขอบ",
+        "strokeWidth": "ความหนาเส้นขอบ",
+        "rotation": "การหมุน",
+        "selectComponent": "เลือกคอมโพเนนท์เพื่อดูคุณสมบัติ"
+      },
+      "messages": {
+        "undo": "เลิกทำ",
+        "redo": "ทำซ้ำ",
+        "copied": "คัดลอกแล้ว",
+        "pasted": "วางแล้ว",
+        "nothingToPaste": "ไม่มีอะไรให้วาง",
+        "hexagonAdded": "เพิ่มรูปหกเหลี่ยมแล้ว",
+        "pentagonAdded": "เพิ่มรูปห้าเหลี่ยมแล้ว",
+        "diamondAdded": "เพิ่มรูปเพชรแล้ว",
+        "ringAdded": "เพิ่มวงแหวนแล้ว",
+        "ellipseAdded": "เพิ่มรูปวงรีแล้ว",
+        "arrowAdded": "เพิ่มลูกศรแล้ว",
+        "parallelogramAdded": "เพิ่มรูปสี่เหลี่ยมด้านขนานแล้ว",
+        "trapezoidAdded": "เพิ่มรูปสี่เหลี่ยมคางหมูแล้ว",
+        "imagePasted": "วางรูปภาพสำเร็จ",
+        "imageLoadFailed": "โหลดรูปภาพล้มเหลว",
+        "unsupportedElementType": "ประเภทองค์ประกอบที่ไม่รองรับ: {type}",
+        "failedToUploadImage": "อัพโหลดรูปภาพล้มเหลว: {error}",
+        "unsupportedLayoutType": "ประเภทเลย์เอาท์ที่ไม่รองรับ",
+        "imageFiltersNotSupported": "ตัวกรองรูปภาพไม่รองรับในสภาพแวดล้อมนี้",
+        "selectedElements": "เลือก {count} องค์ประกอบแล้ว"
+      }
+    },
+    "agent": "Agent",
+    "agentDialog": "AI Agent",
+    "agentPlaceholder": "ให้ฉันช่วยคุณแก้ไข สร้าง หรือจัดรูปแบบอะไรก็ได้",
+    "quickPrompts": {
+      "optimizeLayout": "เพิ่มประสิทธิภาพเค้าโครงสไลด์ปัจจุบัน",
+      "addChart": "เพิ่มแผนภูมิแบบมืออาชีพ",
+      "improveContent": "ปรับปรุงการแสดงเนื้อหา"
+    },
+    "mindmap_modal": {
+      "modal_title": "แผนผังความคิด AI",
+      "subtitle": "การจัดทำแผนที่โครงสร้างความรู้อัจฉริยะ",
+      "input_title": "กรุณาป้อนหัวข้อหรือคำอธิบาย:",
+      "cancel_button": "ยกเลิก",
+      "generate_button": "สร้าง",
+      "ai_generate": "สร้างอัตโนมัติด้วย AI",
+      "missing_api_key": "ยังไม่ได้กำหนดค่า AI API Key กรุณากำหนดค่าในการตั้งค่า AI",
+      "loading_title": "กำลังสร้างแผนผังความคิด",
+      "ai_prompt_prefix": "โปรดแปลงข้อความต่อไปนี้เป็นแผนผังความคิด:"
+    },
+    "cannotDeleteLast": "ไม่สามารถลบสไลด์สุดท้ายได้",
+    "deleted": "ลบสไลด์แล้ว",
+    "layouts": {
+      "layoutApplied": "ใช้เลย์เอาท์ '{name}' แล้ว"
+    }
+  }
+}

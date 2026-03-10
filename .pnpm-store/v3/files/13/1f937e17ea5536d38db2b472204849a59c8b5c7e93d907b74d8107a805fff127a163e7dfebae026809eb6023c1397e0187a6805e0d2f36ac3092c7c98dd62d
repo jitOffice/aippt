@@ -1,0 +1,17 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.setDefaultFont = exports.registerFont = exports.getFonts = exports.getFont = exports.DEFAULT_FONT = exports.loadFonts = exports.loadFont = exports.getWoff2BaseURL = exports.getFontURLs = void 0;
+var loader_1 = require("./loader");
+Object.defineProperty(exports, "getFontURLs", { enumerable: true, get: function () { return loader_1.getFontURLs; } });
+Object.defineProperty(exports, "getWoff2BaseURL", { enumerable: true, get: function () { return loader_1.getWoff2BaseURL; } });
+Object.defineProperty(exports, "loadFont", { enumerable: true, get: function () { return loader_1.loadFont; } });
+Object.defineProperty(exports, "loadFonts", { enumerable: true, get: function () { return loader_1.loadFonts; } });
+var registry_1 = require("./registry");
+Object.defineProperty(exports, "DEFAULT_FONT", { enumerable: true, get: function () { return registry_1.DEFAULT_FONT; } });
+Object.defineProperty(exports, "getFont", { enumerable: true, get: function () { return registry_1.getFont; } });
+Object.defineProperty(exports, "getFonts", { enumerable: true, get: function () { return registry_1.getFonts; } });
+Object.defineProperty(exports, "registerFont", { enumerable: true, get: function () { return registry_1.registerFont; } });
+Object.defineProperty(exports, "setDefaultFont", { enumerable: true, get: function () { return registry_1.setDefaultFont; } });
+const built_in_1 = require("./built-in");
+const registry_2 = require("./registry");
+built_in_1.BUILT_IN_FONTS.forEach(registry_2.registerFont);

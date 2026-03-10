@@ -1,0 +1,826 @@
+import { computed as $, ref as D, onMounted as me, watch as j, onBeforeUnmount as Re, nextTick as De, defineComponent as ae, openBlock as I, createElementBlock as J, withModifiers as le, renderSlot as K, pushScopeId as ye, popScopeId as ke, createElementVNode as P, createBlock as W, resolveDynamicComponent as Ne, normalizeClass as Ie, unref as z, normalizeStyle as ge, withCtx as ee, Fragment as Pe, renderList as Ve, normalizeProps as Ke, guardReactiveProps as Fe, createCommentVNode as te } from "vue";
+const Ge = {
+  type: {
+    type: String,
+    default: "rect"
+  },
+  tag: {
+    type: [String, Object],
+    default: "div"
+  },
+  resizable: {
+    type: Boolean,
+    default: !0
+  },
+  rotatable: {
+    type: Boolean,
+    default: !1
+  },
+  skewable: {
+    type: Boolean,
+    default: !1
+  },
+  boundary: {
+    // 边界
+    type: Boolean
+  },
+  disabled: Boolean,
+  width: {
+    type: Number,
+    default: 0
+  },
+  height: {
+    type: Number,
+    default: 0
+  },
+  left: {
+    type: Number,
+    default: 0
+  },
+  top: {
+    type: Number,
+    default: 0
+  },
+  zIndex: {
+    type: Number,
+    default: 0
+  },
+  angle: {
+    type: Number,
+    default: 0
+  },
+  color: {
+    type: String,
+    default: "#3a7afe"
+  },
+  minWidth: {
+    type: Number,
+    default: -1 / 0
+  },
+  minHeight: {
+    type: Number,
+    default: -1 / 0
+  },
+  maxWidth: {
+    type: Number,
+    default: 0
+  },
+  maxHeight: {
+    type: Number,
+    default: 0
+  },
+  aspectRatio: {
+    // 缩放比例
+    type: Number
+  },
+  selected: Boolean,
+  snapToGrid: Boolean,
+  gridX: {
+    type: Number,
+    default: 50
+  },
+  gridY: {
+    type: Number,
+    default: 50
+  },
+  scaleRatio: {
+    type: Number,
+    default: 1
+  },
+  disabledKeyEvent: Boolean,
+  border: {
+    type: Boolean,
+    default: !0
+    // 兼容默认
+  },
+  resizeList: {
+    type: Array
+    // 要显示的缩放handle列表，默认显示全部
+  },
+  equalProportion: {
+    // 是否等比例缩放
+    type: Boolean
+  },
+  checkCollision: {
+    // 是否开启碰撞检查
+    type: Boolean
+  },
+  snap: Boolean,
+  // 是否开启吸附
+  snapThreshold: {
+    // 吸附阈值，默认10px
+    type: Number,
+    default: 10
+  },
+  markline: [Boolean, Function],
+  extraLines: Function
+};
+function Z(n, o) {
+  const e = (t) => {
+    o && o(t), document.removeEventListener("mousemove", n), document.removeEventListener("mouseup", e), document.removeEventListener("mouseleave", e), document.removeEventListener("touchmove", n), document.removeEventListener("touchend", e);
+  };
+  document.addEventListener("mousemove", n), document.addEventListener("mouseup", e), document.addEventListener("mouseleave", e), document.addEventListener("touchmove", n), document.addEventListener("touchend", e);
+}
+function V(n) {
+  let o = 0, e = 0;
+  if (qe(n)) {
+    const t = n.targetTouches[0];
+    o = t.pageX, e = t.pageY;
+  } else
+    o = n.clientX, e = n.clientY;
+  return { clientX: o, clientY: e };
+}
+function qe(n) {
+  const o = Object.prototype.toString.call(n);
+  return o.substring(8, o.length - 1) === "TouchEvent";
+}
+const U = (n = 0) => parseInt(n + "") + "px", ne = {
+  n: "top",
+  s: "bottom",
+  e: "right",
+  w: "left",
+  ne: "top-right",
+  nw: "top-left",
+  se: "bottom-right",
+  sw: "bottom-left"
+}, ie = ["n", "ne", "e", "se", "s", "sw", "w", "nw"], Oe = { n: 0, ne: 1, e: 2, se: 3, s: 4, sw: 5, w: 6, nw: 7 }, Ue = {
+  0: 0,
+  1: 1,
+  2: 2,
+  3: 2,
+  4: 3,
+  5: 4,
+  6: 4,
+  7: 5,
+  8: 6,
+  9: 6,
+  10: 7,
+  11: 8
+}, je = (n, o) => {
+  const e = Ue[Math.floor(n / 30)], l = (Oe[o] + e) % 8;
+  return ie[l];
+}, ve = (n = 0, o) => {
+  let e = [];
+  for (let t = 0; t < ie.length; t++) {
+    const l = ie[t], [r, d] = ne[l].split("-"), s = je(n, l), u = {
+      [r]: "0%",
+      cursor: s + "-resize",
+      side: ne[l]
+    };
+    if (d)
+      u[d] = "0%";
+    else {
+      const g = ["top", "bottom"].includes(r) ? "left" : "top";
+      u[g] = "50%";
+    }
+    o ? o.includes(ne[l]) && e.push(u) : e.push(u);
+  }
+  return e;
+}, re = (n) => n * Math.PI / 180, Je = (n, o) => Math.sqrt(n * n + o * o), L = (n) => Math.cos(re(n)), x = (n) => Math.sin(re(n)), Qe = (n, o, e, t, l, r, d) => {
+  let { width: s, height: u, centerX: g, centerY: y, rotateAngle: i } = o;
+  const M = s < 0 ? -1 : 1, h = u < 0 ? -1 : 1;
+  if (s = Math.abs(s), u = Math.abs(u), ["top-left", "top-right", "bottom-left", "bottom-right"].includes(n)) {
+    n === "top-right" ? t = -t : n === "bottom-left" ? e = -e : n === "top-left" && (e = -e, t = -t);
+    const f = se(s, e, r);
+    s = f.width, e = f.deltaW;
+    const a = oe(u, t, d);
+    u = a.height, t = a.deltaH, l && (t = e / l, u = s / l);
+  }
+  switch (n) {
+    case "right": {
+      const f = se(s, e, r);
+      s = f.width, e = f.deltaW, l ? (t = e / l, u = s / l, g += e / 2 * L(i) - t / 2 * x(i), y += e / 2 * x(i) + t / 2 * L(i)) : (g += e / 2 * L(i), y += e / 2 * x(i));
+      break;
+    }
+    case "top-right": {
+      g += e / 2 * L(i) + t / 2 * x(i), y += e / 2 * x(i) - t / 2 * L(i);
+      break;
+    }
+    case "bottom-right": {
+      g += e / 2 * L(i) - t / 2 * x(i), y += e / 2 * x(i) + t / 2 * L(i);
+      break;
+    }
+    case "bottom": {
+      const f = oe(u, t, d);
+      u = f.height, t = f.deltaH, l ? (e = t * l, s = u * l, g += e / 2 * L(i) - t / 2 * x(i), y += e / 2 * x(i) + t / 2 * L(i)) : (g -= t / 2 * x(i), y += t / 2 * L(i));
+      break;
+    }
+    case "bottom-left": {
+      g -= e / 2 * L(i) + t / 2 * x(i), y -= e / 2 * x(i) - t / 2 * L(i);
+      break;
+    }
+    case "left": {
+      e = -e;
+      const f = se(s, e, r);
+      s = f.width, e = f.deltaW, l ? (u = s / l, t = e / l, g -= e / 2 * L(i) + t / 2 * x(i), y -= e / 2 * x(i) - t / 2 * L(i)) : (g -= e / 2 * L(i), y -= e / 2 * x(i));
+      break;
+    }
+    case "top-left": {
+      g -= e / 2 * L(i) - t / 2 * x(i), y -= e / 2 * x(i) + t / 2 * L(i);
+      break;
+    }
+    case "top": {
+      t = -t;
+      const f = oe(u, t, d);
+      u = f.height, t = f.deltaH, l ? (s = u * l, e = t * l, g += e / 2 * L(i) + t / 2 * x(i), y += e / 2 * x(i) - t / 2 * L(i)) : (g += t / 2 * x(i), y -= t / 2 * L(i));
+      break;
+    }
+  }
+  return {
+    position: {
+      centerX: g,
+      centerY: y
+    },
+    size: {
+      width: s * M,
+      height: u * h
+    }
+  };
+}, oe = (n, o, e) => {
+  const t = n + o;
+  return t > e ? n = t : (o = e - n, n = e), { height: n, deltaH: o };
+}, se = (n, o, e) => {
+  const t = n + o;
+  return t > e ? n = t : (o = e - n, n = e), { width: n, deltaW: o };
+}, Ze = ({
+  centerX: n,
+  centerY: o,
+  width: e,
+  height: t,
+  angle: l
+}) => ({
+  top: o - t / 2,
+  left: n - e / 2,
+  width: e,
+  height: t,
+  angle: l
+}), He = (n, o, e) => {
+  const { width: t, height: l } = n;
+  return {
+    width: Math.abs(t),
+    height: Math.abs(l),
+    left: o - Math.abs(t) / 2,
+    top: e - Math.abs(l) / 2
+  };
+};
+function Q(n, o) {
+  const e = Math.abs(n) % o, t = n > 0 ? o : -o;
+  let l = 0;
+  return e > o / 2 ? l = t * Math.ceil(Math.abs(n) / o) : l = t * Math.floor(Math.abs(n) / o), l;
+}
+function We(n, o, e) {
+  if (!n || !o)
+    return !1;
+  const t = R(n, e), l = R(o, e);
+  return t.left < l.left + l.width && t.left + t.width > l.left && t.top < l.top + l.height && t.top + t.height > l.top;
+}
+const R = (n, o) => {
+  var e = n.getBoundingClientRect();
+  return {
+    ...e,
+    left: e.left / o,
+    top: e.top / o,
+    right: e.right / o,
+    bottom: e.bottom / o,
+    width: e.width / o,
+    height: e.height / o
+  };
+}, we = (n) => typeof n == "function";
+function et(n, o) {
+  let e = null, t = null;
+  const l = $(() => n.value.offsetParent || document.body), r = $(() => R(l.value, o.scaleRatio)), d = D({ x: [], y: [] }), s = () => {
+    o.markline && !we(o.markline) && (e || (e = document.querySelector(".es-drager-markline-x") || pe("x", l.value, o.color)), t || (t = document.querySelector(".es-drager-markline-y") || pe("y", l.value, o.color)));
+  }, u = (h = {}) => {
+    if (o.markline) {
+      if (we(o.markline))
+        return o.markline(h);
+      h.left === null ? e.style.display = "none" : (e.style.left = h.left + "px", e.style.backgroundColor = o.color, e.style.display = "block"), h.top === null ? t.style.display = "none" : (t.style.top = h.top + "px", t.style.backgroundColor = o.color, t.style.display = "block");
+    }
+  }, g = () => {
+    const h = R(n.value, o.scaleRatio), f = Array.from(document.querySelectorAll(".es-drager"));
+    if (o.extraLines) {
+      const b = o.extraLines(h) || [];
+      f.push(...b);
+    }
+    const a = [], v = [], p = [];
+    for (let b = 0; b < f.length; b++) {
+      const k = f[b];
+      k.nodeType === 1 ? k !== n.value && a.push(R(k, o.scaleRatio)) : k.showTop || k.showTop === 0 ? p.push(k) : (k.showLeft || k.showLeft === 0) && v.push(k);
+    }
+    d.value = tt(a, h), d.value.x.push(...v), d.value.y.push(...p);
+  }, y = () => {
+    const h = {
+      top: null,
+      left: null,
+      diffX: 0,
+      diffY: 0
+    }, f = R(n.value, o.scaleRatio);
+    for (let a = 0; a < d.value.y.length; a++) {
+      const { top: v, showTop: p } = d.value.y[a];
+      if (Math.abs(v - f.top) < o.snapThreshold) {
+        h.diffY = v - f.top, h.top = p - r.value.top;
+        break;
+      }
+    }
+    for (let a = 0; a < d.value.x.length; a++) {
+      const { left: v, showLeft: p } = d.value.x[a];
+      if (Math.abs(v - f.left) < o.snapThreshold) {
+        h.diffX = v - f.left, h.left = p - r.value.left;
+        break;
+      }
+    }
+    return u(h), h;
+  }, i = () => {
+    u({ left: null, top: null });
+  }, M = (h) => {
+    if (!(!o.snap && !o.markline))
+      switch (h) {
+        case "drag-start":
+          g();
+          break;
+        case "drag":
+          return y();
+        case "drag-end":
+          i();
+          break;
+      }
+  };
+  return me(() => {
+    s();
+  }), {
+    marklineEmit: M
+  };
+}
+function pe(n = "x", o, e = "") {
+  const t = document.createElement("div");
+  return t.classList.add(`es-drager-markline-${n}`), t.style.position = "absolute", t.style.top = "0px", t.style.left = "0px", t.style.zIndex = "9999", t.style.backgroundColor = e, t.style.display = "none", n === "x" ? (t.style.height = "100%", t.style.width = "1px") : (t.style.height = "1px", t.style.width = "100%"), o.appendChild(t), t;
+}
+function tt(n, o) {
+  const e = { x: [], y: [] }, { width: t = 0, height: l = 0 } = o;
+  return n.forEach((r) => {
+    const {
+      top: d,
+      left: s,
+      width: u,
+      height: g
+    } = r;
+    e.y.push({ showTop: d, top: d }), e.y.push({ showTop: d, top: d - l }), e.y.push({
+      showTop: d + g / 2,
+      top: d + g / 2 - l / 2
+    }), e.y.push({ showTop: d + g, top: d + g }), e.y.push({ showTop: d + g, top: d + g - l }), e.x.push({ showLeft: s, left: s }), e.x.push({ showLeft: s + u, left: s + u }), e.x.push({
+      showLeft: s + u / 2,
+      left: s + u / 2 - t / 2
+    }), e.x.push({ showLeft: s + u, left: s + u - t }), e.x.push({ showLeft: s, left: s - t });
+  }), e;
+}
+function nt(n, o, e, {
+  getBoundary: t,
+  fixBoundary: l,
+  checkDragerCollision: r,
+  emit: d
+}) {
+  let s = 0, u = 0;
+  return {
+    onKeydown: (i) => {
+      let { left: M, top: h } = o.value;
+      if (s || (s = M), u || (u = h), ["ArrowRight", "ArrowLeft"].includes(i.key)) {
+        const f = i.key === "ArrowRight";
+        let a = f ? 1 : -1;
+        n.snapToGrid && (a = f ? n.gridX : -n.gridX), M = M + a;
+      } else if (["ArrowUp", "ArrowDown"].includes(i.key)) {
+        const f = i.key === "ArrowDown";
+        let a = f ? 1 : -1;
+        n.snapToGrid && (a = f ? n.gridY : -n.gridY), h = h + a;
+      }
+      if (n.boundary) {
+        const [f, a, v, p] = t();
+        [M, h] = l(M, h, f, a, v, p);
+      }
+      o.value.left = M, o.value.top = h;
+    },
+    onKeyup: (i) => {
+      ["ArrowRight", "ArrowLeft", "ArrowUp", "ArrowDown"].includes(i.key) && n.checkCollision && r() && (o.value.left = s, o.value.top = u), s = 0, u = 0;
+    }
+  };
+}
+function ot(n, o, e) {
+  const t = D(!1), l = D(!1), r = D({
+    width: o.width,
+    height: o.height,
+    left: o.left,
+    top: o.top,
+    angle: o.angle
+  }), { marklineEmit: d } = et(n, o), s = /* @__PURE__ */ new Set();
+  function u(a) {
+    if (s.add(a.button), o.disabled)
+      return;
+    t.value = !0, l.value = !0;
+    let { clientX: v, clientY: p } = V(a);
+    const { left: b, top: k } = r.value;
+    let c = 0, w = 0, m = 0, X = 0;
+    o.boundary && ([c, w, m, X] = g()), d("drag-start"), e && e("drag-start", r.value), Z((E) => {
+      if (s.size > 1)
+        return;
+      const { clientX: Y, clientY: A } = V(E);
+      let S = (Y - v) / o.scaleRatio + b, T = (A - p) / o.scaleRatio + k;
+      if (o.snapToGrid) {
+        let { left: B, top: G } = r.value;
+        const C = S - B, N = T - G;
+        S = B + Q(C, o.gridX), T = G + Q(N, o.gridY);
+      }
+      o.boundary && ([S, T] = y(S, T, c, w, m, X)), r.value.left = S, r.value.top = T, e && e("drag", r.value), De(() => {
+        const B = d("drag");
+        o.snap && (B.diffX && (r.value.left += B.diffX), B.diffY && (r.value.top += B.diffY));
+      });
+    }, (E) => {
+      o.checkCollision && i() && (r.value.top = k, r.value.left = b), s.clear(), t.value = !1, d("drag-end"), e && e("drag-end", r.value);
+    });
+  }
+  const g = () => {
+    let a = 0, v = 0;
+    const { left: p, top: b, height: k, width: c, angle: w } = r.value, m = n.value.offsetParent || document.body, X = R(
+      m,
+      o.scaleRatio
+    );
+    if (w) {
+      const Y = R(
+        n.value,
+        o.scaleRatio
+      );
+      a = Y.left - Math.floor(p - (Y.width - c) + X.left), v = Y.top - Math.floor(b - (Y.height - k) + X.top);
+    }
+    const _ = X.width - c, E = X.height - k;
+    return [
+      a,
+      _ - a,
+      v,
+      E - v,
+      X.width,
+      X.height
+    ];
+  }, y = (a, v, p, b, k, c) => (a = a < p ? p : a, a = a > b ? b : a, v = v < k ? k : v, v = v > c ? c : v, [a, v]), i = () => {
+    const a = n.value.offsetParent || document.body, v = Array.from(a.children).filter((p) => p !== n.value && p.classList.contains("es-drager"));
+    for (let p = 0; p < v.length; p++) {
+      const b = v[p];
+      if (We(n.value, b, o.scaleRatio))
+        return !0;
+    }
+  }, M = () => {
+    l.value = !1;
+  }, { onKeydown: h, onKeyup: f } = nt(o, r, l, {
+    getBoundary: g,
+    fixBoundary: y,
+    checkDragerCollision: i,
+    emit: e
+  });
+  return j(l, (a) => {
+    a ? (e("focus", a), document.addEventListener("click", M, { once: !0 })) : e("blur", a), !o.disabledKeyEvent && (a ? (document.addEventListener("keydown", h), document.addEventListener("keyup", f)) : (document.removeEventListener("keydown", h), document.removeEventListener("keyup", f)));
+  }), me(() => {
+    if (n.value) {
+      if (!r.value.width && !r.value.height) {
+        const { width: a, height: v } = R(
+          n.value,
+          o.scaleRatio
+        );
+        r.value = {
+          ...r.value,
+          width: a + 2,
+          height: v + 2
+        };
+      }
+      if (n.value.addEventListener("mousedown", u), n.value.addEventListener("touchstart", u, {
+        passive: !0
+      }), o.type === "text") {
+        const a = window.getComputedStyle(n.value);
+        r.value.height = parseInt(a.fontSize);
+      }
+    }
+  }), Re(() => {
+    document.removeEventListener("click", M), document.removeEventListener("keydown", h), document.removeEventListener("keyup", f);
+  }), {
+    isMousedown: t,
+    selected: l,
+    dragData: r,
+    getBoundary: g,
+    checkDragerCollision: i
+  };
+}
+const st = (n) => (ye("data-v-1b6d4877"), n = n(), ke(), n), lt = /* @__PURE__ */ st(() => /* @__PURE__ */ P("div", { class: "es-drager-rotate-handle" }, [
+  /* @__PURE__ */ P("svg", {
+    viewBox: "0 0 1024 1024",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, [
+    /* @__PURE__ */ P("path", {
+      fill: "currentColor",
+      d: "M784.512 230.272v-50.56a32 32 0 1 1 64 0v149.056a32 32 0 0 1-32 32H667.52a32 32 0 1 1 0-64h92.992A320 320 0 1 0 524.8 833.152a320 320 0 0 0 320-320h64a384 384 0 0 1-384 384 384 384 0 0 1-384-384 384 384 0 0 1 643.712-282.88z"
+    })
+  ])
+], -1)), it = /* @__PURE__ */ ae({
+  __name: "rotate",
+  props: {
+    modelValue: {
+      type: Number,
+      default: 0
+    },
+    element: {
+      type: Object
+    }
+  },
+  emits: [
+    "update:modelValue",
+    "rotate",
+    "rotate-start",
+    "rotate-end"
+  ],
+  setup(n, { emit: o }) {
+    const e = n, t = o, l = D(null), r = $({
+      get: () => e.modelValue,
+      set: (s) => {
+        t("update:modelValue", s);
+      }
+    });
+    function d(s) {
+      if (!e.element)
+        return console.warn(
+          "[es-drager] rotate component need drag element property"
+        );
+      s.stopPropagation();
+      const { width: u, height: g, left: y, top: i } = e.element.getBoundingClientRect(), M = y + u / 2, h = i + g / 2;
+      t("rotate-start", r.value), Z(
+        (f) => {
+          const { clientX: a, clientY: v } = V(f), p = M - a, b = h - v, c = Math.atan2(b, p) * 180 / Math.PI - 90;
+          r.value = (c + 360) % 360, t("rotate", r.value);
+        },
+        () => {
+          t("rotate-end", r.value);
+        }
+      );
+    }
+    return (s, u) => (I(), J("div", {
+      ref_key: "rotateRef",
+      ref: l,
+      class: "es-drager-rotate",
+      onMousedown: le(d, ["stop"]),
+      onTouchstartPassive: d
+    }, [
+      K(s.$slots, "default", {}, () => [
+        lt
+      ], !0)
+    ], 544));
+  }
+});
+const be = (n, o) => {
+  const e = n.__vccOpts || n;
+  for (const [t, l] of o)
+    e[t] = l;
+  return e;
+}, at = /* @__PURE__ */ be(it, [["__scopeId", "data-v-1b6d4877"]]), rt = (n) => (ye("data-v-68f41cf2"), n = n(), ke(), n), ut = /* @__PURE__ */ rt(() => /* @__PURE__ */ P("div", { class: "es-drager-skew-handle" }, [
+  /* @__PURE__ */ P("svg", {
+    viewBox: "0 0 1024 1024",
+    xmlns: "http://www.w3.org/2000/svg"
+  }, [
+    /* @__PURE__ */ P("path", {
+      fill: "currentColor",
+      d: "M870.679273 271.378618L520.946036 65.489455a16.384 16.384 0 0 0-16.644654 0L154.568145 271.378618a16.290909 16.290909 0 0 0 0 28.094837l349.733237 205.889163a16.384 16.384 0 0 0 16.644654 0L870.679273 299.473455a16.290909 16.290909 0 0 0 0-28.094837zM512.623709 452.673164L228.528873 285.426036l284.094836-167.247127 284.094836 167.247127z m-22.574545 71.68L135.521745 322.615855a16.346764 16.346764 0 0 0-24.482909 14.270836l2.485528 405.820509a16.309527 16.309527 0 0 0 8.257163 14.075345l354.518109 201.728a16.346764 16.346764 0 0 0 24.482909-14.270836l-2.485527-405.820509a16.300218 16.300218 0 0 0-8.247854-14.093964z m-326.888728 198.842181l-2.020072-328.927418 287.529891 163.607273 2.020072 328.936727z m725.336437-400.607418L533.969455 524.325236a16.300218 16.300218 0 0 0-8.247855 14.066037l-2.485527 405.820509a16.365382 16.365382 0 0 0 24.4736 14.270836l354.546036-201.728a16.309527 16.309527 0 0 0 8.257164-14.075345l2.485527-405.820509a16.374691 16.374691 0 0 0-24.501527-14.270837z m-41.890909 373.462109L605.016436 838.683927v-57.902545l241.626764-142.671127v57.902545z m0-98.434327L605.016436 740.2496v-57.911855l241.626764-142.63389v57.911854z m0-98.443636L605.016436 641.833891v-57.902546l241.626764-142.63389v57.902545z"
+    })
+  ])
+], -1)), ct = /* @__PURE__ */ ae({
+  __name: "skew",
+  props: {
+    modelValue: {
+      type: Array,
+      default: () => [0, 0]
+    },
+    element: {
+      type: Object
+    }
+  },
+  emits: [
+    "update:modelValue",
+    "skew",
+    "skew-start",
+    "skew-end"
+  ],
+  setup(n, { emit: o }) {
+    const e = n, t = o, l = D(null), r = $({
+      get: () => e.modelValue,
+      set: (s) => {
+        t("update:modelValue", s);
+      }
+    });
+    function d(s) {
+      if (!e.element)
+        return console.warn("[es-drager] skew component need drag element property");
+      s.stopPropagation();
+      const { width: u, height: g } = e.element.getBoundingClientRect(), { clientX: y, clientY: i } = V(s), [M, h] = r.value;
+      t("skew-start", r.value), Z(
+        (f) => {
+          const { clientX: a, clientY: v } = V(f), p = y - a, b = i - v, k = M + p / u * 45, c = h + b / g * 45;
+          r.value = [+k.toFixed(2), +c.toFixed(2)], t("skew", r.value);
+        },
+        () => {
+          t("skew-end", r.value);
+        }
+      );
+    }
+    return (s, u) => (I(), J("div", {
+      ref_key: "skewRef",
+      ref: l,
+      class: "es-drager-skew",
+      onMousedown: d,
+      onTouchstartPassive: d
+    }, [
+      K(s.$slots, "default", {}, () => [
+        ut
+      ], !0)
+    ], 544));
+  }
+});
+const dt = /* @__PURE__ */ be(ct, [["__scopeId", "data-v-68f41cf2"]]), ft = ["data-side", "onMousedown", "onTouchstartPassive"], ht = /* @__PURE__ */ P("div", { class: "es-drager-dot-handle" }, null, -1), Le = /* @__PURE__ */ ae({
+  __name: "drager",
+  props: Ge,
+  emits: [
+    "change",
+    "drag",
+    "drag-start",
+    "drag-end",
+    "resize",
+    "resize-start",
+    "resize-end",
+    "rotate",
+    "rotate-start",
+    "rotate-end",
+    "skew",
+    "skew-start",
+    "skew-end",
+    "focus",
+    "blur"
+  ],
+  setup(n, { emit: o }) {
+    const e = n, t = o, l = (c, ...w) => {
+      t(c, ...w);
+    }, r = D(null), { selected: d, dragData: s, isMousedown: u, getBoundary: g, checkDragerCollision: y } = ot(
+      r,
+      e,
+      l
+    ), i = D(ve(0, e.resizeList)), M = $(() => e.resizable && !e.disabled), h = $(
+      () => e.rotatable && !e.disabled && d.value
+    ), f = $(
+      () => e.skewable && !e.disabled && d.value
+    ), a = $(() => e.type != "text" ? i.value : i.value.filter((c) => !["top", "bottom"].includes(c.side))), v = $(() => {
+      const { width: c, height: w, left: m, top: X, angle: _, skew: E } = s.value, Y = {};
+      c && (Y.width = U(c)), w && (e.type === "text" ? Y.fontSize = w + "px" : Y.height = U(w));
+      let A = [
+        `translateX(${U(m)})`,
+        `translateY(${U(X)})`,
+        `rotate(${_}deg)`
+      ];
+      if (E && E.length) {
+        let S = `skewX(${E[0]}deg)`;
+        E[1] && (S += ` skewY(${E[1]}deg)`), A.push(S);
+      }
+      return {
+        ...Y,
+        // left: withUnit(left),
+        // top: withUnit(top),
+        zIndex: e.zIndex,
+        transform: A.join(" "),
+        "--es-drager-color": e.color
+      };
+    });
+    function p(c) {
+      r.value || (r.value = c.$el || c);
+    }
+    function b(c) {
+      i.value = ve(c, e.resizeList), l("rotate-end", s.value);
+    }
+    function k(c, w) {
+      if (e.disabled)
+        return;
+      w.stopPropagation();
+      const { clientX: m, clientY: X } = V(w), _ = m, E = X, { width: Y, height: A, left: S, top: T } = s.value, B = S + Y / 2, G = T + A / 2, C = {
+        width: Y,
+        height: A,
+        centerX: B,
+        centerY: G,
+        rotateAngle: s.value.angle
+      }, N = c.side;
+      let { minWidth: xe, minHeight: Me, aspectRatio: H, equalProportion: Xe } = e;
+      l("resize-start", s.value, N), e.boundary && g(), ["text", "image"].includes(e.type) && N.includes("-") && (H = C.width / C.height), Z((ue) => {
+        const { clientX: Ye, clientY: Ee } = V(ue);
+        let q = (Ye - _) / e.scaleRatio, O = (Ee - E) / e.scaleRatio;
+        e.snapToGrid && (q = Q(q, e.gridX), O = Q(O, e.gridY));
+        const _e = Math.atan2(O, q), ce = Je(q, O), Se = ue.shiftKey, de = _e - re(C.rotateAngle), ze = ce * Math.cos(de), Ae = ce * Math.sin(de), Te = (Xe || Se) && !H ? C.width / C.height : H, {
+          position: { centerX: fe, centerY: he },
+          size: { width: Be, height: Ce }
+        } = Qe(
+          N,
+          { ...C, rotateAngle: C.rotateAngle },
+          ze,
+          Ae,
+          Te,
+          xe,
+          Me
+        ), $e = Ze({
+          centerX: fe,
+          centerY: he,
+          width: Be,
+          height: Ce,
+          angle: s.value.angle
+        });
+        let F = {
+          ...s.value,
+          ...He($e, fe, he)
+        };
+        e.maxWidth > 0 && (F.width = Math.min(F.width, e.maxWidth)), e.maxHeight > 0 && (F.height = Math.min(F.height, e.maxHeight)), s.value = F, l("resize", s.value, N);
+      }, () => {
+        e.checkCollision && y() && (s.value = { ...s.value, width: Y, height: A, left: S, top: T }), l("resize-end", s.value, N);
+      });
+    }
+    return j(
+      () => [e.width, e.height, e.left, e.top, e.angle],
+      ([c, w, m, X, _], [E, Y, A, S, T]) => {
+        c !== E && (s.value.width = c), w !== Y && (s.value.height = w), m !== A && (s.value.left = m), X !== S && (s.value.top = X), _ !== T && (s.value.angle = _);
+      }
+    ), j(
+      () => s.value,
+      (c) => {
+        t("change", { ...c });
+      },
+      { deep: !0 }
+    ), j(
+      () => e.selected,
+      (c) => {
+        d.value = c;
+      },
+      { immediate: !0 }
+    ), (c, w) => (I(), W(Ne(c.tag), {
+      ref: p,
+      class: Ie([
+        "es-drager",
+        `es-drager-${c.type}`,
+        { disabled: c.disabled, dragging: z(u), selected: z(d), border: c.border }
+      ]),
+      style: ge(v.value),
+      onClick: w[7] || (w[7] = le(() => {
+      }, ["stop"])),
+      onMousedown: w[8] || (w[8] = le(() => {
+      }, ["stop"]))
+    }, {
+      default: ee(() => [
+        K(c.$slots, "default"),
+        M.value ? (I(!0), J(Pe, { key: 0 }, Ve(a.value, (m, X) => (I(), J("div", {
+          key: X,
+          class: "es-drager-dot",
+          "data-side": m.side,
+          style: ge({ ...m }),
+          onMousedown: (_) => k(m, _),
+          onTouchstartPassive: (_) => k(m, _)
+        }, [
+          K(c.$slots, "resize", Ke(Fe({ side: m.side })), () => [
+            ht
+          ])
+        ], 44, ft))), 128)) : te("", !0),
+        h.value ? (I(), W(at, {
+          key: 1,
+          modelValue: z(s).angle,
+          "onUpdate:modelValue": w[0] || (w[0] = (m) => z(s).angle = m),
+          element: r.value,
+          onRotate: w[1] || (w[1] = (m) => l("rotate", z(s))),
+          onRotateStart: w[2] || (w[2] = (m) => l("rotate-start", z(s))),
+          onRotateEnd: b
+        }, {
+          default: ee(() => [
+            K(c.$slots, "rotate")
+          ]),
+          _: 3
+        }, 8, ["modelValue", "element"])) : te("", !0),
+        f.value ? (I(), W(dt, {
+          key: 2,
+          modelValue: z(s).skew,
+          "onUpdate:modelValue": w[3] || (w[3] = (m) => z(s).skew = m),
+          element: r.value,
+          onSkew: w[4] || (w[4] = (m) => l("skew", z(s))),
+          onSkewStart: w[5] || (w[5] = (m) => l("skew-start", z(s))),
+          onSkewEnd: w[6] || (w[6] = (m) => l("skew-end", z(s)))
+        }, {
+          default: ee(() => [
+            K(c.$slots, "skew")
+          ]),
+          _: 3
+        }, 8, ["modelValue", "element"])) : te("", !0)
+      ]),
+      _: 3
+    }, 40, ["class", "style"]));
+  }
+});
+const gt = (n) => {
+  n.component("es-drager", Le);
+};
+Le.install = gt;
+export {
+  Ge as DragerProps,
+  Le as ESDrager,
+  Le as default,
+  gt as install
+};
