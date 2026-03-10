@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="public/logo.png" alt="AIPPT.cc Logo" width="80" />
+<img src="public/logo.png" alt="AIPPT Logo" width="80" />
 
 # AIPPT
 
@@ -20,7 +20,7 @@
 
 ## ✨ 什么是 AIPPT（JitPPT）？
 
-**AIPPT.cc** 是一款功能丰富的开源 AI 演示文稿编辑器，让您在数秒内创建精美的幻灯片。它在浏览器中直接集成了主流大语言模型——DeepSeek、GPT、Claude、Gemini、Kimi、通义千问等——并支持零后端模式，可立即在本地使用。
+**AIPPT** 是一款功能丰富的开源 AI 演示文稿编辑器，让您在数秒内创建精美的幻灯片。它在浏览器中直接集成了主流大语言模型——DeepSeek、GPT、Claude、Gemini、Kimi、通义千问等——并支持零后端模式，可立即在本地使用。
 
 > **一键体验，无需注册。** 在登录页点击「试用演示」即可开始。
 
